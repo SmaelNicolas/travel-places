@@ -1,0 +1,22 @@
+.containerTravelPlaces {
+	width: calc(100vw - (100vw - 100%));
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.containerCarouselDownloads {
+	width: 1100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.containerStepsPlaces {
+	width: 100%;
+	min-height: 500px;
+	border: 1px solid black;
+}
