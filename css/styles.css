@@ -2,6 +2,7 @@
 @import url("./carouselDownloads.css");
 @import url("./stepsPlaces.css");
 @import url("./gridImages.css");
+@import url("./carouselOneImagePerView.css");
 
 @font-face {
 	font-family: "Mont-Book";
