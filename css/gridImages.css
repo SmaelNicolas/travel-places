@@ -1,0 +1,131 @@
+.containerGridImages {
+	width: 100%;
+	min-height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.gridImagesTitle {
+	width: 100%;
+	text-align: center;
+	font-size: 106px;
+	font-weight: 600;
+	color: var(--clr--purple);
+}
+
+.containerGridImagesMain {
+	width: 1000px;
+	min-height: 500px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	position: relative;
+}
+.gridImagesSubTitle {
+	width: 100%;
+	padding: 0px 15px;
+	letter-spacing: 4px;
+	text-align: center;
+	left: 20px;
+	position: absolute;
+	color: var(--clr--hard--grey);
+	font-size: 90px;
+	transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+
+.containerGridImagesMainImages {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.containerGridImagesMainRow {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.containerGridImagesMainRowReverse {
+	width: 100%;
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.containerGridImagesMainRowImage {
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.containerGridImagesMainRowImageWrapperOne {
+	width: 380px;
+	height: 280px;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.gridImagesMainRowImageWrapperImageOne {
+	width: 100%;
+	height: 100%;
+	transition: transform 0.5s ease;
+}
+
+.gridImagesMainRowImageWrapperImageOne:hover {
+	transform: scale(1.1);
+}
+
+.containerGridImagesMainRowImageWrapperTwo {
+	width: 500px;
+	height: 280px;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.gridImagesMainRowImageWrapperImageTwo {
+	width: 100%;
+	height: 100%;
+	transition: transform 0.5s ease;
+}
+
+.gridImagesMainRowImageWrapperImageTwo:hover {
+	transform: scale(1.1);
+}
+
+.containerGridImagesMainRowTitle {
+	width: 100%;
+	font-weight: 900;
+	color: black;
+	text-align: left;
+	font-size: 18px;
+	transition: transform 0.5s ease;
+}
+
+.containerGridImagesMainRowSubTitle {
+	color: var(--clr--hard--grey);
+	text-align: left;
+	font-size: 12px;
+	width: 80%;
+	opacity: 0;
+	transition: transform 0.5s ease;
+}
+
+.addColorPurple {
+	color: var(--clr--purple);
+}
+
+.showDescriptionGridImage {
+	opacity: 1;
+}
