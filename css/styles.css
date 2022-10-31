@@ -1,8 +1,69 @@
 @import url("./containers.css");
 @import url("./carouselDownloads.css");
+@import url("./stepsPlaces.css");
+@import url("./gridImages.css");
+
+@font-face {
+	font-family: "Mont-Book";
+	src: url("../assets/fonts/Mont-Book.woff") format("opentype");
+	font-weight: 100;
+}
+@font-face {
+	font-family: "Heavy";
+	src: url("../assets/fonts/heavy.otf") format("opentype");
+	font-weight: 100;
+}
+
+:root {
+	--clr--purple: #602ff7;
+	--clr--xlight--grey: #d9d9d9c2;
+	--clr--light--grey: #d9d9d9;
+	--clr--medium--grey: #a7a7a7;
+	--clr--hard--grey: #999;
+	--clr--black-: #000000;
+	--ff--Mont: "Mont-Book";
+	--ff--Heavy: "Heavy";
+
+	--shadow--3d--big: 1px 1px 0px var(--clr--hard--grey),
+		2px 2px 0px var(--clr--hard--grey), 3px 3px 0px var(--clr--hard--grey),
+		4px 4px 0px var(--clr--hard--grey), 5px 5px 0px var(--clr--hard--grey),
+		6px 6px 20px 5px var(--clr--hard--grey);
+
+	--shadow--3d--medium: 0px 0px 5px 2px var(--clr--hard--grey);
+	--shadow--3d--small: 0px 0px 5px 1px var(--clr--hard--grey);
+
+	--shadow--3d--small--right: -0.5px 0.5px 0px var(--clr--hard--grey),
+		-1px 1px 0px var(--clr--hard--grey), -2px 2px 0px var(--clr--hard--grey),
+		-3px 3px 0px var(--clr--hard--grey), -4px 4px 0px var(--clr--hard--grey),
+		-5px 5px 20px 10px var(--clr--hard--grey);
+	--shadow--3d--small--left: 0.5px 0.5px 0px var(--clr--hard--grey),
+		1px 1px 0px var(--clr--hard--grey), 2px 2px 0px var(--clr--hard--grey),
+		3px 3px 0px var(--clr--hard--grey), 4px 4px 0px var(--clr--hard--grey),
+		5px 5px 20px 10px var(--clr--hard--grey);
+
+	--shadow--3d--light--left: 0.5px 0.5px 10px var(--clr--hard--grey);
+	--shadow--3d--light--right: -0.5px 0.5px 10px var(--clr--hard--grey);
+
+	/* cards NAMES */
+	--fs--name--cards--xxxbig: 55px;
+	--fs--name--cards--xxbig: 50px;
+	--fs--name--cards--xbig: 45px;
+	--fs--name--cards--big: 35px;
+	--fs--name--cards--large: 30px;
+	--fs--name--cards--medium: 28px;
+	--fs--name--cards--small: 25px;
+	--fs--name--cards--xsmall: 20px;
+	--fs--name--cards--xxsmall: 15px;
+
+	/* cards DESCRIPTION */
+	--fs--desc--cards--big: 20px;
+	--fs--desc--cards--large: 15px;
+	--fs--desc--cards--medium: 13px;
+}
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: var(--ff--Mont);
 }
