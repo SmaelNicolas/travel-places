@@ -14,9 +14,3 @@
 	justify-content: flex-start;
 	align-items: center;
 }
-
-.containerStepsPlaces {
-	width: 100%;
-	min-height: 500px;
-	border: 1px solid black;
-}
