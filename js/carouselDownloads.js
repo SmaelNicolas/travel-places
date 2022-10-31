@@ -32,10 +32,4 @@ export const carouselDownloadStart = () => {
 				"prevPlacesCarouselDownloads"
 			).style.display = "none";
 		});
-
-	document
-		.getElementById("placesCaouselDownloadsIconDwl")
-		.addEventListener("click", () => {
-			console.log("HOLA");
-		});
 };
