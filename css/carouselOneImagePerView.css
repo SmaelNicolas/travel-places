@@ -1,0 +1,93 @@
+.containerCarouselOneImage {
+	width: 100%;
+	min-height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.containerCarouselOneImageWrapper {
+	width: 550px;
+	height: 570px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	position: relative;
+	border-radius: 10px;
+	border: 2px solid var(--clr--light--grey);
+	border-left: 4px solid var(--clr--light--grey);
+	border-bottom: 4px solid var(--clr--light--grey);
+}
+.carouselCarouselOneImageImg {
+	top: 10px;
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	overflow: hidden;
+	display: none;
+	text-decoration: none;
+}
+.carouselOneImageImg {
+	top: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	object-fit: cover;
+	transition: transform 0.5s linear;
+}
+.carouselOneImageImg:hover {
+	-webkit-filter: brightness(70%);
+	-webkit-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+	-ms-transition: all 0.4s linear;
+	transition: all 0.4s linear;
+	transform: scale(1.1);
+}
+
+.containerCarouselOneImageText {
+	z-index: 10;
+	color: white;
+	text-decoration: none;
+	display: none;
+	width: max-content;
+	height: 150px;
+	flex-direction: column;
+}
+.containerCarouselOneImageTitle {
+	font-size: 55px;
+	font-weight: 800;
+}
+
+.containerCarouselOneImageTextSubtitle {
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.containerCarouselOneImageDots {
+	display: flex;
+	flex-direction: row;
+	padding: 10px 0px;
+}
+.carouselOneImageDot {
+	width: 10px;
+	height: 10px;
+	background-color: var(--clr--light--grey);
+	border-radius: 50%;
+	margin: 0px 5px;
+	cursor: pointer;
+}
+
+.showCarouselOneImage {
+	display: flex;
+}
+
+.changeBackgroundColorDot {
+	background-color: var(--clr--hard--grey);
+}
+
+.showTextContainerCarousel {
+	display: flex;
+}
