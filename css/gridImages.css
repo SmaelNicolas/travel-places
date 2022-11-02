@@ -129,3 +129,98 @@
 .showDescriptionGridImage {
 	opacity: 1;
 }
+
+@media only screen and (max-width: 1060px) {
+	.containerGridImagesMain {
+		width: 850px;
+	}
+
+	.gridImagesSubTitle {
+		padding: 0px 15px;
+		left: 20px;
+		font-size: 50px;
+	}
+
+	.containerGridImagesMainRowImageWrapperOne {
+		width: 300px;
+	}
+	.containerGridImagesMainRowImageWrapperTwo {
+		width: 450px;
+	}
+	.containerGridImagesMainRowTitle {
+		font-size: 15px;
+	}
+
+	.containerGridImagesMainRowSubTitle {
+		font-size: 10px;
+	}
+}
+@media only screen and (max-width: 888px) {
+	.containerGridImagesMain {
+		width: 100%;
+	}
+
+	.containerGridImagesMainRow {
+		flex-direction: column;
+	}
+
+	.containerGridImagesMainRowReverse {
+		flex-direction: column;
+	}
+
+	.containerGridImagesMainRowImageWrapperOne {
+		width: 500px;
+		height: auto;
+	}
+	.gridImagesMainRowImageWrapperImageOne {
+		height: auto;
+	}
+	.containerGridImagesMainRowImageWrapperTwo {
+		width: 500px;
+		height: auto;
+	}
+	.gridImagesMainRowImageWrapperImageTwo {
+		height: auto;
+	}
+}
+
+@media only screen and (max-width: 570px) {
+	.containerGridImagesMain {
+		flex-direction: column;
+	}
+	.containerGridImagesMain {
+		width: 100%;
+	}
+
+	.containerGridImagesMainRow {
+		flex-direction: column;
+	}
+
+	.containerGridImagesMainRowReverse {
+		flex-direction: column;
+	}
+
+	.containerGridImagesMainRowImage {
+		height: auto;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.containerGridImagesMainRowImageWrapperOne {
+		width: 300px;
+		height: auto;
+	}
+	.gridImagesMainRowImageWrapperImageOne {
+		height: auto;
+	}
+	.containerGridImagesMainRowImageWrapperTwo {
+		width: 300px;
+		height: auto;
+	}
+	.gridImagesMainRowImageWrapperImageTwo {
+		height: auto;
+	}
+	.containerGridImagesMainRowTitle {
+		width: 300px;
+	}
+}

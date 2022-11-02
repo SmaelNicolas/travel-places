@@ -13,6 +13,40 @@
 	</head>
 	<body>
 		<main class="containerTravelPlaces">
+			<div id="travelBoxSearchContainer" class="travelBoxSearchContainer">
+				<div
+					class="travelBoxSearchLabelsContainer"
+					id="travelBoxSearchLabelsContainer">
+					<div
+						class="travelBoxSearchLabels"
+						id="topUniversitiesLabel">
+						Study
+						<span class="travelBoxSearchLabelsSpan"> Abroad </span>
+					</div>
+				</div>
+				<div class="travelBoxSearchInputsContainer">
+					<div class="travelBoxSearchInputWithIcon">
+						<img
+							class="travelBoxSearchInputsIcon"
+							src="./assets/icons/search-white.svg" />
+						<input
+							class="travelBoxSearchInputs"
+							id="travelBoxSearchInput"
+							type="text"
+							placeholder="" />
+					</div>
+					<div class="travelBoxSearchCountrysContainer">
+						<div
+							class="travelBoxSearchSelector"
+							id="travelSearchSelector">
+							Top Places
+						</div>
+						<div
+							id="travelBoxSearchListCountriesContainer"
+							class="travelBoxSearchListCountriesContainer"></div>
+					</div>
+				</div>
+			</div>
 			<section class="containerCarouselDownloads">
 				<h2>Carousel con descargas</h2>
 				<div
@@ -74,13 +108,28 @@
 								href="./assets/paises/argentina/buenosaires/carouseldownloads/5.webp"
 								download></a>
 						</div>
+						<div class="swiper-slide swiper-slideDownload">
+							<div class="containerImageCarouselDownloadsEffect">
+								<img
+									class="placesCarouselDownloadsImage"
+									src="./assets/paises/argentina/buenosaires/carouseldownloads/6.webp" />
+							</div>
+							<a
+								class="placesCarouselDownloadsIconDwl"
+								href="./assets/paises/argentina/buenosaires/carouseldownloads/5.webp"
+								download></a>
+						</div>
 					</div>
 					<div
 						id="nextPlacesCarouselDownloads"
-						class="swiper-button-next nextPlacesCarouselDownloads"></div>
+						class="swiper-button-next nextPlacesCarouselDownloads">
+						<img src="./assets/icons/right.svg" alt="" srcset="" />
+					</div>
 					<div
 						id="prevPlacesCarouselDownloads"
-						class="swiper-button-prev prevPlacesCarouselDownloads"></div>
+						class="swiper-button-prev prevPlacesCarouselDownloads">
+						<img src="./assets/icons/left.svg" alt="" srcset="" />
+					</div>
 				</div>
 			</section>
 			<section class="containerStepsPlaces">
@@ -409,6 +458,49 @@
 							id="carouselOneImageDot3"
 							class="carouselOneImageDot"></div>
 					</div>
+				</div>
+			</section>
+			<section class="sectionCarouselTriangle">
+				<div
+					id="containerCarouselTriangle"
+					class="containerCarouselTriangle">
+					<img
+						id="carouselTriangleArrowLeft"
+						class="carouselTriangleArrow"
+						src="./assets/icons/left.svg"
+						alt="" />
+					<div class="containerCarouselTriangleImage">
+						<div
+							class="carouselTriangleImageWrapper carouselTriangleImageWrapperLeft">
+							<img
+								id="carouselTriangleImage1"
+								class="carouselTriangleImage"
+								src="./assets/paises/argentina/buenosaires/carouselTriangle/1.webp"
+								alt="1" />
+						</div>
+						<a
+							href="https://google.com.ar"
+							class="carouselTriangleImageWrapper carouselTriangleImageWrapperMiddle">
+							<img
+								id="carouselTriangleImage2"
+								class="carouselTriangleImage carouselTriangleImageEffect"
+								src="./assets/paises/argentina/buenosaires/carouselTriangle/2.webp"
+								alt="2" />
+						</a>
+						<div
+							class="carouselTriangleImageWrapper carouselTriangleImageWrapperRight">
+							<img
+								id="carouselTriangleImage3"
+								class="carouselTriangleImage"
+								src="./assets/paises/argentina/buenosaires/carouselTriangle/3.webp"
+								alt="3" />
+						</div>
+					</div>
+					<img
+						id="carouselTriangleArrowRight"
+						class="carouselTriangleArrow"
+						src="./assets/icons/right.svg"
+						alt="" />
 				</div>
 			</section>
 		</main>

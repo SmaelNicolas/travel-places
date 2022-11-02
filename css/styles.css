@@ -1,8 +1,10 @@
+@import url("./boxSearch.css");
 @import url("./containers.css");
 @import url("./carouselDownloads.css");
 @import url("./stepsPlaces.css");
 @import url("./gridImages.css");
 @import url("./carouselOneImagePerView.css");
+@import url("./carouselTriangle.css");
 
 @font-face {
 	font-family: "Mont-Book";
