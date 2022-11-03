@@ -134,6 +134,9 @@
 	.containerGridImagesMain {
 		width: 850px;
 	}
+	.gridImagesTitle {
+		font-size: 100px;
+	}
 
 	.gridImagesSubTitle {
 		padding: 0px 15px;
@@ -160,6 +163,10 @@
 		width: 100%;
 		justify-content: center;
 		align-items: center;
+	}
+
+	.gridImagesTitle {
+		font-size: 80px;
 	}
 	.gridImagesSubTitle {
 		display: none;
@@ -188,6 +195,9 @@
 @media only screen and (max-width: 570px) {
 	.containerGridImagesMain {
 		flex-direction: column;
+	}
+	.gridImagesTitle {
+		font-size: 50px;
 	}
 	.containerGridImagesMain {
 		width: 100%;
