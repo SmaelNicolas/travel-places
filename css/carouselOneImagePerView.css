@@ -91,3 +91,20 @@
 .showTextContainerCarousel {
 	display: flex;
 }
+
+@media only screen and (max-width: 580px) {
+	.containerCarouselOneImageWrapper {
+		width: 90%;
+		height: 100vw;
+	}
+	.carouselCarouselOneImageImg {
+		width: 90%;
+		height: 80%;
+	}
+	.containerCarouselOneImageTitle {
+		font-size: 35px;
+	}
+	.containerCarouselOneImageTextSubtitle {
+		font-size: 12px;
+	}
+}
