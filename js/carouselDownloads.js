@@ -1,8 +1,23 @@
 export const carouselDownloadStart = () => {
+	let manyInView;
+	let slidesInView;
+	let windowWidth = window.innerWidth;
+	if (windowWidth >= 920) {
+		manyInView = 3;
+		slidesInView = 3;
+	}
+	if (windowWidth >= 725 && windowWidth < 920) {
+		manyInView = 2;
+		slidesInView = 2;
+	}
+	if (windowWidth < 725) {
+		manyInView = 1;
+		slidesInView = 1;
+	}
 	new Swiper(".mySwiper", {
-		slidesPerView: 3,
+		slidesPerView: manyInView,
 		spaceBetween: 30,
-		slidesPerGroup: 3,
+		slidesPerGroup: slidesInView,
 		loop: true,
 		loopFillGroupWithBlank: true,
 		navigation: {

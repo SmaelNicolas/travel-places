@@ -87,3 +87,21 @@
 .swiper-button-next::after {
 	content: "";
 }
+
+@media only screen and (max-width: 1120px) {
+	.containerCarouselDownloads {
+		width: 900px;
+	}
+}
+
+@media only screen and (max-width: 920px) {
+	.containerCarouselDownloads {
+		width: 700px;
+	}
+}
+
+@media only screen and (max-width: 725px) {
+	.containerCarouselDownloads {
+		width: 100%;
+	}
+}
