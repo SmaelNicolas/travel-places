@@ -110,4 +110,10 @@
 	.containerCarouselDownloads {
 		width: 100%;
 	}
+	.nextPlacesCarouselDownloads {
+		display: flex !important;
+	}
+	.prevPlacesCarouselDownloads {
+		display: flex !important;
+	}
 }
