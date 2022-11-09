@@ -36,22 +36,22 @@ export const section_3_start = () => {
 		dot3.classList.add("changeBackgroundColorDot");
 	});
 
-	image1.addEventListener("mouseenter", () => {
-		containerText1.classList.toggle("showTextContainerCarousel");
-	});
-	image1.addEventListener("mouseleave", () => {
-		containerText1.classList.toggle("showTextContainerCarousel");
-	});
-	image2.addEventListener("mouseenter", () => {
-		containerText2.classList.toggle("showTextContainerCarousel");
-	});
-	image2.addEventListener("mouseleave", () => {
-		containerText2.classList.toggle("showTextContainerCarousel");
-	});
-	image3.addEventListener("mouseenter", () => {
-		containerText3.classList.toggle("showTextContainerCarousel");
-	});
-	image3.addEventListener("mouseleave", () => {
-		containerText3.classList.toggle("showTextContainerCarousel");
-	});
+	// image1.addEventListener("mouseenter", () => {
+	// 	containerText1.classList.toggle("showTextContainerCarousel");
+	// });
+	// image1.addEventListener("mouseleave", () => {
+	// 	containerText1.classList.toggle("showTextContainerCarousel");
+	// });
+	// image2.addEventListener("mouseenter", () => {
+	// 	containerText2.classList.toggle("showTextContainerCarousel");
+	// });
+	// image2.addEventListener("mouseleave", () => {
+	// 	containerText2.classList.toggle("showTextContainerCarousel");
+	// });
+	// image3.addEventListener("mouseenter", () => {
+	// 	containerText3.classList.toggle("showTextContainerCarousel");
+	// });
+	// image3.addEventListener("mouseleave", () => {
+	// 	containerText3.classList.toggle("showTextContainerCarousel");
+	// });
 };
