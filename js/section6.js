@@ -1,4 +1,4 @@
-export const carouselDownloadStart = () => {
+export const section_6_start = () => {
 	let manyInView;
 	let slidesInView;
 	let windowWidth = window.innerWidth;

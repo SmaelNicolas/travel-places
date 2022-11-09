@@ -1,10 +1,10 @@
 @import url("./boxSearch.css");
 @import url("./containers.css");
-@import url("./carouselDownloads.css");
-@import url("./stepsPlaces.css");
-@import url("./gridImages.css");
-@import url("./carouselOneImagePerView.css");
-@import url("./carouselTriangle.css");
+@import url("./section1Head.css");
+@import url("./section2Body.css");
+@import url("./section3_5Partners.css");
+@import url("./section4Content.css");
+@import url("./section6Download.css");
 
 @font-face {
 	font-family: "Mont-Book";

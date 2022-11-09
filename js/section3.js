@@ -1,4 +1,4 @@
-export const startCarouselOneImage = () => {
+export const section_3_start = () => {
 	let dot1 = document.getElementById("carouselOneImageDot1");
 	let dot2 = document.getElementById("carouselOneImageDot2");
 	let dot3 = document.getElementById("carouselOneImageDot3");

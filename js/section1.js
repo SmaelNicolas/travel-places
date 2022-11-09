@@ -1,4 +1,4 @@
-export const carouselTriangle = () => {
+export const section_1_start = () => {
 	let carouselContainer = document.getElementById(
 		"containerCarouselTriangle"
 	);

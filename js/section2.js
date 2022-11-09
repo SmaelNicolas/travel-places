@@ -1,4 +1,4 @@
-export const initalizeEventListeners = () => {
+export const section_2_start = () => {
 	let cardContainer1 = document.getElementById("gridImageContainer1");
 	let cardContainer2 = document.getElementById("gridImageContainer2");
 	let cardContainer3 = document.getElementById("gridImageContainer3");
