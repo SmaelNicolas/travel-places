@@ -1,14 +1,23 @@
-.containerCarouselOneImage {
+.section3_5StudyAbroad {
 	width: 100%;
 	min-height: 400px;
 	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
+	flex-direction: row-reverse;
+	justify-content: center;
 	align-items: center;
 	margin: 15px 0px;
 }
 
-.containerCarouselOneImageWrapper {
+.section3_5StudyAbroadTitle {
+	color: var(--clr--hard--grey);
+	min-width: 250px;
+	text-align: end;
+	font-size: var(--fs--name--cards--xxxbig);
+	font-family: var(--ff--Mont);
+	letter-spacing: 1.5px;
+}
+
+.containerSection3_5Wrapper {
 	width: 550px;
 	height: 570px;
 	display: flex;
@@ -21,7 +30,7 @@
 	border-left: 4px solid var(--clr--light--grey);
 	border-bottom: 4px solid var(--clr--light--grey);
 }
-.carouselCarouselOneImageImg {
+.containerSection3_5Img {
 	top: 10px;
 	width: 500px;
 	height: 500px;
@@ -30,7 +39,7 @@
 	display: none;
 	text-decoration: none;
 }
-.carouselOneImageImg {
+.section3_5Img {
 	top: 0;
 	width: 100%;
 	height: 100%;
@@ -38,7 +47,7 @@
 	object-fit: cover;
 	transition: transform 0.5s linear;
 }
-.carouselOneImageImg:hover {
+.section3_5Img:hover {
 	-webkit-filter: brightness(70%);
 	-webkit-transition: all 0.4s linear;
 	-moz-transition: all 0.4s linear;
@@ -48,7 +57,7 @@
 	transform: scale(1.1);
 }
 
-.containerCarouselOneImageText {
+.containerSection3_5Text {
 	z-index: 10;
 	color: white;
 	text-decoration: none;
@@ -57,22 +66,22 @@
 	height: 150px;
 	flex-direction: column;
 }
-.containerCarouselOneImageTitle {
+.containerSection3_5Title {
 	font-size: 55px;
 	font-weight: 800;
 }
 
-.containerCarouselOneImageTextSubtitle {
+.containerSection3_5TextSubtitle {
 	font-size: 15px;
 	font-weight: 500;
 }
 
-.containerCarouselOneImageDots {
+.containerSection3_5Dots {
 	display: flex;
 	flex-direction: row;
 	padding: 10px 0px;
 }
-.carouselOneImageDot {
+.section3_5Dot {
 	width: 10px;
 	height: 10px;
 	background-color: var(--clr--light--grey);
@@ -81,7 +90,7 @@
 	cursor: pointer;
 }
 
-.showCarouselOneImage {
+.showSection3_5Image {
 	display: flex;
 }
 
@@ -94,18 +103,18 @@
 }
 
 @media only screen and (max-width: 580px) {
-	.containerCarouselOneImageWrapper {
+	.containerSection3_5Wrapper {
 		width: 90%;
 		height: 100vw;
 	}
-	.carouselCarouselOneImageImg {
+	.containerSection3_5Img {
 		width: 90%;
 		height: 80%;
 	}
-	.containerCarouselOneImageTitle {
+	.containerSection3_5Title {
 		font-size: 35px;
 	}
-	.containerCarouselOneImageTextSubtitle {
+	.containerSection3_5TextSubtitle {
 		font-size: 12px;
 	}
 }

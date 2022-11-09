@@ -1,15 +1,15 @@
-export const section_3_start = () => {
-	let dot1 = document.getElementById("section3Dot1");
-	let dot2 = document.getElementById("section3Dot2");
-	let dot3 = document.getElementById("section3Dot3");
+export const section_5_start = () => {
+	let dot1 = document.getElementById("section5Dot1");
+	let dot2 = document.getElementById("section5Dot2");
+	let dot3 = document.getElementById("section5Dot3");
 
-	let image1 = document.getElementById("section3Img1");
-	let image2 = document.getElementById("section3Img2");
-	let image3 = document.getElementById("section3Img3");
+	let image1 = document.getElementById("section5Img1");
+	let image2 = document.getElementById("section5Img2");
+	let image3 = document.getElementById("section5Img3");
 
-	let containerText1 = document.getElementById("containersection3Text1");
-	let containerText2 = document.getElementById("containersection3Text2");
-	let containerText3 = document.getElementById("containersection3Text3");
+	let containerText1 = document.getElementById("containersection5Text1");
+	let containerText2 = document.getElementById("containersection5Text2");
+	let containerText3 = document.getElementById("containersection5Text3");
 
 	dot1.addEventListener("click", () => {
 		image1.classList.add("showSection3_5Image");

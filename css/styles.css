@@ -1,10 +1,10 @@
 @import url("./boxSearch.css");
 @import url("./containers.css");
-@import url("./section1Head.css");
-@import url("./section2Body.css");
-@import url("./section3_5Partners.css");
-@import url("./section4Content.css");
-@import url("./section6Download.css");
+@import url("./section1StudyAbroad.css");
+@import url("./section2StudyAbroad.css");
+@import url("./section3_5StudyAbroad.css");
+@import url("./section4StudyAbroad.css");
+@import url("./section6StudyAbroad.css");
 
 @font-face {
 	font-family: "Mont-Book";

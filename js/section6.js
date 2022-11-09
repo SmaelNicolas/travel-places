@@ -26,25 +26,13 @@ export const section_6_start = () => {
 		},
 	});
 
-	document
-		.getElementById("CarouselDownloads")
-		.addEventListener("mouseenter", () => {
-			document.getElementById(
-				"nextPlacesCarouselDownloads"
-			).style.display = "flex";
-			document.getElementById(
-				"prevPlacesCarouselDownloads"
-			).style.display = "flex";
-		});
+	document.getElementById("Section6").addEventListener("mouseenter", () => {
+		document.getElementById("nextPlacesSection6").style.display = "flex";
+		document.getElementById("prevPlacesSection6").style.display = "flex";
+	});
 
-	document
-		.getElementById("CarouselDownloads")
-		.addEventListener("mouseleave", () => {
-			document.getElementById(
-				"nextPlacesCarouselDownloads"
-			).style.display = "none";
-			document.getElementById(
-				"prevPlacesCarouselDownloads"
-			).style.display = "none";
-		});
+	document.getElementById("Section6").addEventListener("mouseleave", () => {
+		document.getElementById("nextPlacesSection6").style.display = "none";
+		document.getElementById("prevPlacesSection6").style.display = "none";
+	});
 };

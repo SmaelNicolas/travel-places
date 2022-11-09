@@ -12,7 +12,7 @@
 
 .travelBoxSearchContainer {
 	width: 90%;
-	height: 200px;
+	min-height: 200px;
 	border: 1px solid rgba(153, 153, 153, 0.699);
 	border-radius: 10px;
 	display: flex;
@@ -22,7 +22,7 @@
 	margin: 0 auto;
 	box-shadow: var(--shadow--3d--big);
 	background-color: white;
-	padding: 8%;
+	padding: 8% 0px;
 }
 
 .travelBoxSearchLabelsContainer {
@@ -56,6 +56,7 @@
 	justify-content: center;
 	align-items: center;
 	background-color: white;
+	position: relative;
 }
 
 .travelBoxSearchInputWithIcon {
@@ -64,7 +65,6 @@
 }
 
 .travelBoxSearchInputs {
-	-webkit-appearance: none;
 	width: 300px;
 	padding: 10px;
 	padding-left: 50px;
@@ -75,7 +75,7 @@
 	font-family: var(--ff--Mont);
 	text-transform: capitalize;
 	background-color: white;
-
+	font-size: 16px;
 	/* box-shadow: var(--shadow--3d--medium); */
 }
 .travelBoxSearchSelector {
@@ -99,7 +99,7 @@
 	width: 30px;
 	height: 30px;
 	position: absolute;
-	top: 13px;
+	top: 16px;
 	left: 12px;
 }
 
@@ -131,6 +131,7 @@
 	z-index: 100;
 	display: none;
 }
+
 .travelBoxSearchListCountriesContainer::-webkit-scrollbar {
 	display: none; /* Safari and Chrome */
 }
@@ -149,7 +150,12 @@
 	padding: 10px;
 	margin: 0px;
 	font-size: 15px;
-	background-color: white;
+	background: rgb(255, 255, 255);
+	background: linear-gradient(
+		90deg,
+		rgba(255, 255, 255, 0.7371323529411764) 0%,
+		rgba(255, 255, 255, 1) 100%
+	);
 	color: var(--clr--hard--grey);
 	font-weight: 900;
 	font-family: var(--ff--Mont);
@@ -177,13 +183,24 @@
 	color: var(--clr--purple);
 }
 
+.travelBoxSearchListNamesItemSelected,
 .travelBoxSearchListCountriesItemSelected {
 	background-color: var(--clr--purple);
 	color: white;
 }
+.travelBoxSearchListNamesItemSelected,
 .travelBoxSearchListCountriesItemSelected:hover {
 	background-color: var(--clr--purple);
 	color: white !important;
+}
+
+.travelBoxSearchListCountriesItemInfo {
+	font-size: 10px;
+	color: var(--clr--light--grey);
+}
+
+.addColorTravelBoxSearchListCountriesItemInfo {
+	color: #ffd430;
 }
 
 .getBigSmall {
@@ -194,7 +211,40 @@
 .getBiggerHeight {
 	height: 350px;
 	align-items: flex-start;
-	padding-top: 50px;
+}
+
+.getBiggerCountries {
+	height: 400px;
+	align-items: flex-start;
+}
+
+.getBiggerSeparator {
+	height: 190px;
+}
+
+/* SUGGESTION CONTAINER */
+.travelContainerSuggestion {
+	width: 340px;
+	padding: 0px 12px;
+	height: 200px;
+	box-shadow: var(--shadow--3d--medium);
+	border-radius: 5px;
+	background-color: white;
+	-ms-overflow-style: none; /* for Internet Explorer, Edge */
+	scrollbar-width: none; /* for Firefox */
+	overflow-y: scroll;
+	position: absolute;
+	z-index: 150;
+	display: none;
+	top: 52px;
+	right: 0px;
+}
+.travelContainerSuggestion::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
+}
+
+.showSuggestionsContainer {
+	display: unset;
 }
 
 @media only screen and (max-width: 1450px) {
@@ -220,6 +270,9 @@
 	.travelBoxSearchListCountriesContainer {
 		width: 320px;
 	}
+	.travelContainerSuggestion {
+		width: 320px;
+	}
 }
 @media only screen and (max-width: 1000px) {
 	.travelBoxSearchLabels {
@@ -234,6 +287,9 @@
 	.travelBoxSearchListCountriesContainer {
 		width: 270px;
 	}
+	.travelContainerSuggestion {
+		width: 270px;
+	}
 }
 
 @media only screen and (max-width: 800px) {
@@ -246,6 +302,7 @@
 	.travelBoxSearchContainer {
 		width: 100%;
 		flex-direction: column;
+		padding-bottom: 5px;
 	}
 	.travelBoxSearchLabelsContainer {
 		width: 100%;
@@ -265,13 +322,43 @@
 	.travelBoxSearchListCountriesContainer {
 		width: 335px;
 	}
+	.travelContainerSuggestion {
+		width: 337px;
+		left: 2px;
+	}
 	.getBiggerHeight {
-		height: 400px;
+		height: 460px;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.getBiggerCountries {
+		height: 480px;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.getBiggerSeparator {
+		height: 190px;
 		justify-content: flex-start;
 		align-items: center;
 	}
 }
 
+@media only screen and (max-width: 650px) {
+	.getBiggerHeight {
+		height: 440px;
+	}
+	.getBiggerCountries {
+		height: 460px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.getBiggerHeight {
+		height: 420px;
+	}
+	.getBiggerCountries {
+		height: 440px;
+	}
+}
 @media only screen and (max-width: 410px) {
 	.travelBoxSearchInputs {
 		width: 220px;
@@ -280,6 +367,9 @@
 		width: 250px;
 	}
 	.travelBoxSearchListCountriesContainer {
+		width: 255px;
+	}
+	.travelContainerSuggestion {
 		width: 255px;
 	}
 }

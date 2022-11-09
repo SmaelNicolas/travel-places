@@ -1,4 +1,4 @@
-.sectionCarouselTriangle {
+.section1StudyAbroad {
 	width: 100%;
 	min-height: 500px;
 	display: flex;
@@ -7,7 +7,7 @@
 	align-items: center;
 }
 
-.containerCarouselTriangle {
+.containerSection1StudyAbroad {
 	max-width: 1100px;
 	min-height: 550px;
 	display: flex;
@@ -16,14 +16,14 @@
 	align-items: center;
 }
 
-.carouselTriangleArrow {
+.section1ArrowStudyAbroad {
 	width: 45px;
 	height: 45px;
 	opacity: 0;
 	transition: transform 0.3s linear;
 }
 
-.containerCarouselTriangleImage {
+.containerSection1ImageStudyAbroad {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -32,7 +32,7 @@
 	position: relative;
 }
 
-.carouselTriangleImageWrapper {
+.section1ImageWrapperStudyAbroad {
 	width: 450px;
 	height: 350px;
 	overflow: hidden;
@@ -46,14 +46,14 @@
 	border-radius: 15px;
 }
 
-.carouselTriangleImageWrapperMiddle {
+.section1ImageWrapperMiddleStudyAbroad {
 	position: absolute;
 	left: 30%;
 	right: 25%;
 	top: 25%;
 }
 
-.carouselTriangleImage {
+.section1ImageStudyAbroad {
 	width: 430px;
 	height: 330px;
 	object-fit: cover;
@@ -61,70 +61,70 @@
 	border-radius: 15px;
 	transition: transform 0.3s linear;
 }
-.carouselTriangleImageEffect:hover {
+.section1ImageEffectStudyAbroad:hover {
 	transform: scale(1.1);
 }
 
-.showArrowsTriangle {
+.showArrowsTriangleStudyAbroad {
 	transition: transform 0.3s linear;
 	opacity: 1;
 	cursor: pointer;
 }
 
 @media only screen and (max-width: 1020px) {
-	.containerCarouselTriangle {
+	.containerSection1StudyAbroad {
 		width: 100%;
 	}
-	.carouselTriangleImageWrapper {
+	.section1ImageWrapperStudyAbroad {
 		width: 400px;
 		height: 300px;
 	}
 }
 @media only screen and (max-width: 910px) {
-	.carouselTriangleImage {
+	.section1ImageStudyAbroad {
 		width: 100%;
 		height: 100%;
 	}
-	.containerCarouselTriangle {
+	.containerSection1StudyAbroad {
 		width: 100%;
 	}
-	.carouselTriangleImageWrapper {
+	.section1ImageWrapperStudyAbroad {
 		width: 300px;
 		height: 200px;
 	}
 }
 @media only screen and (max-width: 675px) {
-	.carouselTriangleImage {
+	.section1ImageStudyAbroad {
 		width: 100%;
 		height: 100%;
 	}
-	.containerCarouselTriangle {
+	.containerSection1StudyAbroad {
 		width: 100%;
 	}
-	.carouselTriangleImageWrapper {
+	.section1ImageWrapperStudyAbroad {
 		width: 250px;
 		height: 150px;
 	}
 }
 
 @media only screen and (max-width: 600px) {
-	.containerCarouselTriangle {
+	.containerSection1StudyAbroad {
 		width: 98%;
 	}
-	.containerCarouselTriangleImage {
+	.containerSection1ImageStudyAbroad {
 		flex-direction: column;
 		justify-content: space-around;
 		height: 450px;
 	}
 
-	.carouselTriangleImageWrapperMiddle {
+	.section1ImageWrapperMiddleStudyAbroad {
 		width: 280px;
 		height: 180px;
 		top: 30%;
 		left: unset;
 		right: unset;
 	}
-	.carouselTriangleArrow {
+	.section1ArrowStudyAbroad {
 		opacity: 1;
 	}
 }

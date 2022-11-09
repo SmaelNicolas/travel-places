@@ -1,20 +1,18 @@
 export const section_1_start = () => {
-	let carouselContainer = document.getElementById(
-		"containerCarouselTriangle"
-	);
-	let image1 = document.getElementById("carouselTriangleImage1");
-	let image2 = document.getElementById("carouselTriangleImage2");
-	let image3 = document.getElementById("carouselTriangleImage3");
-	let arrowLeft = document.getElementById("carouselTriangleArrowLeft");
-	let arrowRight = document.getElementById("carouselTriangleArrowRight");
+	let carouselContainer = document.getElementById("containerSection1");
+	let image1 = document.getElementById("section1Image1");
+	let image2 = document.getElementById("section1Image2");
+	let image3 = document.getElementById("section1Image3");
+	let arrowLeft = document.getElementById("section1ArrowLeft");
+	let arrowRight = document.getElementById("section1ArrowRight");
 
-	containerCarouselTriangle.addEventListener("mouseenter", () => {
-		arrowLeft.classList.toggle("showArrowsTriangle");
-		arrowRight.classList.toggle("showArrowsTriangle");
+	containerSection1.addEventListener("mouseenter", () => {
+		arrowLeft.classList.toggle("showArrowsTriangleStudyAbroad");
+		arrowRight.classList.toggle("showArrowsTriangleStudyAbroad");
 	});
-	containerCarouselTriangle.addEventListener("mouseleave", () => {
-		arrowLeft.classList.toggle("showArrowsTriangle");
-		arrowRight.classList.toggle("showArrowsTriangle");
+	containerSection1.addEventListener("mouseleave", () => {
+		arrowLeft.classList.toggle("showArrowsTriangleStudyAbroad");
+		arrowRight.classList.toggle("showArrowsTriangleStudyAbroad");
 	});
 
 	arrowLeft.addEventListener("click", () => {

@@ -44,51 +44,51 @@ export const section_2_start = () => {
 	);
 
 	cardContainer1.addEventListener("mouseenter", () => {
-		cardTitle1.classList.toggle("addColorPurple");
-		cardSubtitle1.classList.toggle("showDescriptionGridImage");
+		cardTitle1.classList.toggle("addColorPurpleStudyAbroad");
+		cardSubtitle1.classList.toggle("showDescriptionGridImageStudyAbroad");
 	});
 	cardContainer1.addEventListener("mouseleave", () => {
-		cardTitle1.classList.toggle("addColorPurple");
-		cardSubtitle1.classList.toggle("showDescriptionGridImage");
+		cardTitle1.classList.toggle("addColorPurpleStudyAbroad");
+		cardSubtitle1.classList.toggle("showDescriptionGridImageStudyAbroad");
 	});
 	cardContainer2.addEventListener("mouseenter", () => {
-		cardTitle2.classList.toggle("addColorPurple");
-		cardSubtitle2.classList.toggle("showDescriptionGridImage");
+		cardTitle2.classList.toggle("addColorPurpleStudyAbroad");
+		cardSubtitle2.classList.toggle("showDescriptionGridImageStudyAbroad");
 	});
 	cardContainer2.addEventListener("mouseleave", () => {
-		cardTitle2.classList.toggle("addColorPurple");
-		cardSubtitle2.classList.toggle("showDescriptionGridImage");
+		cardTitle2.classList.toggle("addColorPurpleStudyAbroad");
+		cardSubtitle2.classList.toggle("showDescriptionGridImageStudyAbroad");
 	});
 	cardContainer3.addEventListener("mouseenter", () => {
-		cardTitle3.classList.toggle("addColorPurple");
-		cardSubtitle3.classList.toggle("showDescriptionGridImage");
+		cardTitle3.classList.toggle("addColorPurpleStudyAbroad");
+		cardSubtitle3.classList.toggle("showDescriptionGridImageStudyAbroad");
 	});
 	cardContainer3.addEventListener("mouseleave", () => {
-		cardTitle3.classList.toggle("addColorPurple");
-		cardSubtitle3.classList.toggle("showDescriptionGridImage");
+		cardTitle3.classList.toggle("addColorPurpleStudyAbroad");
+		cardSubtitle3.classList.toggle("showDescriptionGridImageStudyAbroad");
 	});
 	cardContainer4.addEventListener("mouseenter", () => {
-		cardTitle4.classList.toggle("addColorPurple");
-		cardSubtitle4.classList.toggle("showDescriptionGridImage");
+		cardTitle4.classList.toggle("addColorPurpleStudyAbroad");
+		cardSubtitle4.classList.toggle("showDescriptionGridImageStudyAbroad");
 	});
 	cardContainer4.addEventListener("mouseleave", () => {
-		cardTitle4.classList.toggle("addColorPurple");
-		cardSubtitle4.classList.toggle("showDescriptionGridImage");
+		cardTitle4.classList.toggle("addColorPurpleStudyAbroad");
+		cardSubtitle4.classList.toggle("showDescriptionGridImageStudyAbroad");
 	});
 	cardContainer5.addEventListener("mouseenter", () => {
-		cardTitle5.classList.toggle("addColorPurple");
-		cardSubtitle5.classList.toggle("showDescriptionGridImage");
+		cardTitle5.classList.toggle("addColorPurpleStudyAbroad");
+		cardSubtitle5.classList.toggle("showDescriptionGridImageStudyAbroad");
 	});
 	cardContainer5.addEventListener("mouseleave", () => {
-		cardTitle5.classList.toggle("addColorPurple");
-		cardSubtitle5.classList.toggle("showDescriptionGridImage");
+		cardTitle5.classList.toggle("addColorPurpleStudyAbroad");
+		cardSubtitle5.classList.toggle("showDescriptionGridImageStudyAbroad");
 	});
 	cardContainer6.addEventListener("mouseenter", () => {
-		cardTitle6.classList.toggle("addColorPurple");
-		cardSubtitle6.classList.toggle("showDescriptionGridImage");
+		cardTitle6.classList.toggle("addColorPurpleStudyAbroad");
+		cardSubtitle6.classList.toggle("showDescriptionGridImageStudyAbroad");
 	});
 	cardContainer6.addEventListener("mouseleave", () => {
-		cardTitle6.classList.toggle("addColorPurple");
-		cardSubtitle6.classList.toggle("showDescriptionGridImage");
+		cardTitle6.classList.toggle("addColorPurpleStudyAbroad");
+		cardSubtitle6.classList.toggle("showDescriptionGridImageStudyAbroad");
 	});
 };

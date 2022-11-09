@@ -1,4 +1,4 @@
-.containerStepsPlaces {
+.containerSection4 {
 	width: 100%;
 	min-height: 400px;
 	display: flex;
@@ -8,24 +8,24 @@
 	margin: 15px 0px;
 }
 
-.stepsPlacesTitle {
+.section4Title {
 	width: 800px;
 	font-size: 106px;
 	font-weight: 600;
 }
 
-.stepsPlacesTitleSpan {
+.section4TitleSpan {
 	color: var(--clr--purple);
 }
 
-.containerStepsPlacesInfo {
+.containerSection4Info {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-.stepsPlacesInfo {
+.section4Info {
 	width: 1000px;
 	height: 300px;
 	display: flex;
@@ -35,14 +35,14 @@
 	align-items: center;
 }
 
-.stepsPlacesInfoNumber {
+.section4InfoNumber {
 	width: 100px;
 	height: 100px;
 	position: relative;
 	padding: 0px 10px;
 }
 
-.stepsPlacesInfoNumberBigCircle {
+.section4InfoNumberBigCircle {
 	width: 80px;
 	height: 80px;
 	border-radius: 50%;
@@ -54,7 +54,7 @@
 	transform: translate(-50%, -50%);
 }
 
-.stepsPlacesInfoNumberSmallCircle {
+.section4InfoNumberSmallCircle {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
@@ -65,7 +65,7 @@
 	top: 50%;
 	transform: translate(-50%, -50%);
 }
-.stepsPlacesInfoNumberText {
+.section4InfoNumberText {
 	width: 20px;
 	height: 20px;
 	z-index: 6;
@@ -78,85 +78,85 @@
 	font-weight: 900;
 }
 
-.stepsPlacesInfoImageContainer {
+.section4InfoImageContainer {
 	width: 230px;
 	height: 230px;
 	overflow: hidden;
 }
 
-.stepsPlacesInfoImage {
+.section4InfoImage {
 	width: 100%;
 	height: 100%;
 	transition: transform 0.5s ease;
 }
-.stepsPlacesInfoImage:hover {
+.section4InfoImage:hover {
 	transform: scale(1.1);
 }
 
-.stepsPlacesInfoText {
+.section4InfoText {
 	margin: 0px 10px;
 	width: 600px;
 }
 
-.stepsPlacesInfoTextTitle {
+.section4InfoTextTitle {
 	font-size: 22px;
 	font-weight: 900;
 	color: black;
 }
 
-.stepsPlacesInfoTextDescription {
+.section4InfoTextDescription {
 	font-size: 14px;
 	font-weight: 300;
 	color: black;
 }
 
 @media only screen and (max-width: 990px) {
-	.stepsPlacesTitle {
+	.section4Title {
 		font-size: 70px;
 	}
-	.stepsPlacesInfoImageContainer {
+	.section4InfoImageContainer {
 		display: none;
 	}
-	.stepsPlacesInfoNumberBigCircle {
+	.section4InfoNumberBigCircle {
 		width: 60px;
 		height: 60px;
 	}
-	.stepsPlacesInfoNumberSmallCircle {
+	.section4InfoNumberSmallCircle {
 		width: 30px;
 		height: 30px;
 	}
-	.containerStepsPlacesInfo {
+	.containerSection4Info {
 		width: 100%;
 	}
-	.stepsPlacesInfo {
+	.section4Info {
 		width: 100%;
 		height: 150px;
 	}
-	.stepsPlacesTitle {
+	.section4Title {
 		width: 100%;
 		text-align: center;
 	}
-	.stepsPlacesInfoText {
+	.section4InfoText {
 		width: 70%;
 	}
-	.stepsPlacesInfoTextTitle {
+	.section4InfoTextTitle {
 		width: 100%;
 		font-size: 18px;
 	}
-	.stepsPlacesInfoTextDescription {
+	.section4InfoTextDescription {
 		width: 100%;
 		font-size: 12px;
 	}
 }
 
 @media only screen and (max-width: 700px) {
-	.stepsPlacesInfoText {
+	.section4InfoText {
 		width: 100%;
 	}
 }
 
 @media only screen and (max-width: 500px) {
-	.stepsPlacesTitle {
+	.section4Title {
 		font-size: 40px;
 	}
 }
