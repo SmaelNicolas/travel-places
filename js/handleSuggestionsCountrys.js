@@ -42,7 +42,6 @@ export const handleSuggestionsCountrys = () => {
 	// CREA Y RENDERIZA CADA NOMBRE DE PAIS Y LE ASIGNA EL EVENT LISTENER CORRESPONDIENTE.
 	const renderSelectors = (arrayCountrys) => {
 		arrayCountrys.map((country) => {
-			console.log(country);
 			let node = document.createElement("div");
 			node.id = country.name;
 			node.innerHTML = country.name;
