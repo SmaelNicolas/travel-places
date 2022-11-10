@@ -3,13 +3,22 @@
 	min-height: 500px;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
+	padding: 50px 0px;
+}
+
+.section1Title {
+	width: 1100px;
+	color: var(--clr--hard--grey);
+	font-size: 80px;
+	font-weight: 300;
+	text-align: left;
 }
 
 .containerSection1StudyAbroad {
 	max-width: 1100px;
-	min-height: 550px;
+	min-height: 530px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
