@@ -8,8 +8,8 @@
 	padding: 50px 0px;
 }
 
-.section1Title {
-	width: 1100px;
+.section1TitleStudyAbroad {
+	width: 70%;
 	color: var(--clr--hard--grey);
 	font-size: 80px;
 	font-weight: 300;
@@ -18,11 +18,11 @@
 
 .containerSection1StudyAbroad {
 	max-width: 1100px;
-	min-height: 530px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	margin: 10px 0px;
 }
 
 .section1ArrowStudyAbroad {
@@ -93,6 +93,9 @@
 	.section1ImageStudyAbroad {
 		width: 100%;
 		height: 100%;
+	}
+	.section1TitleStudyAbroad {
+		text-align: center;
 	}
 	.containerSection1StudyAbroad {
 		width: 100%;
