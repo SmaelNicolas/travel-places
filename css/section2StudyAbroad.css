@@ -8,7 +8,7 @@
 	margin: 15px 0px;
 }
 
-.gridImagesTitleStudyAbroad {
+.section2TitleStudyAbroad {
 	width: 100%;
 	text-align: center;
 	font-size: 106px;
@@ -16,7 +16,7 @@
 	color: var(--clr--purple);
 }
 
-.containerGridImagesMainStudyAbroad {
+.containerSection2MainStudyAbroad {
 	width: 1000px;
 	min-height: 500px;
 	display: flex;
@@ -25,7 +25,7 @@
 	align-items: center;
 	position: relative;
 }
-.gridImagesSubTitleStudyAbroad {
+.section2SubTitleStudyAbroad {
 	width: 100%;
 	padding: 0px 15px;
 	letter-spacing: 4px;
@@ -37,7 +37,7 @@
 	transform: translateX(-50%) translateY(-50%) rotate(-90deg);
 }
 
-.containerGridImagesMainImagesStudyAbroad {
+.containerSection2MainImagesStudyAbroad {
 	width: 90%;
 	display: flex;
 	flex-direction: column;
@@ -45,7 +45,7 @@
 	align-items: center;
 }
 
-.containerGridImagesMainRowStudyAbroad {
+.containerSection2MainRowStudyAbroad {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -54,7 +54,7 @@
 	align-items: center;
 }
 
-.containerGridImagesMainRowReverseStudyAbroad {
+.containerSection2MainRowReverseStudyAbroad {
 	width: 100%;
 	display: flex;
 	flex-direction: row-reverse;
@@ -63,7 +63,7 @@
 	align-items: center;
 }
 
-.containerGridImagesMainRowImageStudyAbroad {
+.containerSection2MainRowImageStudyAbroad {
 	height: 350px;
 	display: flex;
 	flex-direction: column;
@@ -71,41 +71,41 @@
 	align-items: flex-start;
 }
 
-.containerGridImagesMainRowImageWrapperOneStudyAbroad {
+.containerSection2MainRowImageWrapperOneStudyAbroad {
 	width: 380px;
 	height: 280px;
 	border-radius: 8px;
 	overflow: hidden;
 }
 
-.gridImagesMainRowImageWrapperImageOneStudyAbroad {
+.section2MainRowImageWrapperImageOneStudyAbroad {
 	width: 100%;
 	height: 100%;
 	transition: transform 0.5s ease;
 }
 
-.gridImagesMainRowImageWrapperImageOneStudyAbroad:hover {
+.section2MainRowImageWrapperImageOneStudyAbroad:hover {
 	transform: scale(1.1);
 }
 
-.containerGridImagesMainRowImageWrapperTwoStudyAbroad {
+.containerSection2MainRowImageWrapperTwoStudyAbroad {
 	width: 500px;
 	height: 280px;
 	border-radius: 8px;
 	overflow: hidden;
 }
 
-.gridImagesMainRowImageWrapperImageTwoStudyAbroad {
+.section2MainRowImageWrapperImageTwoStudyAbroad {
 	width: 100%;
 	height: 100%;
 	transition: transform 0.5s ease;
 }
 
-.gridImagesMainRowImageWrapperImageTwoStudyAbroad:hover {
+.section2MainRowImageWrapperImageTwoStudyAbroad:hover {
 	transform: scale(1.1);
 }
 
-.containerGridImagesMainRowTitleStudyAbroad {
+.containerSection2MainRowTitleStudyAbroad {
 	width: 100%;
 	font-weight: 900;
 	color: black;
@@ -114,7 +114,7 @@
 	transition: transform 0.5s ease;
 }
 
-.containerGridImagesMainRowSubTitleStudyAbroad {
+.containerSection2MainRowSubTitleStudyAbroad {
 	color: var(--clr--hard--grey);
 	text-align: left;
 	font-size: 12px;
@@ -127,112 +127,112 @@
 	color: var(--clr--purple);
 }
 
-.showDescriptionGridImageStudyAbroad {
+.showDescriptionSection2StudyAbroad {
 	opacity: 1;
 }
 
 @media only screen and (max-width: 1060px) {
-	.containerGridImagesMainStudyAbroad {
+	.containerSection2MainStudyAbroad {
 		width: 850px;
 	}
-	.gridImagesTitleStudyAbroad {
+	.section2TitleStudyAbroad {
 		font-size: 100px;
 	}
 
-	.gridImagesSubTitleStudyAbroad {
+	.section2SubTitleStudyAbroad {
 		padding: 0px 15px;
 		left: 20px;
 		font-size: 50px;
 	}
 
-	.containerGridImagesMainRowImageWrapperOneStudyAbroad {
+	.containerSection2MainRowImageWrapperOneStudyAbroad {
 		width: 300px;
 	}
-	.containerGridImagesMainRowImageWrapperTwoStudyAbroad {
+	.containerSection2MainRowImageWrapperTwoStudyAbroad {
 		width: 450px;
 	}
-	.containerGridImagesMainRowTitleStudyAbroad {
+	.containerSection2MainRowTitleStudyAbroad {
 		font-size: 15px;
 	}
 
-	.containerGridImagesMainRowSubTitleStudyAbroad {
+	.containerSection2MainRowSubTitleStudyAbroad {
 		font-size: 10px;
 	}
 }
 @media only screen and (max-width: 888px) {
-	.containerGridImagesMainStudyAbroad {
+	.containerSection2MainStudyAbroad {
 		width: 100%;
 		justify-content: center;
 		align-items: center;
 	}
 
-	.gridImagesTitleStudyAbroad {
+	.section2TitleStudyAbroad {
 		font-size: 80px;
 	}
-	.gridImagesSubTitleStudyAbroad {
+	.section2SubTitleStudyAbroad {
 		display: none;
 	}
-	.containerGridImagesMainRowStudyAbroad {
+	.containerSection2MainRowStudyAbroad {
 		flex-direction: column;
 	}
 
-	.containerGridImagesMainRowReverseStudyAbroad {
+	.containerSection2MainRowReverseStudyAbroad {
 		flex-direction: column;
 	}
 
-	.containerGridImagesMainRowImageWrapperOneStudyAbroad {
+	.containerSection2MainRowImageWrapperOneStudyAbroad {
 		width: 500px;
 		height: auto;
 	}
-	.containerGridImagesMainRowImageWrapperTwoStudyAbroad {
+	.containerSection2MainRowImageWrapperTwoStudyAbroad {
 		width: 500px;
 		height: auto;
 	}
-	.gridImagesMainRowImageWrapperImageTwoStudyAbroad {
+	.section2MainRowImageWrapperImageTwoStudyAbroad {
 		height: auto;
 	}
 }
 
 @media only screen and (max-width: 570px) {
-	.containerGridImagesMainStudyAbroad {
+	.containerSection2MainStudyAbroad {
 		flex-direction: column;
 	}
-	.gridImagesTitleStudyAbroad {
+	.section2TitleStudyAbroad {
 		font-size: 50px;
 	}
-	.containerGridImagesMainStudyAbroad {
+	.containerSection2MainStudyAbroad {
 		width: 100%;
 	}
 
-	.containerGridImagesMainRowStudyAbroad {
+	.containerSection2MainRowStudyAbroad {
 		flex-direction: column;
 	}
 
-	.containerGridImagesMainRowReverseStudyAbroad {
+	.containerSection2MainRowReverseStudyAbroad {
 		flex-direction: column;
 	}
 
-	.containerGridImagesMainRowImageStudyAbroad {
+	.containerSection2MainRowImageStudyAbroad {
 		height: auto;
 		justify-content: center;
 		align-items: center;
 	}
 
-	.containerGridImagesMainRowImageWrapperOneStudyAbroad {
+	.containerSection2MainRowImageWrapperOneStudyAbroad {
 		width: 300px;
 		height: auto;
 	}
-	.gridImagesMainRowImageWrapperImageOneStudyAbroad {
+	.section2MainRowImageWrapperImageOneStudyAbroad {
 		height: auto;
 	}
-	.containerGridImagesMainRowImageWrapperTwoStudyAbroad {
+	.containerSection2MainRowImageWrapperTwoStudyAbroad {
 		width: 300px;
 		height: auto;
 	}
-	.gridImagesMainRowImageWrapperImageTwoStudyAbroad {
+	.section2MainRowImageWrapperImageTwoStudyAbroad {
 		height: auto;
 	}
-	.containerGridImagesMainRowTitleStudyAbroad {
+	.containerSection2MainRowTitleStudyAbroad {
 		width: 300px;
 	}
 }
