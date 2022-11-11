@@ -71,3 +71,23 @@
 	box-sizing: border-box;
 	font-family: var(--ff--Mont);
 }
+
+@media only screen and (max-width: 600px) {
+	:root {
+		/* cards NAMES */
+		--fs--name--cards--xxxbig: 50px;
+		--fs--name--cards--xxbig: 45px;
+		--fs--name--cards--xbig: 40px;
+		--fs--name--cards--big: 30px;
+		--fs--name--cards--large: 25px;
+		--fs--name--cards--medium: 23px;
+		--fs--name--cards--small: 20px;
+		--fs--name--cards--xsmall: 15px;
+		--fs--name--cards--xxsmall: 13px;
+
+		/* cards DESCRIPTION */
+		--fs--desc--cards--big: 15px;
+		--fs--desc--cards--large: 12px;
+		--fs--desc--cards--medium: 10px;
+	}
+}
