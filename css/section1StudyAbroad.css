@@ -51,7 +51,6 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: white;
 	border-radius: 15px;
 }
 
@@ -60,16 +59,20 @@
 	left: 30%;
 	right: 25%;
 	top: 25%;
+	background: rgba(255, 255, 255, 0.04);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(6.5px);
+	-webkit-backdrop-filter: blur(6.5px);
 }
 
 .section1ImageStudyAbroad {
-	width: 430px;
-	height: 330px;
+	width: 415px;
+	height: 315px;
 	object-fit: cover;
-	border: 6px solid white;
 	border-radius: 15px;
 	transition: transform 0.3s linear;
 }
+
 .section1ImageEffectStudyAbroad:hover {
 	transform: scale(1.1);
 }
