@@ -28,6 +28,7 @@
 	background-image: url("../assets/line.png");
 	background-position: left;
 	background-repeat: repeat-y;
+	position: relative;
 }
 
 .section4Info {
@@ -293,6 +294,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	z-index: 6;
 }
 .section4InfoSevenText {
 	width: 70%;
@@ -304,6 +306,21 @@
 .section4InfoSevenImage {
 	width: 120px;
 	height: 120px;
+}
+
+/* PLANE IMAGE  */
+.section4InfoImagePlane {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	bottom: -20px;
+	right: -100px;
+	z-index: 2;
+}
+@media only screen and (max-width: 1000px) {
+	.section4InfoImagePlane {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 800px) {
