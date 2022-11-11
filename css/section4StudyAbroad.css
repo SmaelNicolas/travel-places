@@ -118,6 +118,12 @@
 	position: relative;
 	background-color: var(--clr--cream);
 	rotate: -10deg;
+
+	border-left: 2px solid var(--clr--hard--grey);
+	border-bottom: 3px solid var(--clr--hard--grey);
+	border-right: 1px solid var(--clr--light--grey);
+	border-top: 1px solid var(--clr--light--grey);
+	border-radius: 5px;
 }
 
 .section4InfoOneImageCountry {
@@ -266,17 +272,26 @@
 	height: 170px;
 	rotate: -10deg;
 	z-index: 4;
+	border-radius: 5px;
 	background-color: var(--clr--cream);
+	border-left: 2px solid var(--clr--hard--grey);
+	border-bottom: 3px solid var(--clr--hard--grey);
+	border-right: 1px solid var(--clr--light--grey);
+	border-top: 1px solid var(--clr--light--grey);
+	display: flex;
+	justify-content: center;
 }
 .section4InfoSixImageRest {
-	width: 100%;
+	width: 90%;
+	height: 80%;
+	border-radius: 5px;
 }
 .section4InfoSixImageClip {
 	position: absolute;
-	right: 5px;
-	top: -19px;
-	width: 50px;
-	rotate: -65deg;
+	right: 15px;
+	top: -16px;
+	width: 30px;
+	rotate: -45deg;
 	z-index: 5;
 }
 .section4InfoSixImageRestContainerBack {
@@ -286,10 +301,19 @@
 	height: 170px;
 	rotate: -25deg;
 	z-index: 1;
+	border-radius: 5px;
 	background-color: var(--clr--cream);
+	border-left: 2px solid var(--clr--hard--grey);
+	border-bottom: 3px solid var(--clr--hard--grey);
+	border-right: 1px solid var(--clr--light--grey);
+	border-top: 1px solid var(--clr--light--grey);
+	display: flex;
+	justify-content: center;
 }
 .section4InfoSixImageRestBack {
-	width: 100%;
+	width: 90%;
+	height: 80%;
+	border-radius: 5px;
 }
 
 /* STEP 7 */
