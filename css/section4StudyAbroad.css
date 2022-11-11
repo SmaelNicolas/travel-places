@@ -232,6 +232,11 @@
 /* STEP 6 */
 .section4InfoSix {
 	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0px 10px;
 }
 .section4InfoSixText {
 	width: 60%;
@@ -239,20 +244,47 @@
 	font-family: var(--ff--Mont);
 	font-size: var(--fs--name--cards--xsmall);
 	text-align: justify;
-	padding-left: 50px;
 }
 .section4InfoSixImageMap {
 	width: 200px;
 	height: 110px;
 }
-.section4InfoSixImageRest {
+.section4InfoSixImagesContainer {
+	width: 10%;
+	height: 50px;
+	position: relative;
+}
+.section4InfoSixImageRestContainer {
 	position: absolute;
-	right: 10px;
-	border: 1px solid black;
+	right: 15px;
 	width: 140px;
-	height: 150px;
-	top: -20px;
+	height: 170px;
+	rotate: -10deg;
+	z-index: 4;
+	background-color: var(--clr--cream);
+}
+.section4InfoSixImageRest {
+	width: 100%;
+}
+.section4InfoSixImageClip {
+	position: absolute;
+	right: 5px;
+	top: -19px;
+	width: 50px;
+	rotate: -65deg;
+	z-index: 5;
+}
+.section4InfoSixImageRestContainerBack {
+	position: absolute;
+	right: 15px;
+	width: 120px;
+	height: 170px;
 	rotate: -25deg;
+	z-index: 1;
+	background-color: var(--clr--cream);
+}
+.section4InfoSixImageRestBack {
+	width: 100%;
 }
 
 /* STEP 7 */
@@ -308,5 +340,34 @@
 	}
 	.section4InfoSeven {
 		flex-direction: column-reverse;
+	}
+	.section4InfoSix {
+		flex-direction: column;
+		align-items: center;
+	}
+	.section4InfoSixImagesContainer {
+		width: 150px;
+		height: 150px;
+		margin: 25px 0px;
+	}
+	.section4InfoSixText {
+		width: 100%;
+	}
+	.section4InfoSixImageMap {
+		margin-top: 20px;
+	}
+
+	.section4InfoNumberTitle {
+		font-size: 35px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.section4InfoNumberTitle {
+		font-size: 20px;
+	}
+
+	.section4InfoTextDescription {
+		padding-left: 10px;
 	}
 }
