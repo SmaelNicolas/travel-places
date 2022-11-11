@@ -135,8 +135,8 @@
 }
 
 .section4InfoOneRibbonContainer {
-	width: 200px;
-	rotate: -20deg;
+	width: 250px;
+	rotate: -10deg;
 }
 .section4InfoOneRibbonName {
 	width: 100%;
@@ -144,7 +144,10 @@
 	line-height: 45px;
 	text-align: center;
 	font-family: var(--ff--Mont);
-	background-color: var(--clr--purple);
+	background-image: url("../assets/ribbon.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
 	color: white;
 	margin: 10px 0px;
 }
@@ -156,7 +159,7 @@
 	font-family: var(--ff--Mont);
 	color: var(--clr--hard--grey);
 	text-align: center;
-	font-size: var(--fs--name--cards--xxsmall);
+	font-size: var(--fs--name--cards--xsmall);
 }
 
 /* STEP 2 */
@@ -196,6 +199,7 @@
 }
 .section4InfoThreeCardsImage {
 	width: 90%;
+	height: 70%;
 }
 .section4InfoThreeCardsCity {
 	color: var(--clr--hard--grey);
@@ -270,59 +274,39 @@
 	height: 120px;
 }
 
-@media only screen and (max-width: 1020px) {
-	.section4Info {
-		width: 950px;
-	}
-}
-
-@media only screen and (max-width: 990px) {
-	.section4Title {
-		font-size: 70px;
-	}
-	.section4InfoImageContainer {
-		display: none;
-	}
-	.section4InfoNumberBigCircle {
-		width: 60px;
-		height: 60px;
-	}
-	.section4InfoNumberSmallCircle {
-		width: 30px;
-		height: 30px;
-	}
+@media only screen and (max-width: 800px) {
 	.containerSection4Info {
 		width: 100%;
 	}
+	.section4InfoText {
+		width: 85%;
+	}
 	.section4Info {
 		width: 100%;
-		height: 150px;
 	}
-	.section4Title {
-		width: 100%;
-		text-align: center;
+	.section4InfoNumber {
+		justify-content: flex-start;
 	}
-	.section4InfoText {
-		width: 70%;
-	}
-	.section4InfoTextTitle {
-		width: 100%;
-		font-size: 18px;
-	}
-	.section4InfoTextDescription {
-		width: 100%;
-		font-size: 12px;
+	.section4InfoNumberTitle {
+		width: max-content;
+		padding-left: 15px;
 	}
 }
 
-@media only screen and (max-width: 700px) {
-	.section4InfoText {
-		width: 100%;
+@media only screen and (max-width: 665px) {
+	.section4InfoOne {
+		flex-direction: column;
+	}
+	.section4InfoOneRibbonContainer {
+		rotate: 0deg;
+		margin-top: 35px;
 	}
 }
-
-@media only screen and (max-width: 500px) {
-	.section4Title {
-		font-size: 40px;
+@media only screen and (max-width: 600px) {
+	.section4InfoFive {
+		flex-direction: column;
+	}
+	.section4InfoSeven {
+		flex-direction: column-reverse;
 	}
 }
