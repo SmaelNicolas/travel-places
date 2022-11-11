@@ -328,7 +328,10 @@
 @media only screen and (max-width: 665px) {
 	.section4InfoOne {
 		flex-direction: column;
+		margin: 0px;
+		padding: 0px;
 	}
+
 	.section4InfoOneRibbonContainer {
 		rotate: 0deg;
 		margin-top: 35px;
@@ -358,16 +361,21 @@
 	}
 
 	.section4InfoNumberTitle {
-		font-size: 35px;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	.section4InfoNumberTitle {
 		font-size: 20px;
 	}
 
 	.section4InfoTextDescription {
 		padding-left: 10px;
+	}
+	.section4InfoSixText {
+		padding-left: 0px;
+	}
+	.section4InfoSevenText {
+		width: 100%;
+		padding-left: 0px;
+	}
+
+	.section4InfoOneImageFlag {
+		left: 80px;
 	}
 }

@@ -72,7 +72,7 @@
 	font-family: var(--ff--Mont);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
 	:root {
 		/* cards NAMES */
 		--fs--name--cards--xxxbig: 50px;
