@@ -196,7 +196,11 @@
 	justify-content: space-around;
 	align-items: center;
 	margin: 15px 10px;
-	box-shadow: var(--shadow--3d--small--right);
+	border-radius: 5px;
+	border-left: 2px solid var(--clr--hard--grey);
+	border-bottom: 4px solid var(--clr--hard--grey);
+	border-right: 1px solid var(--clr--light--grey);
+	border-top: 1px solid var(--clr--light--grey);
 }
 .section4InfoThreeCardsImage {
 	width: 90%;
