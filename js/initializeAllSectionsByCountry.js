@@ -16,6 +16,15 @@ export const initializeAllSections = (infoCountry) => {
 		section_3_start(country.section_3, country.country);
 		section_4_Start(country.section_4, country.country);
 		section_5_start(country.section_5, country.country);
-		section_6_start(country.country);
+		let windowWidth = window.innerWidth;
+		if (windowWidth >= 920) {
+			section_6_start(infoCountry[0].country);
+		}
+		if (windowWidth >= 725 && windowWidth < 920) {
+			section_6_start(infoCountry[0].country);
+		}
+		if (windowWidth < 725) {
+			section_6_start(infoCountry[0].country);
+		}
 	});
 };
