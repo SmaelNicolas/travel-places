@@ -1,8 +1,8 @@
-export const section_2_start = () => {
+export const section_2_start = (section2Info, country) => {
 	let containerTravelPlaces = document.getElementById(
 		"containerTravelPlaces"
 	);
-	addSection_2ToContainer(containerTravelPlaces);
+	addSection_2ToContainer(containerTravelPlaces, section2Info, country);
 	let cardContainer1 = document.getElementById("gridImageContainer1");
 	let cardContainer2 = document.getElementById("gridImageContainer2");
 	let cardContainer3 = document.getElementById("gridImageContainer3");
@@ -85,13 +85,18 @@ export const section_2_start = () => {
 	});
 };
 
-const addSection_2ToContainer = (containerTravelPlaces) => {
+const addSection_2ToContainer = (
+	containerTravelPlaces,
+	section2Info,
+	country
+) => {
+	console.log(section2Info);
 	let node = document.createElement("section");
 	node.classList.add("section2StudyAbroad");
 	node.innerHTML = `<h2 class="section2SubTitleStudyAbroadResponsive">
 					Places to visit
 				</h2>
-				<h2 class="section2TitleStudyAbroad">in Argentina</h2>
+				<h2 class="section2TitleStudyAbroad">in ${country}</h2>
 				<div class="containerSection2MainStudyAbroad">
 					<h2 class="section2SubTitleStudyAbroad">Places to visit</h2>
 					<div class="containerSection2MainImagesStudyAbroad">
@@ -103,18 +108,18 @@ const addSection_2ToContainer = (containerTravelPlaces) => {
 									class="containerSection2MainRowImageWrapperOneStudyAbroad">
 									<img
 										class="section2MainRowImageWrapperImageOneStudyAbroad"
-										src="./assets/country/argentina/section2/1.webp"
+										src="./assets/country/${country}/section2/1.webp"
 										alt="country" />
 								</div>
 								<div
 									id="containerSection2MainRowTitle1"
 									class="containerSection2MainRowTitleStudyAbroad">
-									Astronaut & Flashing Neon Lights
+									${section2Info.titles[0]}
 								</div>
 								<div
 									id="containerSection2MainRowSubTitle1"
 									class="containerSection2MainRowSubTitleStudyAbroad">
-									3D Render / Graphic Design / Motion Design
+									${section2Info.subtitles[0]}
 								</div>
 							</div>
 							<div
@@ -124,20 +129,18 @@ const addSection_2ToContainer = (containerTravelPlaces) => {
 									class="containerSection2MainRowImageWrapperTwoStudyAbroad">
 									<img
 										class="section2MainRowImageWrapperImageTwoStudyAbroad"
-										src="./assets/country/argentina/section2/2.webp"
+										src="./assets/country/${country}/section2/2.webp"
 										alt="country" />
 								</div>
 								<div
 									id="containerSection2MainRowTitle2"
 									class="containerSection2MainRowTitleStudyAbroad">
-									Scene of Sunglasses & Headphone on Human
-									Head
+									${section2Info.titles[1]}
 								</div>
 								<div
 									id="containerSection2MainRowSubTitle2"
 									class="containerSection2MainRowSubTitleStudyAbroad">
-									NFT / Graphic Design / Art / Identity /
-									Motion Design
+									${section2Info.subtitles[1]}
 								</div>
 							</div>
 						</div>
@@ -149,18 +152,18 @@ const addSection_2ToContainer = (containerTravelPlaces) => {
 									class="containerSection2MainRowImageWrapperOneStudyAbroad">
 									<img
 										class="section2MainRowImageWrapperImageOneStudyAbroad"
-										src="./assets/country/argentina/section2/4.webp"
+										src="./assets/country/${country}/section2/4.webp"
 										alt="country" />
 								</div>
 								<div
 									id="containerSection2MainRowTitle4"
 									class="containerSection2MainRowTitleStudyAbroad">
-									Big Blue Whale Shape
+									${section2Info.titles[3]}
 								</div>
 								<div
 									id="containerSection2MainRowSubTitle4"
 									class="containerSection2MainRowSubTitleStudyAbroad">
-									3D Pollygonal Shadpe / Graphic Design / Art
+									${section2Info.subtitles[3]}
 								</div>
 							</div>
 							<div
@@ -170,18 +173,18 @@ const addSection_2ToContainer = (containerTravelPlaces) => {
 									class="containerSection2MainRowImageWrapperTwoStudyAbroad">
 									<img
 										class="section2MainRowImageWrapperImageTwoStudyAbroad"
-										src="./assets/country/argentina/section2/3.webp"
+										src="./assets/country/${country}/section2/3.webp"
 										alt="country" />
 								</div>
 								<div
 									id="containerSection2MainRowTitle3"
 									class="containerSection2MainRowTitleStudyAbroad">
-									Plaster Antique Sculpture in a Pop Art Style
+									${section2Info.titles[2]}
 								</div>
 								<div
 									id="containerSection2MainRowSubTitle3"
 									class="containerSection2MainRowSubTitleStudyAbroad">
-									NFT / Graphic Design / Art / 3D
+									${section2Info.subtitles[2]}
 								</div>
 							</div>
 						</div>
@@ -193,18 +196,18 @@ const addSection_2ToContainer = (containerTravelPlaces) => {
 									class="containerSection2MainRowImageWrapperOneStudyAbroad">
 									<img
 										class="section2MainRowImageWrapperImageOneStudyAbroad"
-										src="./assets/country/argentina/section2/5.webp"
+										src="./assets/country/${country}/section2/5.webp"
 										alt="country" />
 								</div>
 								<div
 									id="containerSection2MainRowTitle5"
 									class="containerSection2MainRowTitleStudyAbroad">
-									3D Shape Illustration
+									${section2Info.titles[4]}
 								</div>
 								<div
 									id="containerSection2MainRowSubTitle5"
 									class="containerSection2MainRowSubTitleStudyAbroad">
-									3D Design / Illustration / Art
+									${section2Info.subtitles[4]}
 								</div>
 							</div>
 							<div
@@ -214,18 +217,18 @@ const addSection_2ToContainer = (containerTravelPlaces) => {
 									class="containerSection2MainRowImageWrapperTwoStudyAbroad">
 									<img
 										class="section2MainRowImageWrapperImageTwoStudyAbroad"
-										src="./assets/country/argentina/section2/6.webp"
+										src="./assets/country/${country}/section2/6.webp"
 										alt="country" />
 								</div>
 								<div
 									id="containerSection2MainRowTitle6"
 									class="containerSection2MainRowTitleStudyAbroad">
-									Mannequin Hands Holding Phone
+									${section2Info.titles[5]}
 								</div>
 								<div
 									id="containerSection2MainRowSubTitle6"
 									class="containerSection2MainRowSubTitleStudyAbroad">
-									NFT / Graphic Design / Art / 3D
+									${section2Info.subtitles[5]}
 								</div>
 							</div>
 						</div>
