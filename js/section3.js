@@ -83,7 +83,6 @@ const addSection_3ToContainer = (
 };
 
 const addImageToWrapper = (section3Info, country) => {
-	console.log(section3Info);
 	section3Info.urls.map((url, index) => {
 		let node = document.createElement("a");
 		node.classList.add("containerSection3_5Img");
