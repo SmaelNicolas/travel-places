@@ -12,7 +12,7 @@ export const initializeAllSections = (infoCountry) => {
 	containerTravelPlaces.innerHTML = "";
 	infoCountry.map((country) => {
 		section_1_start(country.section_1, country.country);
-		section_2_start(country.section_2, country.country);
+		section_2_start(country.section_2, country.country, country.styles);
 		section_3_start(country.section_3, country.country);
 		section_4_Start(country.section_4, country.country);
 		section_5_start(country.section_5, country.country);
