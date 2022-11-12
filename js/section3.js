@@ -68,61 +68,7 @@ const addSection_3ToContainer = (
 	let node = document.createElement("section");
 	node.classList.add("section3_5StudyAbroad");
 	node.innerHTML = `<h2 class="section3_5StudyAbroadTitle">${section3Info.title}</h2>
-				<div class="containerSection3_5Wrapper">
-				<a
-						href="${section3Info.urls[0]}"
-						target='_blank'
-						id="section3Img1"
-						class="containerSection3_5Img showSection3_5Image">
-						<img
-							class="section3_5Img"
-							src="./assets/country/${country}/section3/1.webp"
-							alt="" />
-						<div
-							id="containersection3Text1"
-							class="containerSection3_5Text">
-							<div class="containerSection3_5Title">Titulo</div>
-							<div class="containerSection3_5TextSubtitle">
-								Subtitulo
-							</div>
-						</div>
-					</a>
-					<a
-						href=${section3Info.urls[1]}
-						target='_blank'
-						id="section3Img2"
-						class="containerSection3_5Img">
-						<img
-							class="section3_5Img"
-							src="./assets/country/${country}/section3/2.webp"
-							alt="" />
-						<div
-							id="containersection3Text2"
-							class="containerSection3_5Text">
-							<div class="containerSection3_5Title">Titulo</div>
-							<div class="containerSection3_5TextSubtitle">
-								Subtitulo
-							</div>
-						</div>
-					</a>
-					<a
-						href="${section3Info.urls[2]}"
-						target='_blank'
-						id="section3Img3"
-						class="containerSection3_5Img">
-						<img
-							class="section3_5Img"
-							src="./assets/country/${country}/section3/3.webp"
-							alt="" />
-						<div
-							id="containersection3Text3"
-							class="containerSection3_5Text">
-							<div class="containerSection3_5Title">Titulo</div>
-							<div class="containerSection3_5TextSubtitle">
-								Subtitulo
-							</div>
-						</div>
-					</a>
+				<div id="containerSection3Wrapper" class="containerSection3_5Wrapper">
 					<div class="containerSection3_5Dots">
 						<div
 							id="section3Dot1"
@@ -133,4 +79,24 @@ const addSection_3ToContainer = (
 				</div>`;
 
 	containerTravelPlaces.appendChild(node);
+	addImageToWrapper(section3Info, country);
+};
+
+const addImageToWrapper = (section3Info, country) => {
+	console.log(section3Info);
+	section3Info.urls.map((url, index) => {
+		let node = document.createElement("a");
+		node.classList.add("containerSection3_5Img");
+		index === 0 && node.classList.add("showSection3_5Image");
+		node.href = url;
+		node.target = "_blank";
+		node.id = `section3Img${index + 1}`;
+		node.innerHTML = `
+						<img
+							class="section3_5Img"
+							src="./assets/country/${country}/section3/${index + 1}.webp"
+							alt="${country}News" />
+					`;
+		document.getElementById("containerSection3Wrapper").appendChild(node);
+	});
 };
