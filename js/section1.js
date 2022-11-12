@@ -1,12 +1,16 @@
-export const section_1_start = () => {
+export const section_1_start = (section1Info, country) => {
 	let containerTravelPlaces = document.getElementById(
 		"containerTravelPlaces"
 	);
-	addSection_1ToContainer(containerTravelPlaces);
+	addSection_1ToContainer(containerTravelPlaces, section1Info, country);
 	let containerSection1 = document.getElementById("containerSection1");
-	let image1 = document.getElementById("section1Image1");
-	let image2 = document.getElementById("section1Image2");
-	let image3 = document.getElementById("section1Image3");
+	let image1 = document.getElementById("section1Image0");
+	let image2 = document.getElementById("section1Image1");
+	let image3 = document.getElementById("section1Image2");
+	let anchor1 = document.getElementById("section1ImageWrapperStudyAbroad0");
+	let anchor2 = document.getElementById("section1ImageWrapperStudyAbroad1");
+	let anchor3 = document.getElementById("section1ImageWrapperStudyAbroad2");
+
 	let arrowLeft = document.getElementById("section1ArrowLeft");
 	let arrowRight = document.getElementById("section1ArrowRight");
 
@@ -24,9 +28,17 @@ export const section_1_start = () => {
 		let image2Src = image2.src;
 		let image3Src = image3.src;
 
+		let anchor1Href = anchor1.href;
+		let anchor2Href = anchor2.href;
+		let anchor3Href = anchor3.href;
+
 		image1.src = image2Src;
 		image2.src = image3Src;
 		image3.src = image1Src;
+
+		anchor1.href = anchor2Href;
+		anchor2.href = anchor3Href;
+		anchor3.href = anchor1Href;
 	});
 
 	arrowRight.addEventListener("click", () => {
@@ -34,13 +46,25 @@ export const section_1_start = () => {
 		let image2Src = image2.src;
 		let image3Src = image3.src;
 
+		let anchor1Href = anchor1.href;
+		let anchor2Href = anchor2.href;
+		let anchor3Href = anchor3.href;
+
 		image1.src = image3Src;
 		image2.src = image1Src;
 		image3.src = image2Src;
+
+		anchor1.href = anchor3Href;
+		anchor2.href = anchor1Href;
+		anchor3.href = anchor2Href;
 	});
 };
 
-const addSection_1ToContainer = (containerTravelPlaces) => {
+const addSection_1ToContainer = (
+	containerTravelPlaces,
+	section1Info,
+	country
+) => {
 	let node = document.createElement("section");
 	node.classList.add("section1StudyAbroad");
 	node.innerHTML = `<h2 class="section1TitleStudyAbroad">Events</h2>
@@ -53,32 +77,26 @@ const addSection_1ToContainer = (containerTravelPlaces) => {
 						src="./assets/icons/left.svg"
 						alt="" />
 					<div class="containerSection1ImageStudyAbroad">
-						<div
-							class="section1ImageWrapperStudyAbroad section1ImageWrapperLeftStudyAbroad">
-							<img
-								id="section1Image1"
-								class="section1ImageStudyAbroad"
-								src="./assets/country/argentina/section1/1.webp"
-								alt="1" />
-						</div>
-						<a
-							href="https://google.com.ar"
+					${section1Info.map(
+						(url, index) =>
+							`<a
+							id="section1ImageWrapperStudyAbroad${index}"
+							href=${url}
 							target='_blank'
-							class="section1ImageWrapperStudyAbroad section1ImageWrapperMiddleStudyAbroad">
+							class=
+									"section1ImageWrapperStudyAbroad
+									${index + 1 === 1 && "section1ImageWrapperLeftStudyAbroad"}
+									${index + 1 === 2 && "section1ImageWrapperMiddleStudyAbroad"}
+									${index + 1 === 3 && "section1ImageWrapperRightStudyAbroad"}">
 							<img
-								id="section1Image2"
-								class="section1ImageStudyAbroad section1ImageEffectStudyAbroad"
-								src="./assets/country/argentina/section1/2.webp"
-								alt="2" />
-						</a>
-						<div
-							class="section1ImageWrapperStudyAbroad section1ImageWrapperRightStudyAbroad">
-							<img
-								id="section1Image3"
-								class="section1ImageStudyAbroad"
-								src="./assets/country/argentina/section1/3.webp"
-								alt="3" />
-						</div>
+								id="section1Image${index}"
+								class='section1ImageStudyAbroad'
+								src="../assets/country/${country}/section1/${index + 1}.webp"
+								alt="${country}Event"
+							/>
+						</a>`
+					)}
+						
 					</div>
 					<img
 						id="section1ArrowRight"
