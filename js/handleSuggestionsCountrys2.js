@@ -66,7 +66,7 @@ export const handleSuggestionsCountrys2 = () => {
 				"travelBoxSearchListCountriesItemSelected"
 			);
 			clearSelectedInList();
-			let infoCountry;
+			let infoCountry = [];
 			if (hasClass) {
 				travelSearchSelector.innerHTML = "COUNTRY";
 			} else {
