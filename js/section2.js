@@ -1,4 +1,8 @@
 export const section_2_start = () => {
+	let containerTravelPlaces = document.getElementById(
+		"containerTravelPlaces"
+	);
+	addSection_2ToContainer(containerTravelPlaces);
 	let cardContainer1 = document.getElementById("gridImageContainer1");
 	let cardContainer2 = document.getElementById("gridImageContainer2");
 	let cardContainer3 = document.getElementById("gridImageContainer3");
@@ -79,4 +83,154 @@ export const section_2_start = () => {
 		cardTitle6.classList.toggle("addColorPurpleStudyAbroad");
 		cardSubtitle6.classList.toggle("showDescriptionSection2StudyAbroad");
 	});
+};
+
+const addSection_2ToContainer = (containerTravelPlaces) => {
+	let node = document.createElement("section");
+	node.classList.add("section2StudyAbroad");
+	node.innerHTML = `<h2 class="section2SubTitleStudyAbroadResponsive">
+					Places to visit
+				</h2>
+				<h2 class="section2TitleStudyAbroad">in Argentina</h2>
+				<div class="containerSection2MainStudyAbroad">
+					<h2 class="section2SubTitleStudyAbroad">Places to visit</h2>
+					<div class="containerSection2MainImagesStudyAbroad">
+						<div class="containerSection2MainRowStudyAbroad">
+							<div
+								id="gridImageContainer1"
+								class="containerSection2MainRowImageStudyAbroad">
+								<div
+									class="containerSection2MainRowImageWrapperOneStudyAbroad">
+									<img
+										class="section2MainRowImageWrapperImageOneStudyAbroad"
+										src="./assets/country/argentina/section2/1.webp"
+										alt="country" />
+								</div>
+								<div
+									id="containerSection2MainRowTitle1"
+									class="containerSection2MainRowTitleStudyAbroad">
+									Astronaut & Flashing Neon Lights
+								</div>
+								<div
+									id="containerSection2MainRowSubTitle1"
+									class="containerSection2MainRowSubTitleStudyAbroad">
+									3D Render / Graphic Design / Motion Design
+								</div>
+							</div>
+							<div
+								id="gridImageContainer2"
+								class="containerSection2MainRowImageStudyAbroad">
+								<div
+									class="containerSection2MainRowImageWrapperTwoStudyAbroad">
+									<img
+										class="section2MainRowImageWrapperImageTwoStudyAbroad"
+										src="./assets/country/argentina/section2/2.webp"
+										alt="country" />
+								</div>
+								<div
+									id="containerSection2MainRowTitle2"
+									class="containerSection2MainRowTitleStudyAbroad">
+									Scene of Sunglasses & Headphone on Human
+									Head
+								</div>
+								<div
+									id="containerSection2MainRowSubTitle2"
+									class="containerSection2MainRowSubTitleStudyAbroad">
+									NFT / Graphic Design / Art / Identity /
+									Motion Design
+								</div>
+							</div>
+						</div>
+						<div class="containerSection2MainRowReverseStudyAbroad">
+							<div
+								id="gridImageContainer4"
+								class="containerSection2MainRowImageStudyAbroad">
+								<div
+									class="containerSection2MainRowImageWrapperOneStudyAbroad">
+									<img
+										class="section2MainRowImageWrapperImageOneStudyAbroad"
+										src="./assets/country/argentina/section2/4.webp"
+										alt="country" />
+								</div>
+								<div
+									id="containerSection2MainRowTitle4"
+									class="containerSection2MainRowTitleStudyAbroad">
+									Big Blue Whale Shape
+								</div>
+								<div
+									id="containerSection2MainRowSubTitle4"
+									class="containerSection2MainRowSubTitleStudyAbroad">
+									3D Pollygonal Shadpe / Graphic Design / Art
+								</div>
+							</div>
+							<div
+								id="gridImageContainer3"
+								class="containerSection2MainRowImageStudyAbroad">
+								<div
+									class="containerSection2MainRowImageWrapperTwoStudyAbroad">
+									<img
+										class="section2MainRowImageWrapperImageTwoStudyAbroad"
+										src="./assets/country/argentina/section2/3.webp"
+										alt="country" />
+								</div>
+								<div
+									id="containerSection2MainRowTitle3"
+									class="containerSection2MainRowTitleStudyAbroad">
+									Plaster Antique Sculpture in a Pop Art Style
+								</div>
+								<div
+									id="containerSection2MainRowSubTitle3"
+									class="containerSection2MainRowSubTitleStudyAbroad">
+									NFT / Graphic Design / Art / 3D
+								</div>
+							</div>
+						</div>
+						<div class="containerSection2MainRowStudyAbroad">
+							<div
+								id="gridImageContainer5"
+								class="containerSection2MainRowImageStudyAbroad">
+								<div
+									class="containerSection2MainRowImageWrapperOneStudyAbroad">
+									<img
+										class="section2MainRowImageWrapperImageOneStudyAbroad"
+										src="./assets/country/argentina/section2/5.webp"
+										alt="country" />
+								</div>
+								<div
+									id="containerSection2MainRowTitle5"
+									class="containerSection2MainRowTitleStudyAbroad">
+									3D Shape Illustration
+								</div>
+								<div
+									id="containerSection2MainRowSubTitle5"
+									class="containerSection2MainRowSubTitleStudyAbroad">
+									3D Design / Illustration / Art
+								</div>
+							</div>
+							<div
+								id="gridImageContainer6"
+								class="containerSection2MainRowImageStudyAbroad">
+								<div
+									class="containerSection2MainRowImageWrapperTwoStudyAbroad">
+									<img
+										class="section2MainRowImageWrapperImageTwoStudyAbroad"
+										src="./assets/country/argentina/section2/6.webp"
+										alt="country" />
+								</div>
+								<div
+									id="containerSection2MainRowTitle6"
+									class="containerSection2MainRowTitleStudyAbroad">
+									Mannequin Hands Holding Phone
+								</div>
+								<div
+									id="containerSection2MainRowSubTitle6"
+									class="containerSection2MainRowSubTitleStudyAbroad">
+									NFT / Graphic Design / Art / 3D
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>`;
+
+	containerTravelPlaces.appendChild(node);
 };

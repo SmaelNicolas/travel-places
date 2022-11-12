@@ -1,4 +1,9 @@
 export const section_6_start = () => {
+	let containerTravelPlaces = document.getElementById(
+		"containerTravelPlaces"
+	);
+	addSection_6ToContainer(containerTravelPlaces);
+
 	let manyInView;
 	let slidesInView;
 	let windowWidth = window.innerWidth;
@@ -35,4 +40,92 @@ export const section_6_start = () => {
 		document.getElementById("nextPlacesSection6").style.display = "none";
 		document.getElementById("prevPlacesSection6").style.display = "none";
 	});
+};
+
+const addSection_6ToContainer = (containerTravelPlaces) => {
+	let node = document.createElement("section");
+	node.classList.add("containerSection6");
+	node.innerHTML = `<h2 class="section6Title">Programs</h2>
+				<div id="Section6" class="swiper mySwiper section6StudyAbroad">
+					<div class="swiper-wrapper section6Wrapper">
+						<div class="swiper-slide swiper-slideDownload">
+							<div class="containerImageSection6Effect">
+								<img
+									class="placesSection6Image"
+									src="./assets/country/argentina/section6/1.webp" />
+							</div>
+							<a
+								class="placesSection6IconDwl"
+								href="./assets/country/argentina/section6/downloads/1.webp"
+								download></a>
+						</div>
+						<div class="swiper-slide swiper-slideDownload">
+							<div class="containerImageSection6Effect">
+								<img
+									class="placesSection6Image"
+									src="./assets/country/argentina/section6/2.webp" />
+							</div>
+							<a
+								class="placesSection6IconDwl"
+								href="./assets/country/argentina/section6/downloads/2.webp"
+								download></a>
+						</div>
+						<div class="swiper-slide swiper-slideDownload">
+							<div class="containerImageSection6Effect">
+								<img
+									class="placesSection6Image"
+									src="./assets/country/argentina/section6/3.webp" />
+							</div>
+							<a
+								class="placesSection6IconDwl"
+								href="./assets/country/argentina/section6/downloads/3.webp"
+								download></a>
+						</div>
+						<div class="swiper-slide swiper-slideDownload">
+							<div class="containerImageSection6Effect">
+								<img
+									class="placesSection6Image"
+									src="./assets/country/argentina/section6/4.webp" />
+							</div>
+							<a
+								class="placesSection6IconDwl"
+								href="./assets/country/argentina/section6/downloads/4.webp"
+								download></a>
+						</div>
+						<div class="swiper-slide swiper-slideDownload">
+							<div class="containerImageSection6Effect">
+								<img
+									class="placesSection6Image"
+									src="./assets/country/argentina/section6/5.webp" />
+							</div>
+							<a
+								class="placesSection6IconDwl"
+								href="./assets/country/argentina/section6/downloads/5.webp"
+								download></a>
+						</div>
+						<div class="swiper-slide swiper-slideDownload">
+							<div class="containerImageSection6Effect">
+								<img
+									class="placesSection6Image"
+									src="./assets/country/argentina/section6/6.webp" />
+							</div>
+							<a
+								class="placesSection6IconDwl"
+								href="./assets/country/argentina/section6/downloads/5.webp"
+								download></a>
+						</div>
+					</div>
+					<div
+						id="nextPlacesSection6"
+						class="swiper-button-next nextPlacesSection6">
+						<img src="./assets/icons/right.svg" alt="" srcset="" />
+					</div>
+					<div
+						id="prevPlacesSection6"
+						class="swiper-button-prev prevPlacesSection6">
+						<img src="./assets/icons/left.svg" alt="" srcset="" />
+					</div>
+				</div>`;
+
+	containerTravelPlaces.appendChild(node);
 };
