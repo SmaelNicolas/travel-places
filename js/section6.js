@@ -1,8 +1,9 @@
-export const section_6_start = () => {
+export const section_6_start = (country) => {
+	console.log(country);
 	let containerTravelPlaces = document.getElementById(
 		"containerTravelPlaces"
 	);
-	addSection_6ToContainer(containerTravelPlaces);
+	addSection_6ToContainer(containerTravelPlaces, country);
 
 	let manyInView;
 	let slidesInView;
@@ -42,7 +43,7 @@ export const section_6_start = () => {
 	});
 };
 
-const addSection_6ToContainer = (containerTravelPlaces) => {
+const addSection_6ToContainer = (containerTravelPlaces, country) => {
 	let node = document.createElement("section");
 	node.classList.add("containerSection6");
 	node.innerHTML = `<h2 class="section6Title">Programs</h2>
@@ -52,66 +53,66 @@ const addSection_6ToContainer = (containerTravelPlaces) => {
 							<div class="containerImageSection6Effect">
 								<img
 									class="placesSection6Image"
-									src="./assets/country/argentina/section6/1.webp" />
+									src="../assets/country/${country}/section6/1.webp" />
 							</div>
 							<a
 								class="placesSection6IconDwl"
-								href="./assets/country/argentina/section6/downloads/1.webp"
+								href="../assets/country/${country}/section6/downloads/1.webp"
 								download></a>
 						</div>
 						<div class="swiper-slide swiper-slideDownload">
 							<div class="containerImageSection6Effect">
 								<img
 									class="placesSection6Image"
-									src="./assets/country/argentina/section6/2.webp" />
+									src="../assets/country/${country}/section6/2.webp" />
 							</div>
 							<a
 								class="placesSection6IconDwl"
-								href="./assets/country/argentina/section6/downloads/2.webp"
+								href="../assets/country/${country}/section6/downloads/2.webp"
 								download></a>
 						</div>
 						<div class="swiper-slide swiper-slideDownload">
 							<div class="containerImageSection6Effect">
 								<img
 									class="placesSection6Image"
-									src="./assets/country/argentina/section6/3.webp" />
+									src="../assets/country/${country}/section6/3.webp" />
 							</div>
 							<a
 								class="placesSection6IconDwl"
-								href="./assets/country/argentina/section6/downloads/3.webp"
+								href="../assets/country/${country}/section6/downloads/3.webp"
 								download></a>
 						</div>
 						<div class="swiper-slide swiper-slideDownload">
 							<div class="containerImageSection6Effect">
 								<img
 									class="placesSection6Image"
-									src="./assets/country/argentina/section6/4.webp" />
+									src="../assets/country/${country}/section6/4.webp" />
 							</div>
 							<a
 								class="placesSection6IconDwl"
-								href="./assets/country/argentina/section6/downloads/4.webp"
+								href="../assets/country/${country}/section6/downloads/4.webp"
 								download></a>
 						</div>
 						<div class="swiper-slide swiper-slideDownload">
 							<div class="containerImageSection6Effect">
 								<img
 									class="placesSection6Image"
-									src="./assets/country/argentina/section6/5.webp" />
+									src="../assets/country/${country}/section6/5.webp" />
 							</div>
 							<a
 								class="placesSection6IconDwl"
-								href="./assets/country/argentina/section6/downloads/5.webp"
+								href="../assets/country/${country}/section6/downloads/5.webp"
 								download></a>
 						</div>
 						<div class="swiper-slide swiper-slideDownload">
 							<div class="containerImageSection6Effect">
 								<img
 									class="placesSection6Image"
-									src="./assets/country/argentina/section6/6.webp" />
+									src="../assets/country/${country}/section6/6.webp" />
 							</div>
 							<a
 								class="placesSection6IconDwl"
-								href="./assets/country/argentina/section6/downloads/5.webp"
+								href="../assets/country/${country}/section6/downloads/5.webp"
 								download></a>
 						</div>
 					</div>
