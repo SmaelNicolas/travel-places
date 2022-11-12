@@ -1,8 +1,8 @@
-export const section_3_start = () => {
+export const section_3_start = (section3Info, country) => {
 	let containerTravelPlaces = document.getElementById(
 		"containerTravelPlaces"
 	);
-	addSection_3ToContainer(containerTravelPlaces);
+	addSection_3ToContainer(containerTravelPlaces, section3Info, country);
 	let dot1 = document.getElementById("section3Dot1");
 	let dot2 = document.getElementById("section3Dot2");
 	let dot3 = document.getElementById("section3Dot3");
@@ -11,9 +11,9 @@ export const section_3_start = () => {
 	let image2 = document.getElementById("section3Img2");
 	let image3 = document.getElementById("section3Img3");
 
-	let containerText1 = document.getElementById("containersection3Text1");
-	let containerText2 = document.getElementById("containersection3Text2");
-	let containerText3 = document.getElementById("containersection3Text3");
+	// let containerText1 = document.getElementById("containersection3Text1");
+	// let containerText2 = document.getElementById("containersection3Text2");
+	// let containerText3 = document.getElementById("containersection3Text3");
 
 	dot1.addEventListener("click", () => {
 		image1.classList.add("showSection3_5Image");
@@ -60,19 +60,23 @@ export const section_3_start = () => {
 	// });
 };
 
-const addSection_3ToContainer = (containerTravelPlaces) => {
+const addSection_3ToContainer = (
+	containerTravelPlaces,
+	section3Info,
+	country
+) => {
 	let node = document.createElement("section");
 	node.classList.add("section3_5StudyAbroad");
-	node.innerHTML = `<h2 class="section3_5StudyAbroadTitle">News 1</h2>
+	node.innerHTML = `<h2 class="section3_5StudyAbroadTitle">${section3Info.title}</h2>
 				<div class="containerSection3_5Wrapper">
-					<a
-						href="https://youtube.com.ar"
+				<a
+						href="${section3Info.urls[0]}"
 						target='_blank'
 						id="section3Img1"
 						class="containerSection3_5Img showSection3_5Image">
 						<img
 							class="section3_5Img"
-							src="./assets/country/argentina/section3/1.webp"
+							src="./assets/country/${country}/section3/1.webp"
 							alt="" />
 						<div
 							id="containersection3Text1"
@@ -84,13 +88,13 @@ const addSection_3ToContainer = (containerTravelPlaces) => {
 						</div>
 					</a>
 					<a
-						href="https://google.com.ar"
+						href=${section3Info.urls[1]}
 						target='_blank'
 						id="section3Img2"
 						class="containerSection3_5Img">
 						<img
 							class="section3_5Img"
-							src="./assets/country/argentina/section3/2.webp"
+							src="./assets/country/${country}/section3/2.webp"
 							alt="" />
 						<div
 							id="containersection3Text2"
@@ -102,13 +106,13 @@ const addSection_3ToContainer = (containerTravelPlaces) => {
 						</div>
 					</a>
 					<a
-						href="https://google.com.ar"
+						href="${section3Info.urls[2]}"
 						target='_blank'
 						id="section3Img3"
 						class="containerSection3_5Img">
 						<img
 							class="section3_5Img"
-							src="./assets/country/argentina/section3/3.webp"
+							src="./assets/country/${country}/section3/3.webp"
 							alt="" />
 						<div
 							id="containersection3Text3"
