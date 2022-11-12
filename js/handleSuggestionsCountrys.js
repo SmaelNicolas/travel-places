@@ -27,8 +27,8 @@ export const handleSuggestionsCountrys = () => {
 	// ORDENA LAS UNIVERSIDADES ALFABETICAMENTE SEGUN EL pais
 	const sortInitialUniversities = (value) => {
 		value.sort((a, b) => {
-			const firstcountryUni = a.name.toUpperCase();
-			const secondCountryUni = b.name.toUpperCase();
+			const firstcountryUni = a.country.toUpperCase();
+			const secondCountryUni = b.country.toUpperCase();
 			if (firstcountryUni < secondCountryUni) {
 				return -1;
 			}
@@ -43,8 +43,8 @@ export const handleSuggestionsCountrys = () => {
 	const renderSelectors = (arrayCountrys) => {
 		arrayCountrys.map((country) => {
 			let node = document.createElement("div");
-			node.id = country.name;
-			node.innerHTML = country.name;
+			node.id = country.country;
+			node.innerHTML = country.country;
 			node.classList.add("travelBoxSearchListCountriesItem");
 			suggestionListCountries.appendChild(node);
 			eventListenerCountries(node);
