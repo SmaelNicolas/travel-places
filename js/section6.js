@@ -1,8 +1,8 @@
 export const section_6_start = (country) => {
-	console.log(country);
 	let containerTravelPlaces = document.getElementById(
 		"containerTravelPlaces"
 	);
+
 	addSection_6ToContainer(containerTravelPlaces, country);
 
 	let manyInView;
