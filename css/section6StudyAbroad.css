@@ -70,8 +70,8 @@
 }
 
 .containerImageSection6Effect {
-	width: 280px;
-	height: 300px;
+	width: 270px;
+	height: 290px;
 	overflow: hidden;
 }
 
@@ -84,10 +84,9 @@
 }
 
 .placesSection6Image {
-	width: 260px;
-	height: 260px;
+	width: 270px;
+	height: 290px;
 	object-fit: cover;
-	margin-top: 20px;
 }
 
 .placesSection6IconDwl {
@@ -136,5 +135,11 @@
 @media only screen and (max-width: 700px) {
 	.section6Title {
 		font-size: 60px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.section6StudyAbroad {
+		width: 310px;
 	}
 }
