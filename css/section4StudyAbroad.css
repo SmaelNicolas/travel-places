@@ -195,8 +195,8 @@
 	align-items: center;
 }
 .section4InfoThreeCards {
-	width: 150px;
-	height: 180px;
+	width: 180px;
+	height: 195px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -214,6 +214,7 @@
 }
 .section4InfoThreeCardsCity {
 	color: var(--clr--hard--grey);
+	font-size: var(--fs--name--cards--small);
 }
 
 /* STEP 4 */
