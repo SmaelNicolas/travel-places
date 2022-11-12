@@ -1,7 +1,7 @@
 [
 	{
 		"id": 1,
-		"name": "argentina",
+		"country": "argentina",
 		"section_1": [
 			"https://www.google.com.ar/",
 			"https://www.google.com.ar/",
@@ -62,7 +62,7 @@
 	},
 	{
 		"id": 2,
-		"name": "españa",
+		"country": "españa",
 		"section_1": [
 			"https://www.google.com.ar/",
 			"https://www.google.com.ar/",
