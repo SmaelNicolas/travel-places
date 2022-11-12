@@ -12,6 +12,10 @@ section_5_start();
 section_6_start();
 handleSuggestionsCountrys();
 
+fetch("../data/countries.json")
+	.then((resp) => resp.json())
+	.then((res) => console.log(res));
+
 window.addEventListener("resize", () => {
 	let windowWidth = window.innerWidth;
 	if (windowWidth >= 920) {
