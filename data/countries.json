@@ -68,7 +68,8 @@
 				"https://www.youtube.com/",
 				"https://www.youtube.com/"
 			]
-		}
+		},
+		"styles": "makeTitleGreen"
 	},
 	{
 		"id": 2,
@@ -129,6 +130,7 @@
 				"https://www.youtube.com/",
 				"https://www.youtube.com/"
 			]
-		}
+		},
+		"styles": "makeTitleYellow"
 	}
 ]
