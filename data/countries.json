@@ -34,9 +34,19 @@
 			]
 		},
 		"section_4": {
+			"titles": [
+				"Country",
+				"Weather",
+				"Best Cities",
+				"Internationals exams",
+				"Procedure",
+				"Accommodations",
+				"Final recommendations"
+			],
 			"texts": [
 				"Hay cientos de países en el mundo y, por ende, muchos destinos para estudiar en el extranjero. Sin embargo, hay naciones que destacan entre la multitud.",
 				"A pesar de que se viven las cuatro estaciones, el clima de Austra- lia es muy cálido. Al menos, gran parte del año. Claro, no hay que negar que llueve",
+				"",
 				"A pesar de que se viven las cuatro estaciones, el clima de Austra- lia es muy cálido. Al menos, gran parte del año. Claro, no hay que negar que llueve y, en algunas zonas, nieva",
 				"Hay cientos de países en el mundo y, por ende, muchos destinos para estudiar en el extranjero. Sin embargo, hay naciones que destacan entre la multitud.",
 				"Sed fermentum ut nibh duis. Dolor pretium arcu, tincidunt ultrices tristique arcu cursus massa gravida.",
