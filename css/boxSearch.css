@@ -177,6 +177,7 @@
 	border-radius: 15px;
 	color: var(--clr--hard--grey);
 	background-color: white;
+	text-transform: capitalize;
 }
 
 .travelBoxSearchListCountriesItem:hover {
