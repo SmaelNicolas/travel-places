@@ -1,8 +1,9 @@
-import { handleSuggestionsCountrys } from "./handleSuggestionsCountrys.js";
+// import { handleSuggestionsCountrys } from "./handleSuggestionsCountrys.js";
+import { handleSuggestionsCountrys2 } from "./handleSuggestionsCountrys2.js";
 import { initializeAllSections } from "./initializeAllSectionsByCountry.js";
 import { section_6_start } from "./section6.js";
 
-handleSuggestionsCountrys();
+handleSuggestionsCountrys2();
 
 fetch("../data/countries.json")
 	.then((resp) => resp.json())
