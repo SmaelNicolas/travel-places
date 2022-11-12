@@ -11,7 +11,6 @@ export const section_1_start = () => {
 	let arrowRight = document.getElementById("section1ArrowRight");
 
 	containerSection1.addEventListener("mouseenter", () => {
-		console.log("hola");
 		arrowLeft.classList.toggle("showArrowsTriangleStudyAbroad");
 		arrowRight.classList.toggle("showArrowsTriangleStudyAbroad");
 	});
