@@ -5,11 +5,17 @@ import { section_4_Start } from "./section4.js";
 import { section_5_start } from "./section5.js";
 import { section_6_start } from "./section6.js";
 
-export const initializeAllSections = (countryInfo) => {
-	section_1_start();
-	section_2_start();
-	section_3_start();
-	section_4_Start();
-	section_5_start();
-	section_6_start();
+export const initializeAllSections = (infoCountry) => {
+	let containerTravelPlaces = document.getElementById(
+		"containerTravelPlaces"
+	);
+	containerTravelPlaces.innerHTML = "";
+	infoCountry.map((country) => {
+		section_1_start(country.section_1, country.country);
+		section_2_start(country.section_2, country.country);
+		section_3_start(country.section_3, country.country);
+		section_4_Start(country.section_4, country.country);
+		section_5_start(country.section_5, country.country);
+		section_6_start(country.section_6, country.country);
+	});
 };
