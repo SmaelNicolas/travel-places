@@ -1,8 +1,13 @@
-export const section_2_start = (section2Info, country) => {
+export const section_2_start = (section2Info, country, styles) => {
 	let containerTravelPlaces = document.getElementById(
 		"containerTravelPlaces"
 	);
-	addSection_2ToContainer(containerTravelPlaces, section2Info, country);
+	addSection_2ToContainer(
+		containerTravelPlaces,
+		section2Info,
+		country,
+		styles
+	);
 	let cardContainer1 = document.getElementById("gridImageContainer1");
 	let cardContainer2 = document.getElementById("gridImageContainer2");
 	let cardContainer3 = document.getElementById("gridImageContainer3");
@@ -88,14 +93,15 @@ export const section_2_start = (section2Info, country) => {
 const addSection_2ToContainer = (
 	containerTravelPlaces,
 	section2Info,
-	country
+	country,
+	styles
 ) => {
 	let node = document.createElement("section");
 	node.classList.add("section2StudyAbroad");
 	node.innerHTML = `<h2 class="section2SubTitleStudyAbroadResponsive">
 					Places to visit
 				</h2>
-				<h2 class="section2TitleStudyAbroad">in ${country}</h2>
+				<h2 class="section2TitleStudyAbroad ${styles}">in ${country}</h2>
 				<div class="containerSection2MainStudyAbroad">
 					<h2 class="section2SubTitleStudyAbroad">Places to visit</h2>
 					<div class="containerSection2MainImagesStudyAbroad">
