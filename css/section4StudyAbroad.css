@@ -348,7 +348,15 @@
 }
 @media only screen and (max-width: 1000px) {
 	.section4InfoImagePlane {
-		display: none;
+		bottom: 0px;
+		right: 0px;
+	}
+	.section4InfoSeven {
+		flex-direction: column-reverse;
+		align-items: flex-start;
+	}
+	.section4InfoSevenImage {
+		margin-left: 100px;
 	}
 }
 
@@ -387,9 +395,7 @@
 	.section4InfoFive {
 		flex-direction: column;
 	}
-	.section4InfoSeven {
-		flex-direction: column-reverse;
-	}
+
 	.section4InfoSix {
 		flex-direction: column;
 		align-items: center;
@@ -423,5 +429,11 @@
 
 	.section4InfoOneImageFlag {
 		left: 80px;
+	}
+
+	.section4InfoImagePlane {
+		bottom: -100px;
+		right: 50px;
+		rotate: 45deg;
 	}
 }
