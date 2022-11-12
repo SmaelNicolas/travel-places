@@ -5,9 +5,9 @@ import { section_6_start } from "./section6.js";
 
 handleSuggestionsCountrys2();
 
-fetch("../data/countries.json")
-	.then((resp) => resp.json())
-	.then((res) => initializeAllSections(res));
+// fetch("../data/countries.json")
+// 	.then((resp) => resp.json())
+// 	.then((res) => initializeAllSections(res));
 
 window.addEventListener("resize", () => {
 	let windowWidth = window.innerWidth;
