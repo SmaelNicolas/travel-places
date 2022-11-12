@@ -6,6 +6,7 @@
 	justify-content: center;
 	align-items: center;
 	padding: 50px 0px;
+	background-color: white;
 }
 
 .section3_5StudyAbroadTitle {
@@ -26,10 +27,11 @@
 	justify-content: flex-end;
 	align-items: center;
 	position: relative;
-	border-radius: 10px;
+	border-radius: 15px;
 	border: 2px solid var(--clr--light--grey);
 	border-left: 4px solid var(--clr--hard--grey);
 	border-bottom: 5px solid var(--clr--hard--grey);
+	background-color: white;
 }
 .containerSection3_5Img {
 	top: 10px;
