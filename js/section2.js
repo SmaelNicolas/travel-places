@@ -90,7 +90,6 @@ const addSection_2ToContainer = (
 	section2Info,
 	country
 ) => {
-	console.log(section2Info);
 	let node = document.createElement("section");
 	node.classList.add("section2StudyAbroad");
 	node.innerHTML = `<h2 class="section2SubTitleStudyAbroadResponsive">
