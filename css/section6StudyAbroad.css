@@ -110,6 +110,15 @@
 	.containerSection6 {
 		width: 900px;
 	}
+	.containerImageSection6Effect {
+		width: 230px;
+		height: 270px;
+	}
+	.placesSection6Image {
+		width: 230px;
+		height: 270px;
+		object-fit: cover;
+	}
 }
 
 @media only screen and (max-width: 920px) {
@@ -131,7 +140,17 @@
 	.prevPlacesSection6 {
 		display: flex !important;
 	}
+	.containerImageSection6Effect {
+		width: 250px;
+		height: 280px;
+	}
+	.placesSection6Image {
+		width: 250px;
+		height: 280px;
+		object-fit: cover;
+	}
 }
+
 @media only screen and (max-width: 700px) {
 	.section6Title {
 		font-size: 60px;
