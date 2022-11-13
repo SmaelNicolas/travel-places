@@ -57,7 +57,7 @@ const addSection_6ToContainer = (containerTravelPlaces, country, styles) => {
 							</div>
 							<a
 								class="placesSection6IconDwl"
-								href="../assets/country/${country}/section6/downloads/1.webp"
+								href="../assets/country/${country}/section6/downloads/1.pdf"
 								download></a>
 						</div>
 						<div class="swiper-slide swiper-slideDownload">
@@ -68,7 +68,7 @@ const addSection_6ToContainer = (containerTravelPlaces, country, styles) => {
 							</div>
 							<a
 								class="placesSection6IconDwl"
-								href="../assets/country/${country}/section6/downloads/2.webp"
+								href="../assets/country/${country}/section6/downloads/2.pdf"
 								download></a>
 						</div>
 						<div class="swiper-slide swiper-slideDownload">
@@ -79,7 +79,7 @@ const addSection_6ToContainer = (containerTravelPlaces, country, styles) => {
 							</div>
 							<a
 								class="placesSection6IconDwl"
-								href="../assets/country/${country}/section6/downloads/3.webp"
+								href="../assets/country/${country}/section6/downloads/3.pdf"
 								download></a>
 						</div>
 						<div class="swiper-slide swiper-slideDownload">
@@ -90,7 +90,7 @@ const addSection_6ToContainer = (containerTravelPlaces, country, styles) => {
 							</div>
 							<a
 								class="placesSection6IconDwl"
-								href="../assets/country/${country}/section6/downloads/4.webp"
+								href="../assets/country/${country}/section6/downloads/4.pdf"
 								download></a>
 						</div>
 						<div class="swiper-slide swiper-slideDownload">
@@ -101,7 +101,7 @@ const addSection_6ToContainer = (containerTravelPlaces, country, styles) => {
 							</div>
 							<a
 								class="placesSection6IconDwl"
-								href="../assets/country/${country}/section6/downloads/5.webp"
+								href="../assets/country/${country}/section6/downloads/5.pdf"
 								download></a>
 						</div>
 						<div class="swiper-slide swiper-slideDownload">
@@ -112,7 +112,7 @@ const addSection_6ToContainer = (containerTravelPlaces, country, styles) => {
 							</div>
 							<a
 								class="placesSection6IconDwl"
-								href="../assets/country/${country}/section6/downloads/5.webp"
+								href="../assets/country/${country}/section6/downloads/5.pdf"
 								download></a>
 						</div>
 					</div>
