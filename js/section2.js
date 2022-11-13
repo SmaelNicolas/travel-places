@@ -98,10 +98,10 @@ const addSection_2ToContainer = (
 ) => {
 	let node = document.createElement("section");
 	node.classList.add("section2StudyAbroad");
-	node.innerHTML = `<h2 class="section2SubTitleStudyAbroadResponsive">
+	node.innerHTML = `<h2 class="section2SubTitleStudyAbroadResponsive ${styles.section_2_subtitle}">
 					Places to visit
 				</h2>
-				<h2 class="section2TitleStudyAbroad ${styles}">in ${country}</h2>
+				<h2 class="section2TitleStudyAbroad ${styles.section_2_title} ">in ${country}</h2>
 				<div class="containerSection2MainStudyAbroad">
 					<h2 class="section2SubTitleStudyAbroad">Places to visit</h2>
 					<div class="containerSection2MainImagesStudyAbroad">
@@ -118,12 +118,12 @@ const addSection_2ToContainer = (
 								</div>
 								<div
 									id="containerSection2MainRowTitle1"
-									class="containerSection2MainRowTitleStudyAbroad">
+									class="containerSection2MainRowTitleStudyAbroad ${styles.section_2_image_title}">
 									${section2Info.titles[0]}
 								</div>
 								<div
 									id="containerSection2MainRowSubTitle1"
-									class="containerSection2MainRowSubTitleStudyAbroad">
+									class="containerSection2MainRowSubTitleStudyAbroad ${styles.section_2_image_subtitle}">
 									${section2Info.subtitles[0]}
 								</div>
 							</div>
@@ -139,12 +139,12 @@ const addSection_2ToContainer = (
 								</div>
 								<div
 									id="containerSection2MainRowTitle2"
-									class="containerSection2MainRowTitleStudyAbroad">
+									class="containerSection2MainRowTitleStudyAbroad ${styles.section_2_image_title}">
 									${section2Info.titles[1]}
 								</div>
 								<div
 									id="containerSection2MainRowSubTitle2"
-									class="containerSection2MainRowSubTitleStudyAbroad">
+									class="containerSection2MainRowSubTitleStudyAbroad ${styles.section_2_image_subtitle}">
 									${section2Info.subtitles[1]}
 								</div>
 							</div>
@@ -162,12 +162,12 @@ const addSection_2ToContainer = (
 								</div>
 								<div
 									id="containerSection2MainRowTitle4"
-									class="containerSection2MainRowTitleStudyAbroad">
+									class="containerSection2MainRowTitleStudyAbroad ${styles.section_2_image_title}">
 									${section2Info.titles[3]}
 								</div>
 								<div
 									id="containerSection2MainRowSubTitle4"
-									class="containerSection2MainRowSubTitleStudyAbroad">
+									class="containerSection2MainRowSubTitleStudyAbroad ${styles.section_2_image_subtitle}">
 									${section2Info.subtitles[3]}
 								</div>
 							</div>
@@ -183,12 +183,12 @@ const addSection_2ToContainer = (
 								</div>
 								<div
 									id="containerSection2MainRowTitle3"
-									class="containerSection2MainRowTitleStudyAbroad">
+									class="containerSection2MainRowTitleStudyAbroad ${styles.section_2_image_title}">
 									${section2Info.titles[2]}
 								</div>
 								<div
 									id="containerSection2MainRowSubTitle3"
-									class="containerSection2MainRowSubTitleStudyAbroad">
+									class="containerSection2MainRowSubTitleStudyAbroad ${styles.section_2_image_subtitle}">
 									${section2Info.subtitles[2]}
 								</div>
 							</div>
@@ -206,12 +206,12 @@ const addSection_2ToContainer = (
 								</div>
 								<div
 									id="containerSection2MainRowTitle5"
-									class="containerSection2MainRowTitleStudyAbroad">
+									class="containerSection2MainRowTitleStudyAbroad ${styles.section_2_image_title}">
 									${section2Info.titles[4]}
 								</div>
 								<div
 									id="containerSection2MainRowSubTitle5"
-									class="containerSection2MainRowSubTitleStudyAbroad">
+									class="containerSection2MainRowSubTitleStudyAbroad ${styles.section_2_image_subtitle}">
 									${section2Info.subtitles[4]}
 								</div>
 							</div>
@@ -227,12 +227,12 @@ const addSection_2ToContainer = (
 								</div>
 								<div
 									id="containerSection2MainRowTitle6"
-									class="containerSection2MainRowTitleStudyAbroad">
+									class="containerSection2MainRowTitleStudyAbroad ${styles.section_2_image_title}">
 									${section2Info.titles[5]}
 								</div>
 								<div
 									id="containerSection2MainRowSubTitle6"
-									class="containerSection2MainRowSubTitleStudyAbroad">
+									class="containerSection2MainRowSubTitleStudyAbroad ${styles.section_2_image_subtitle}">
 									${section2Info.subtitles[5]}
 								</div>
 							</div>

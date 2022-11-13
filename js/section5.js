@@ -1,8 +1,13 @@
-export const section_5_start = (section3Info, country) => {
+export const section_5_start = (section3Info, country, styles) => {
 	let containerTravelPlaces = document.getElementById(
 		"containerTravelPlaces"
 	);
-	addSection_5ToContainer(containerTravelPlaces, section3Info, country);
+	addSection_5ToContainer(
+		containerTravelPlaces,
+		section3Info,
+		country,
+		styles
+	);
 
 	let dot1 = document.getElementById("section5Dot1");
 	let dot2 = document.getElementById("section5Dot2");
@@ -11,10 +16,6 @@ export const section_5_start = (section3Info, country) => {
 	let image1 = document.getElementById("section5Img1");
 	let image2 = document.getElementById("section5Img2");
 	let image3 = document.getElementById("section5Img3");
-
-	// let containerText1 = document.getElementById("containersection5Text1");
-	// let containerText2 = document.getElementById("containersection5Text2");
-	// let containerText3 = document.getElementById("containersection5Text3");
 
 	dot1.addEventListener("click", () => {
 		image1.classList.add("showSection3_5Image");
@@ -40,35 +41,17 @@ export const section_5_start = (section3Info, country) => {
 		dot2.classList.remove("changeBackgroundColorDot");
 		dot3.classList.add("changeBackgroundColorDot");
 	});
-
-	// image1.addEventListener("mouseenter", () => {
-	// 	containerText1.classList.toggle("showTextContainerCarousel");
-	// });
-	// image1.addEventListener("mouseleave", () => {
-	// 	containerText1.classList.toggle("showTextContainerCarousel");
-	// });
-	// image2.addEventListener("mouseenter", () => {
-	// 	containerText2.classList.toggle("showTextContainerCarousel");
-	// });
-	// image2.addEventListener("mouseleave", () => {
-	// 	containerText2.classList.toggle("showTextContainerCarousel");
-	// });
-	// image3.addEventListener("mouseenter", () => {
-	// 	containerText3.classList.toggle("showTextContainerCarousel");
-	// });
-	// image3.addEventListener("mouseleave", () => {
-	// 	containerText3.classList.toggle("showTextContainerCarousel");
-	// });
 };
 
 const addSection_5ToContainer = (
 	containerTravelPlaces,
 	section5Info,
-	country
+	country,
+	styles
 ) => {
 	let node = document.createElement("section");
 	node.classList.add("section3_5StudyAbroad");
-	node.innerHTML = `<h2 class="section3_5StudyAbroadTitle">${section5Info.title}</h2>
+	node.innerHTML = `<h2 class="section3_5StudyAbroadTitle ${styles.section_5_title}">${section5Info.title}</h2>
 				<div id="containerSection5Wrapper" class="containerSection3_5Wrapper">
 					<div class="containerSection3_5Dots">
 						<div
@@ -80,7 +63,7 @@ const addSection_5ToContainer = (
 				</div>`;
 
 	containerTravelPlaces.appendChild(node);
-	addImageToWrapper(section5Info, country);
+	addImageToWrapper(section5Info, country, styles);
 };
 
 const addImageToWrapper = (section5Info, country) => {

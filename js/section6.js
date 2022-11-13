@@ -1,9 +1,9 @@
-export const section_6_start = (country) => {
+export const section_6_start = (country, styles) => {
 	let containerTravelPlaces = document.getElementById(
 		"containerTravelPlaces"
 	);
 
-	addSection_6ToContainer(containerTravelPlaces, country);
+	addSection_6ToContainer(containerTravelPlaces, country, styles);
 
 	let manyInView;
 	let slidesInView;
@@ -43,10 +43,10 @@ export const section_6_start = (country) => {
 	});
 };
 
-const addSection_6ToContainer = (containerTravelPlaces, country) => {
+const addSection_6ToContainer = (containerTravelPlaces, country, styles) => {
 	let node = document.createElement("section");
 	node.classList.add("containerSection6");
-	node.innerHTML = `<h2 class="section6Title">Programs</h2>
+	node.innerHTML = `<h2 class="section6Title ${styles.section_6_title}">Programs</h2>
 				<div id="Section6" class="swiper mySwiper section6StudyAbroad">
 					<div class="swiper-wrapper section6Wrapper">
 						<div class="swiper-slide swiper-slideDownload">

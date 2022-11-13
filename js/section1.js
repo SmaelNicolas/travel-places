@@ -1,8 +1,13 @@
-export const section_1_start = (section1Info, country) => {
+export const section_1_start = (section1Info, country, styles) => {
 	let containerTravelPlaces = document.getElementById(
 		"containerTravelPlaces"
 	);
-	addSection_1ToContainer(containerTravelPlaces, section1Info, country);
+	addSection_1ToContainer(
+		containerTravelPlaces,
+		section1Info,
+		country,
+		styles
+	);
 	let containerSection1 = document.getElementById("containerSection1");
 	let image1 = document.getElementById("section1Image0");
 	let image2 = document.getElementById("section1Image1");
@@ -63,11 +68,14 @@ export const section_1_start = (section1Info, country) => {
 const addSection_1ToContainer = (
 	containerTravelPlaces,
 	section1Info,
-	country
+	country,
+	styles
 ) => {
 	let node = document.createElement("section");
 	node.classList.add("section1StudyAbroad");
-	node.innerHTML = `<h2 class="section1TitleStudyAbroad">Events</h2>
+	node.innerHTML = `<h2 class="section1TitleStudyAbroad ${
+		styles.section_1_title
+	}">Events</h2>
 				<div
 					id="containerSection1"
 					class="containerSection1StudyAbroad">

@@ -1,19 +1,25 @@
-export const section_4_Start = (section4Info, country) => {
+export const section_4_Start = (section4Info, country, styles) => {
 	let containerTravelPlaces = document.getElementById(
 		"containerTravelPlaces"
 	);
-	addSection_4ToContainer(containerTravelPlaces, section4Info, country);
+	addSection_4ToContainer(
+		containerTravelPlaces,
+		section4Info,
+		country,
+		styles
+	);
 };
 const addSection_4ToContainer = (
 	containerTravelPlaces,
 	section4Info,
-	country
+	country,
+	styles
 ) => {
 	let node = document.createElement("section");
 	node.classList.add("containerSection4");
-	node.innerHTML = `<h2 class="section4Title">
+	node.innerHTML = `<h2 class="section4Title ${styles.section_4_title}">
 					Prepare to
-					<span class="section4TitleSpan">study abroad</span>
+					<span class="section4TitleSpan ${styles.section_4_span_title} ">study abroad</span>
 				</h2>
 				<div id="containerSection4Info" class="containerSection4Info">
 					<img
@@ -24,36 +30,68 @@ const addSection_4ToContainer = (
 	containerTravelPlaces.appendChild(node);
 	section4Info.titles.map((title, index) => {
 		if (index === 0) {
-			renderSection_4Step_1(title, section4Info.texts, index, country);
+			renderSection_4Step_1(
+				title,
+				section4Info.texts,
+				index,
+				country,
+				styles
+			);
 		}
 		if (index === 1) {
-			renderSection_4Step_2(title, section4Info.texts, index);
+			renderSection_4Step_2(title, section4Info.texts, index, styles);
 		}
 		if (index === 2) {
-			renderSection_4Step_3(title, section4Info.cities, index, country);
+			renderSection_4Step_3(
+				title,
+				section4Info.cities,
+				index,
+				country,
+				styles
+			);
 		}
 		if (index === 3) {
-			renderSection_4Step_4(title, section4Info.texts, index);
+			renderSection_4Step_4(title, section4Info.texts, index, styles);
 		}
 		if (index === 4) {
-			renderSection_4Step_5(title, section4Info.texts, index, country);
+			renderSection_4Step_5(
+				title,
+				section4Info.texts,
+				index,
+				country,
+				styles
+			);
 		}
 		if (index === 5) {
-			renderSection_4Step_6(title, section4Info.texts, index, country);
+			renderSection_4Step_6(
+				title,
+				section4Info.texts,
+				index,
+				country,
+				styles
+			);
 		}
 		if (index === 6) {
-			renderSection_4Step_7(title, section4Info.texts, index, country);
+			renderSection_4Step_7(
+				title,
+				section4Info.texts,
+				index,
+				country,
+				styles
+			);
 		}
 	});
 };
 
-const renderSection_4Step_1 = (title, text, value, country) => {
+const renderSection_4Step_1 = (title, text, value, country, style) => {
 	let node = document.createElement("div");
 	node.classList.add("section4Info");
 	node.innerHTML = `
 						<div class="section4InfoNumber">
 							<div class="section4InfoNumberText">${value + 1}</div>
-							<h3 class="section4InfoNumberTitle">${title}</h3>
+							<h3 class="section4InfoNumberTitle ${
+								style.section_4_title_step_1_title
+							}">${title}</h3>
 						</div>
 						<div class="section4InfoText section4InfoOne">
 							<div class="section4InfoOneImageCountryContainer">
@@ -70,34 +108,42 @@ const renderSection_4Step_1 = (title, text, value, country) => {
 								<div class="section4InfoOneRibbonName">
 									${country}
 								</div>
-								<div class="section4InfoOneRibbonText">
+								<div class="section4InfoOneRibbonText ${
+									style.section_4_title_step_1_paragraph
+								}">
 									${text[value]}
 								</div>
 							</div>
 						</div>`;
 	document.getElementById("containerSection4Info").appendChild(node);
 };
-const renderSection_4Step_2 = (title, text, value) => {
+const renderSection_4Step_2 = (title, text, value, style) => {
 	let node = document.createElement("div");
 	node.classList.add("section4Info");
 	node.innerHTML = `<div class="section4InfoNumber">
 							<div class="section4InfoNumberText">${value + 1}</div>
-							<h3 class="section4InfoNumberTitle">${title}</h3>
+							<h3 class="section4InfoNumberTitle ${
+								style.section_4_title_step_2_title
+							}">${title}</h3>
 						</div>
 						<div class="section4InfoText section4InfoTwo">
 							<div
-								class="section4InfoTextDescription section4InfoTwoText">
+								class="section4InfoTextDescription section4InfoTwoText ${
+									style.section_4_title_step_2_paragraph
+								}">
 								${text[value]}
 							</div>
 						</div>`;
 	document.getElementById("containerSection4Info").appendChild(node);
 };
-const renderSection_4Step_3 = (title, cities, value, country) => {
+const renderSection_4Step_3 = (title, cities, value, country, style) => {
 	let node = document.createElement("div");
 	node.classList.add("section4Info");
 	node.innerHTML = `<div class="section4InfoNumber">
 							<div class="section4InfoNumberText">${value}</div>
-							<h3 class="section4InfoNumberTitle">${title}</h3>
+							<h3 class="section4InfoNumberTitle ${
+								style.section_4_title_step_3_title
+							}">${title}</h3>
 						</div>
 						<div class="section4InfoText section4InfoThree">
 							<div
@@ -109,7 +155,9 @@ const renderSection_4Step_3 = (title, cities, value, country) => {
 												src="../assets/country/${country}/section4/step3/${index + 1}.png"
 												alt='${city}Image'
 											/>
-											<div class='section4InfoThreeCardsCity'>
+											<div class='section4InfoThreeCardsCity ${
+												style.section_4_title_step_3_city_name
+											}'>
 												${city}
 											</div>
 										</div>`;
@@ -118,53 +166,61 @@ const renderSection_4Step_3 = (title, cities, value, country) => {
 						</div>`;
 	document.getElementById("containerSection4Info").appendChild(node);
 };
-const renderSection_4Step_4 = (title, text, value) => {
+const renderSection_4Step_4 = (title, text, value, style) => {
 	let node = document.createElement("div");
 	node.classList.add("section4Info");
 	node.innerHTML = `<div class="section4InfoNumber">
 							<div class="section4InfoNumberText">${value + 1}</div>
-							<h3 class="section4InfoNumberTitle">
+							<h3 class="section4InfoNumberTitle ${style.section_4_title_step_4_title}">
 								${title}
 							</h3>
 						</div>
 						<div class="section4InfoText section4InfoFour">
 							<div
-								class="section4InfoTextDescription section4InfoFourText">
+								class="section4InfoTextDescription section4InfoFourText ${
+									style.section_4_title_step_4_paragraph
+								}">
 								${text[value]}
 							</div>
 						</div>`;
 	document.getElementById("containerSection4Info").appendChild(node);
 };
-const renderSection_4Step_5 = (title, text, value, country) => {
+const renderSection_4Step_5 = (title, text, value, country, style) => {
 	let node = document.createElement("div");
 	node.classList.add("section4Info");
 	node.innerHTML = `<div class="section4InfoNumber">
 							<div class="section4InfoNumberText">${value + 1}</div>
-							<h3 class="section4InfoNumberTitle">${title}</h3>
+							<h3 class="section4InfoNumberTitle ${
+								style.section_4_title_step_5_title
+							}">${title}</h3>
 						</div>
 						<div class="section4InfoText section4InfoFive">
 							<img
 								src="../assets/country/${country}/section4/step5/tickets.png"
 								alt="imgTickets" />
 							<div
-								class="section4InfoTextDescription section4InfoFiveText">
+								class="section4InfoTextDescription section4InfoFiveText ${
+									style.section_4_title_step_5_paragraph
+								}">
 								${text[value]}
 							</div>
 						</div>`;
 	document.getElementById("containerSection4Info").appendChild(node);
 };
-const renderSection_4Step_6 = (title, text, value, country) => {
+const renderSection_4Step_6 = (title, text, value, country, style) => {
 	let node = document.createElement("div");
 	node.classList.add("section4Info");
 	node.innerHTML = `<div class="section4InfoNumber">
 							<div class="section4InfoNumberText">${value + 1}</div>
-							<h3 class="section4InfoNumberTitle">
+							<h3 class="section4InfoNumberTitle ${style.section_4_title_step_6_title}">
 								${title}
 							</h3>
 						</div>
 						<div class="section4InfoText section4InfoSix">
 							<div
-								class="section4InfoTextDescription section4InfoSixText">
+								class="section4InfoTextDescription section4InfoSixText ${
+									style.section_4_title_step_6_paragraph
+								}">
 								${text[value]}
 							</div>
 							<div class="section4InfoSixImagesContainer">
@@ -195,18 +251,20 @@ const renderSection_4Step_6 = (title, text, value, country) => {
 					`;
 	document.getElementById("containerSection4Info").appendChild(node);
 };
-const renderSection_4Step_7 = (title, text, value, country) => {
+const renderSection_4Step_7 = (title, text, value, country, style) => {
 	let node = document.createElement("div");
 	node.classList.add("section4Info");
 	node.innerHTML = `	<div class="section4InfoNumber">
 							<div class="section4InfoNumberText">${value + 1}</div>
-								<h3 class="section4InfoNumberTitle">
+								<h3 class="section4InfoNumberTitle ${style.section_4_title_step_7_title}">
 									${title}
 								</h3>
 							</div>
 							<div class="section4InfoText section4InfoSeven">
 								<div
-									class="section4InfoTextDescription section4InfoSevenText">
+									class="section4InfoTextDescription section4InfoSevenText ${
+										style.section_4_title_step_7_paragraph
+									}">
 									${text[value]}
 								</div>
 								<img
