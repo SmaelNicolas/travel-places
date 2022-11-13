@@ -5,7 +5,8 @@
 @import url("./section3_5StudyAbroad.css");
 @import url("./section4StudyAbroad.css");
 @import url("./section6StudyAbroad.css");
-@import url("./jsonStyles.css");
+@import url("./jsonStyles_Argentina.css");
+@import url("./jsonStyles_Spain.css");
 
 @font-face {
 	font-family: "Mont-Book";
@@ -69,6 +70,10 @@
 	--fs--desc--cards--big: 20px;
 	--fs--desc--cards--large: 15px;
 	--fs--desc--cards--medium: 13px;
+
+	/* COLORES DE PAISES */
+	--clr--argentina: #40cfff;
+	--clr--spain: #d4af37;
 }
 
 * {
