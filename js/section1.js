@@ -94,11 +94,14 @@ const addSection_1ToContainer = (
 							class=
 									"section1ImageWrapperStudyAbroad
 									${index + 1 === 1 && "section1ImageWrapperLeftStudyAbroad"}
-									${index + 1 === 2 && "section1ImageWrapperMiddleStudyAbroad"}
+									${index + 1 === 2 && "section1ImageWrapperMiddleStudyAbroad "}
 									${index + 1 === 3 && "section1ImageWrapperRightStudyAbroad"}">
 							<img
 								id="section1Image${index}"
-								class='section1ImageStudyAbroad'
+								class='section1ImageStudyAbroad ${
+									index + 1 === 2 &&
+									"section1ImageEffectStudyAbroad "
+								}'
 								src="../assets/country/${country}/section1/${index + 1}.webp"
 								alt="${country}Event"
 							/>
