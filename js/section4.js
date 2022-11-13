@@ -24,7 +24,7 @@ const addSection_4ToContainer = (
 				<div id="containerSection4Info" class="containerSection4Info">
 					<img
 						class="section4InfoImagePlane"
-						src="./assets/plane.png"
+						src="./assets/icons/plane.png"
 						alt="" />
 				</div>`;
 	containerTravelPlaces.appendChild(node);

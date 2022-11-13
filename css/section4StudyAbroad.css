@@ -25,7 +25,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-image: url("../assets/line.png");
+	background-image: url("../assets/icons/line.png");
 	background-position: left;
 	background-repeat: repeat-y;
 	position: relative;
@@ -152,7 +152,7 @@
 	line-height: 45px;
 	text-align: center;
 	font-family: var(--ff--Mont);
-	background-image: url("../assets/ribbon.png");
+	background-image: url("../assets/icons/ribbon.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
