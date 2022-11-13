@@ -1,9 +1,14 @@
-export const section_6_start = (country, styles) => {
+export const section_6_start = (section6Info, country, styles) => {
 	let containerTravelPlaces = document.getElementById(
 		"containerTravelPlaces"
 	);
 
-	addSection_6ToContainer(containerTravelPlaces, country, styles);
+	addSection_6ToContainer(
+		containerTravelPlaces,
+		section6Info,
+		country,
+		styles
+	);
 
 	let manyInView;
 	let slidesInView;
@@ -43,78 +48,17 @@ export const section_6_start = (country, styles) => {
 	});
 };
 
-const addSection_6ToContainer = (containerTravelPlaces, country, styles) => {
+const addSection_6ToContainer = (
+	containerTravelPlaces,
+	section6Info,
+	country,
+	styles
+) => {
 	let node = document.createElement("section");
 	node.classList.add("containerSection6");
-	node.innerHTML = `<h2 class="section6Title ${styles.section_6_title}">Programs</h2>
+	node.innerHTML = `<h2 class="section6Title ${styles.section_6_title}">${section6Info.title}</h2>
 				<div id="Section6" class="swiper mySwiper section6StudyAbroad">
-					<div class="swiper-wrapper section6Wrapper">
-						<div class="swiper-slide swiper-slideDownload">
-							<div class="containerImageSection6Effect">
-								<img
-									class="placesSection6Image"
-									src="../assets/country/${country}/section6/1.webp" />
-							</div>
-							<a
-								class="placesSection6IconDwl"
-								href="../assets/country/${country}/section6/downloads/1.pdf"
-								download></a>
-						</div>
-						<div class="swiper-slide swiper-slideDownload">
-							<div class="containerImageSection6Effect">
-								<img
-									class="placesSection6Image"
-									src="../assets/country/${country}/section6/2.webp" />
-							</div>
-							<a
-								class="placesSection6IconDwl"
-								href="../assets/country/${country}/section6/downloads/2.pdf"
-								download></a>
-						</div>
-						<div class="swiper-slide swiper-slideDownload">
-							<div class="containerImageSection6Effect">
-								<img
-									class="placesSection6Image"
-									src="../assets/country/${country}/section6/3.webp" />
-							</div>
-							<a
-								class="placesSection6IconDwl"
-								href="../assets/country/${country}/section6/downloads/3.pdf"
-								download></a>
-						</div>
-						<div class="swiper-slide swiper-slideDownload">
-							<div class="containerImageSection6Effect">
-								<img
-									class="placesSection6Image"
-									src="../assets/country/${country}/section6/4.webp" />
-							</div>
-							<a
-								class="placesSection6IconDwl"
-								href="../assets/country/${country}/section6/downloads/4.pdf"
-								download></a>
-						</div>
-						<div class="swiper-slide swiper-slideDownload">
-							<div class="containerImageSection6Effect">
-								<img
-									class="placesSection6Image"
-									src="../assets/country/${country}/section6/5.webp" />
-							</div>
-							<a
-								class="placesSection6IconDwl"
-								href="../assets/country/${country}/section6/downloads/5.pdf"
-								download></a>
-						</div>
-						<div class="swiper-slide swiper-slideDownload">
-							<div class="containerImageSection6Effect">
-								<img
-									class="placesSection6Image"
-									src="../assets/country/${country}/section6/6.webp" />
-							</div>
-							<a
-								class="placesSection6IconDwl"
-								href="../assets/country/${country}/section6/downloads/5.pdf"
-								download></a>
-						</div>
+					<div id="section6Wrapper" class="swiper-wrapper section6Wrapper">
 					</div>
 					<div
 						id="nextPlacesSection6"
@@ -129,4 +73,25 @@ const addSection_6ToContainer = (containerTravelPlaces, country, styles) => {
 				</div>`;
 
 	containerTravelPlaces.appendChild(node);
+	createSwiperCardDownload(section6Info, country);
+};
+
+const createSwiperCardDownload = (section6Info, country) => {
+	for (let i = 0; i < section6Info.number_programs; i++) {
+		let node = document.createElement("div");
+		node.classList.add("swiper-slide");
+		node.classList.add("swiper-slideDownload");
+		node.innerHTML = `
+						<div class='containerImageSection6Effect'>
+							<img
+								class='placesSection6Image'
+								src='../assets/country/${country}/section6/${i + 1}.webp'
+							/>
+						</div>
+						<a
+							class='placesSection6IconDwl'
+							href='../assets/country/${country}/section6/downloads/${i + 1}.pdf'
+							download></a>`;
+		document.getElementById("section6Wrapper").appendChild(node);
+	}
 };
