@@ -103,7 +103,7 @@ const addSection_2ToContainer = (
 				</h2>
 				<h2 class="section2TitleStudyAbroad ${styles.section_2_title} ">in ${country}</h2>
 				<div class="containerSection2MainStudyAbroad">
-					<h2 class="section2SubTitleStudyAbroad">Places to visit</h2>
+					<h2 class="section2SubTitleStudyAbroad ${styles.section_2_subtitle}">Places to visit</h2>
 					<div class="containerSection2MainImagesStudyAbroad">
 						<div class="containerSection2MainRowStudyAbroad">
 							<div
