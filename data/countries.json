@@ -69,6 +69,10 @@
 				"https://www.youtube.com/"
 			]
 		},
+		"section_6": {
+			"title": "Programs",
+			"number_programs": 6
+		},
 		"styles": {
 			"section_1_title": "section_1_title_argentina",
 			"section_2_title": "section_2_title_argentina",
