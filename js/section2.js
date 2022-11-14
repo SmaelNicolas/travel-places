@@ -113,7 +113,7 @@ const addSection_2ToContainer = (
 									class="containerSection2MainRowImageWrapperOneStudyAbroad">
 									<img
 										class="section2MainRowImageWrapperImageOneStudyAbroad"
-										src="./assets/country/${country}/section2/1.webp"
+										src="./data/country/${country}/section2/1.webp"
 										alt="country" />
 								</div>
 								<div
@@ -134,7 +134,7 @@ const addSection_2ToContainer = (
 									class="containerSection2MainRowImageWrapperTwoStudyAbroad">
 									<img
 										class="section2MainRowImageWrapperImageTwoStudyAbroad"
-										src="./assets/country/${country}/section2/2.webp"
+										src="./data/country/${country}/section2/2.webp"
 										alt="country" />
 								</div>
 								<div
@@ -157,7 +157,7 @@ const addSection_2ToContainer = (
 									class="containerSection2MainRowImageWrapperOneStudyAbroad">
 									<img
 										class="section2MainRowImageWrapperImageOneStudyAbroad"
-										src="./assets/country/${country}/section2/4.webp"
+										src="./data/country/${country}/section2/4.webp"
 										alt="country" />
 								</div>
 								<div
@@ -178,7 +178,7 @@ const addSection_2ToContainer = (
 									class="containerSection2MainRowImageWrapperTwoStudyAbroad">
 									<img
 										class="section2MainRowImageWrapperImageTwoStudyAbroad"
-										src="./assets/country/${country}/section2/3.webp"
+										src="./data/country/${country}/section2/3.webp"
 										alt="country" />
 								</div>
 								<div
@@ -201,7 +201,7 @@ const addSection_2ToContainer = (
 									class="containerSection2MainRowImageWrapperOneStudyAbroad">
 									<img
 										class="section2MainRowImageWrapperImageOneStudyAbroad"
-										src="./assets/country/${country}/section2/5.webp"
+										src="./data/country/${country}/section2/5.webp"
 										alt="country" />
 								</div>
 								<div
@@ -222,7 +222,7 @@ const addSection_2ToContainer = (
 									class="containerSection2MainRowImageWrapperTwoStudyAbroad">
 									<img
 										class="section2MainRowImageWrapperImageTwoStudyAbroad"
-										src="./assets/country/${country}/section2/6.webp"
+										src="./data/country/${country}/section2/6.webp"
 										alt="country" />
 								</div>
 								<div

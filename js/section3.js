@@ -76,7 +76,7 @@ const addImageToWrapper = (section3Info, country) => {
 		node.innerHTML = `
 						<img
 							class="section3_5Img"
-							src="./assets/country/${country}/section3/${index + 1}.webp"
+							src="./data/country/${country}/section3/${index + 1}.webp"
 							alt="${country}News" />
 					`;
 		document.getElementById("containerSection3Wrapper").appendChild(node);

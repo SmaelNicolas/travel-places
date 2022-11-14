@@ -85,12 +85,12 @@ const createSwiperCardDownload = (section6Info, country) => {
 						<div class='containerImageSection6Effect'>
 							<img
 								class='placesSection6Image'
-								src='../assets/country/${country}/section6/${i + 1}.webp'
+								src='../data/country/${country}/section6/${i + 1}.webp'
 							/>
 						</div>
 						<a
 							class='placesSection6IconDwl'
-							href='../assets/country/${country}/section6/downloads/${i + 1}.pdf'
+							href='../data/country/${country}/section6/downloads/${i + 1}.pdf'
 							download></a>`;
 		document.getElementById("section6Wrapper").appendChild(node);
 	}

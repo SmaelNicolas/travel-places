@@ -102,7 +102,7 @@ const addSection_1ToContainer = (
 									index + 1 === 2 &&
 									"section1ImageEffectStudyAbroad "
 								}'
-								src="../assets/country/${country}/section1/${index + 1}.webp"
+								src="../data/country/${country}/section1/${index + 1}.webp"
 								alt="${country}Event"
 							/>
 						</a>`

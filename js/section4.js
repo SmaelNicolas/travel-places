@@ -97,11 +97,11 @@ const renderSection_4Step_1 = (title, text, value, country, style) => {
 							<div class="section4InfoOneImageCountryContainer">
 								<img
 									class="section4InfoOneImageCountry"
-									src="../assets/country/${country}/section4/step1/1.webp"
+									src="../data/country/${country}/section4/step1/1.webp"
 									alt="countryimage" />
 								<img
 									class="section4InfoOneImageFlag"
-									src="../assets/country/${country}/section4/step1/flag.webp"
+									src="../data/country/${country}/section4/step1/flag.webp"
 									alt="${country}Flag" />
 							</div>
 							<div class="section4InfoOneRibbonContainer">
@@ -152,7 +152,7 @@ const renderSection_4Step_3 = (title, cities, value, country, style) => {
 									return `	<div class='section4InfoThreeCards'>
 											<img
 												class='section4InfoThreeCardsImage'
-												src="../assets/country/${country}/section4/step3/${index + 1}.webp"
+												src="../data/country/${country}/section4/step3/${index + 1}.webp"
 												alt='${city}Image'
 											/>
 											<div class='section4InfoThreeCardsCity ${
@@ -196,7 +196,7 @@ const renderSection_4Step_5 = (title, text, value, country, style) => {
 						</div>
 						<div class="section4InfoText section4InfoFive">
 							<img
-								src="../assets/country/${country}/section4/step5/tickets.png"
+								src="../data/country/${country}/section4/step5/tickets.png"
 								alt="imgTickets" />
 							<div
 								class="section4InfoTextDescription section4InfoFiveText ${
@@ -227,24 +227,24 @@ const renderSection_4Step_6 = (title, text, value, country, style) => {
 								<div class="section4InfoSixImageRestContainer">
 									<img
 										class="section4InfoSixImageRest"
-										src="../assets/country/${country}/section4/step6/1.webp"
+										src="../data/country/${country}/section4/step6/1.webp"
 										alt="AcommodationImage" />
 									<img
 										class="section4InfoSixImageClip"
-										src="../assets/country/${country}/section4/step6/clip.png"
+										src="../data/country/${country}/section4/step6/clip.png"
 										alt="clipImage" />
 								</div>
 								<div
 									class="section4InfoSixImageRestContainerBack">
 									<img
 										class="section4InfoSixImageRestBack"
-										src="../assets/country/${country}/section4/step6/2.webp"
+										src="../data/country/${country}/section4/step6/2.webp"
 										alt="backImage" />
 								</div>
 							</div>
 							<img
 								class="section4InfoSixImageMap"
-								src="../assets/country/${country}/section4/step6/map.png"
+								src="../data/country/${country}/section4/step6/map.png"
 								alt="img map" />
 						</div>
 					</div>
@@ -269,7 +269,7 @@ const renderSection_4Step_7 = (title, text, value, country, style) => {
 								</div>
 								<img
 									class="section4InfoSevenImage"
-									src="../assets/country/${country}/section4/step7/hi.png"
+									src="../data/country/${country}/section4/step7/hi.png"
 									alt="hiImage" />
 							</div>
 						</div>
