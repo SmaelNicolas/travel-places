@@ -46,9 +46,7 @@
 	width: 450px;
 	height: 350px;
 	overflow: hidden;
-	border: 1px solid var(--clr--medium--grey);
-	border-left: 4px solid var(--clr--medium--grey);
-	border-bottom: 4px solid var(--clr--medium--grey);
+	/* border: 1px solid var(--clr--light--grey); */
 	display: flex;
 	justify-content: center;
 	align-items: center;
