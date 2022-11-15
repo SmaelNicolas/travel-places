@@ -1,3 +1,5 @@
+import { initializeAllSections } from "./initializeAllSectionsByCountry.js";
+
 export const handleSuggestionsCountrys = () => {
 	let containerSearch = document.getElementById(
 		"boxSearchCointainerStudyAbroad"
@@ -8,8 +10,6 @@ export const handleSuggestionsCountrys = () => {
 	let selectorCountriesList = document.getElementById(
 		"boxSearchListCountriesContainerStudyAbroad"
 	);
-	let clearAllCountriesSelected =
-		document.getElementById("closeListCountries");
 
 	let selectorCountries = document.getElementById(
 		"searchSelectorStudyAbroad"
@@ -18,21 +18,19 @@ export const handleSuggestionsCountrys = () => {
 		"searchSelectorStudyAbroad"
 	);
 
-	let arrayCountries = [];
-	let dataUniversities = [];
+	let dataCountries = [];
 
 	//LEE EL JSON PARA OBTENER LA LISTA DE PAISES DISPONIBLES
 	fetch("../data/countries.json")
 		.then((res) => res.json())
 		.then((res) => {
 			sortInitialUniversities(res);
-			dataUniversities = res;
 			renderSelectors(res);
 		});
 
-	// ORDENA LAS UNIVERSIDADES ALFABETICAMENTE SEGUN EL pais
-	const sortInitialUniversities = (value) => {
-		value.sort((a, b) => {
+	// ORDENA LOS PAISES ALFABETICAMENTE
+	const sortInitialUniversities = async (value) => {
+		await value.sort((a, b) => {
 			const firstcountryUni = a.country.toUpperCase();
 			const secondCountryUni = b.country.toUpperCase();
 			if (firstcountryUni < secondCountryUni) {
@@ -43,6 +41,7 @@ export const handleSuggestionsCountrys = () => {
 			}
 			return 0;
 		});
+		dataCountries = value;
 	};
 
 	// CREA Y RENDERIZA CADA NOMBRE DE PAIS Y LE ASIGNA EL EVENT LISTENER CORRESPONDIENTE.
@@ -65,40 +64,38 @@ export const handleSuggestionsCountrys = () => {
 		);
 	});
 
-	//EVENT LISTENER QUE MANEJA LA OPCION DE ELIMINAR TODOS
-	clearAllCountriesSelected.addEventListener("click", () => {
+	//FUNCION QUE LE ASIGNA EL EVENT LISTENER A CADA PAIS
+	//MANEJA LOS CLICKS EN CADA PAIS, PARA AGREGARLE LA CLASE Y HACER EL LLAMADO A LA FUNCION QUE RENDERIZA LA INFO DEL PAIS
+	const eventListenerCountries = (node) => {
+		node.addEventListener("click", () => {
+			let hasClass = node.classList.contains(
+				"travelBoxSearchListCountriesItemSelected"
+			);
+			clearSelectedInList();
+			let infoCountry = [];
+			if (hasClass) {
+				searchSelectorStudyAbroad.innerHTML = "COUNTRY";
+			} else {
+				node.classList.toggle(
+					"travelBoxSearchListCountriesItemSelected"
+				);
+				searchSelectorStudyAbroad.innerHTML = node.getAttribute("id");
+				infoCountry = dataCountries.filter(
+					(country) =>
+						country.country.toLowerCase() ===
+						searchSelectorStudyAbroad.innerHTML
+				);
+				initializeAllSections(infoCountry);
+			}
+		});
+	};
+
+	const clearSelectedInList = () => {
 		const allSelected = document.querySelectorAll(
 			".travelBoxSearchListCountriesItemSelected"
 		);
 		allSelected.forEach((box) => {
 			box.classList.remove("travelBoxSearchListCountriesItemSelected");
-		});
-		arrayCountries = [];
-		searchSelectorStudyAbroad.innerHTML = "COUNTRY";
-	});
-
-	//FUNCION QUE LE ASIGNA EL EVENT LISTENER A CADA PAIS
-	//MANEJA LOS CLICKS EN CADA PAIS, PARA AGREGARLE LA CLASE Y HACER EL LLAMADO A LA FUNCION QUE BUSCA LAS UNIVERSIDADES POR PAIS
-	const eventListenerCountries = (node) => {
-		node.addEventListener("click", () => {
-			node.classList.toggle("travelBoxSearchListCountriesItemSelected");
-			if (
-				node.classList.contains(
-					"travelBoxSearchListCountriesItemSelected"
-				)
-			) {
-				arrayCountries.push(node.getAttribute("id"));
-				searchSelectorStudyAbroad.innerHTML = node.getAttribute("id");
-			} else {
-				arrayCountries = arrayCountries.filter(
-					(country) => country !== node.getAttribute("id")
-				);
-				searchSelectorStudyAbroad.innerHTML = "COUNTRY";
-				if (arrayCountries.length > 0) {
-				} else {
-					// ACA IRIA CODIGO SI SE QUIERE AGREGAR ALGO CUANDO NO HAYA NINGUN PAIS SELECCIONADO.
-				}
-			}
 		});
 	};
 };
