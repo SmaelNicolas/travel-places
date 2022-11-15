@@ -197,22 +197,20 @@
 	align-items: center;
 }
 .section4InfoThreeCards {
-	width: 180px;
-	height: 195px;
+	width: 210px;
+	height: 205px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
 	margin: 15px 10px;
-	border-radius: 5px;
-	border-left: 2px solid var(--clr--hard--grey);
-	border-bottom: 4px solid var(--clr--hard--grey);
-	border-right: 1px solid var(--clr--light--grey);
-	border-top: 1px solid var(--clr--light--grey);
+	border-radius: 15px;
+	border: 1px solid var(--clr--xlight--grey);
 }
 .section4InfoThreeCardsImage {
 	width: 90%;
 	height: 70%;
+	border-radius: 10px;
 }
 .section4InfoThreeCardsCity {
 	color: var(--clr--hard--grey);
@@ -276,19 +274,17 @@
 	height: 170px;
 	rotate: -10deg;
 	z-index: 4;
-	border-radius: 5px;
+	border-radius: 10px;
 	background-color: var(--clr--cream);
-	border-left: 2px solid var(--clr--hard--grey);
-	border-bottom: 3px solid var(--clr--hard--grey);
-	border-right: 1px solid var(--clr--light--grey);
-	border-top: 1px solid var(--clr--light--grey);
+	border: 1px solid var(--clr--light--grey);
 	display: flex;
 	justify-content: center;
 }
 .section4InfoSixImageRest {
 	width: 90%;
 	height: 80%;
-	border-radius: 5px;
+	margin-top: 5px;
+	border-radius: 10px;
 }
 .section4InfoSixImageClip {
 	position: absolute;
@@ -305,12 +301,10 @@
 	height: 170px;
 	rotate: -25deg;
 	z-index: 1;
-	border-radius: 5px;
+	border-radius: 15px;
 	background-color: var(--clr--cream);
-	border-left: 2px solid var(--clr--hard--grey);
-	border-bottom: 3px solid var(--clr--hard--grey);
-	border-right: 1px solid var(--clr--light--grey);
-	border-top: 1px solid var(--clr--light--grey);
+	border: 1px solid var(--clr--light--grey);
+
 	display: flex;
 	justify-content: center;
 }
