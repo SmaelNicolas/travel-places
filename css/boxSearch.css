@@ -64,7 +64,6 @@
 	text-transform: capitalize;
 	background-color: white;
 	font-size: 16px;
-	/* box-shadow: var(--shadow--3d--medium); */
 }
 .boxSearchSelectorStudyAbroad {
 	width: 335px;
@@ -76,7 +75,7 @@
 	font-family: var(--ff--Mont);
 	text-transform: capitalize;
 	border: none;
-	border: 2px solid var(--clr--medium--grey);
+	border: 1px solid var(--clr--xlight--grey);
 	text-align: left;
 	font-weight: 700;
 	cursor: pointer;
@@ -92,7 +91,6 @@
 	height: 200px;
 	margin-top: 5px;
 	padding: 10px 20px 0px 20px;
-	box-shadow: var(--shadow--3d--medium);
 	border-radius: 5px;
 	background-color: white;
 	-ms-overflow-style: none; /* for Internet Explorer, Edge */
@@ -101,6 +99,7 @@
 	position: absolute;
 	z-index: 100;
 	display: none;
+	border: 1px solid var(--clr--xlight--grey);
 }
 
 .boxSearchListCountriesContainerStudyAbroad::-webkit-scrollbar {
