@@ -1,10 +1,10 @@
 export const section_6_start = (section6Info, country, styles) => {
-	let containerTravelPlaces = document.getElementById(
-		"containerTravelPlaces"
+	let containerStudyAbroadCities = document.getElementById(
+		"containerStudyAbroadCities"
 	);
 
 	addSection_6ToContainer(
-		containerTravelPlaces,
+		containerStudyAbroadCities,
 		section6Info,
 		country,
 		styles
@@ -49,7 +49,7 @@ export const section_6_start = (section6Info, country, styles) => {
 };
 
 const addSection_6ToContainer = (
-	containerTravelPlaces,
+	containerStudyAbroadCities,
 	section6Info,
 	country,
 	styles
@@ -72,7 +72,7 @@ const addSection_6ToContainer = (
 					</div>
 				</div>`;
 
-	containerTravelPlaces.appendChild(node);
+	containerStudyAbroadCities.appendChild(node);
 	createSwiperCardDownload(section6Info, country);
 };
 

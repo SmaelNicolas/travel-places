@@ -1,16 +1,22 @@
 import { initializeAllSections } from "./initializeAllSectionsByCountry.js";
 
 export const handleSuggestionsCountrys2 = () => {
-	let containerSearch = document.getElementById("travelBoxSearchContainer");
+	let containerSearch = document.getElementById(
+		"boxSearchCointainerStudyAbroad"
+	);
 	let suggestionListCountries = document.getElementById(
-		"travelBoxSearchListCountriesContainer"
+		"boxSearchListCountriesContainerStudyAbroad"
 	);
 	let selectorCountriesList = document.getElementById(
-		"travelBoxSearchListCountriesContainer"
+		"boxSearchListCountriesContainerStudyAbroad"
 	);
 
-	let selectorCountries = document.getElementById("travelSearchSelector");
-	let travelSearchSelector = document.getElementById("travelSearchSelector");
+	let selectorCountries = document.getElementById(
+		"searchSelectorStudyAbroad"
+	);
+	let searchSelectorStudyAbroad = document.getElementById(
+		"searchSelectorStudyAbroad"
+	);
 
 	let dataCountries = [];
 
@@ -68,16 +74,16 @@ export const handleSuggestionsCountrys2 = () => {
 			clearSelectedInList();
 			let infoCountry = [];
 			if (hasClass) {
-				travelSearchSelector.innerHTML = "COUNTRY";
+				searchSelectorStudyAbroad.innerHTML = "COUNTRY";
 			} else {
 				node.classList.toggle(
 					"travelBoxSearchListCountriesItemSelected"
 				);
-				travelSearchSelector.innerHTML = node.getAttribute("id");
+				searchSelectorStudyAbroad.innerHTML = node.getAttribute("id");
 				infoCountry = dataCountries.filter(
 					(country) =>
 						country.country.toLowerCase() ===
-						travelSearchSelector.innerHTML
+						searchSelectorStudyAbroad.innerHTML
 				);
 				initializeAllSections(infoCountry);
 			}

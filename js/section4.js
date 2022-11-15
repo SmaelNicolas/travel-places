@@ -1,16 +1,16 @@
 export const section_4_Start = (section4Info, country, styles) => {
-	let containerTravelPlaces = document.getElementById(
-		"containerTravelPlaces"
+	let containerStudyAbroadCities = document.getElementById(
+		"containerStudyAbroadCities"
 	);
 	addSection_4ToContainer(
-		containerTravelPlaces,
+		containerStudyAbroadCities,
 		section4Info,
 		country,
 		styles
 	);
 };
 const addSection_4ToContainer = (
-	containerTravelPlaces,
+	containerStudyAbroadCities,
 	section4Info,
 	country,
 	styles
@@ -27,7 +27,7 @@ const addSection_4ToContainer = (
 						src="./assets/icons/plane.png"
 						alt="" />
 				</div>`;
-	containerTravelPlaces.appendChild(node);
+	containerStudyAbroadCities.appendChild(node);
 	section4Info.titles.map((title, index) => {
 		if (index === 0) {
 			renderSection_4Step_1(

@@ -1,16 +1,22 @@
 export const handleSuggestionsCountrys = () => {
-	let containerSearch = document.getElementById("travelBoxSearchContainer");
+	let containerSearch = document.getElementById(
+		"boxSearchCointainerStudyAbroad"
+	);
 	let suggestionListCountries = document.getElementById(
-		"travelBoxSearchListCountriesContainer"
+		"boxSearchListCountriesContainerStudyAbroad"
 	);
 	let selectorCountriesList = document.getElementById(
-		"travelBoxSearchListCountriesContainer"
+		"boxSearchListCountriesContainerStudyAbroad"
 	);
 	let clearAllCountriesSelected =
 		document.getElementById("closeListCountries");
 
-	let selectorCountries = document.getElementById("travelSearchSelector");
-	let travelSearchSelector = document.getElementById("travelSearchSelector");
+	let selectorCountries = document.getElementById(
+		"searchSelectorStudyAbroad"
+	);
+	let searchSelectorStudyAbroad = document.getElementById(
+		"searchSelectorStudyAbroad"
+	);
 
 	let arrayCountries = [];
 	let dataUniversities = [];
@@ -68,7 +74,7 @@ export const handleSuggestionsCountrys = () => {
 			box.classList.remove("travelBoxSearchListCountriesItemSelected");
 		});
 		arrayCountries = [];
-		travelSearchSelector.innerHTML = "COUNTRY";
+		searchSelectorStudyAbroad.innerHTML = "COUNTRY";
 	});
 
 	//FUNCION QUE LE ASIGNA EL EVENT LISTENER A CADA PAIS
@@ -82,12 +88,12 @@ export const handleSuggestionsCountrys = () => {
 				)
 			) {
 				arrayCountries.push(node.getAttribute("id"));
-				travelSearchSelector.innerHTML = node.getAttribute("id");
+				searchSelectorStudyAbroad.innerHTML = node.getAttribute("id");
 			} else {
 				arrayCountries = arrayCountries.filter(
 					(country) => country !== node.getAttribute("id")
 				);
-				travelSearchSelector.innerHTML = "COUNTRY";
+				searchSelectorStudyAbroad.innerHTML = "COUNTRY";
 				if (arrayCountries.length > 0) {
 				} else {
 					// ACA IRIA CODIGO SI SE QUIERE AGREGAR ALGO CUANDO NO HAYA NINGUN PAIS SELECCIONADO.

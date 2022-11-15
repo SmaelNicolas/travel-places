@@ -6,10 +6,10 @@ import { section_5_start } from "./section5.js";
 import { section_6_start } from "./section6.js";
 
 export const initializeAllSections = (infoCountry) => {
-	let containerTravelPlaces = document.getElementById(
-		"containerTravelPlaces"
+	let containerStudyAbroadCities = document.getElementById(
+		"containerStudyAbroadCities"
 	);
-	containerTravelPlaces.innerHTML = "";
+	containerStudyAbroadCities.innerHTML = "";
 	infoCountry.map((country) => {
 		section_1_start(country.section_1, country.country, country.styles);
 		section_2_start(country.section_2, country.country, country.styles);

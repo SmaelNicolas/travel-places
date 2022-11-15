@@ -1,9 +1,9 @@
 export const section_3_start = (section3Info, country, styles) => {
-	let containerTravelPlaces = document.getElementById(
-		"containerTravelPlaces"
+	let containerStudyAbroadCities = document.getElementById(
+		"containerStudyAbroadCities"
 	);
 	addSection_3ToContainer(
-		containerTravelPlaces,
+		containerStudyAbroadCities,
 		section3Info,
 		country,
 		styles
@@ -43,7 +43,7 @@ export const section_3_start = (section3Info, country, styles) => {
 };
 
 const addSection_3ToContainer = (
-	containerTravelPlaces,
+	containerStudyAbroadCities,
 	section3Info,
 	country,
 	styles
@@ -61,7 +61,7 @@ const addSection_3ToContainer = (
 					</div>
 				</div>`;
 
-	containerTravelPlaces.appendChild(node);
+	containerStudyAbroadCities.appendChild(node);
 	addImageToWrapper(section3Info, country);
 };
 
