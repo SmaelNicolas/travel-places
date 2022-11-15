@@ -1,6 +1,6 @@
 .boxSearchCointainerStudyAbroad {
 	width: 90%;
-	min-height: 450px;
+	min-height: 250px;
 	border: 1px solid var(--clr--xlight--grey);
 	border-radius: 10px;
 	display: flex;
@@ -218,25 +218,18 @@
 	display: unset;
 }
 
-@media only screen and (max-width: 1450px) {
+@media only screen and (max-width: 1170px) {
 	.boxSearchLabelsStudyAbroad {
-		font-size: 55px;
-	}
-}
-@media only screen and (max-width: 1230px) {
-	.boxSearchLabelsStudyAbroad {
-		font-size: 48px;
+		font-size: 65px;
 	}
 }
 @media only screen and (max-width: 1100px) {
 	.boxSearchCointainerStudyAbroad {
 		width: 97%;
 	}
-	.travelBoxSearchInputs {
-		width: 280px;
-	}
+
 	.boxSearchSelectorStudyAbroad {
-		width: 315px;
+		width: 320px;
 	}
 	.boxSearchListCountriesContainerStudyAbroad {
 		width: 320px;
@@ -246,34 +239,27 @@
 	}
 }
 @media only screen and (max-width: 1000px) {
-	.boxSearchLabelsStudyAbroad {
-		font-size: 38px;
-	}
 	.travelBoxSearchInputs {
 		width: 230px;
-	}
-	.boxSearchSelectorStudyAbroad {
-		width: 265px;
-	}
-	.boxSearchListCountriesContainerStudyAbroad {
-		width: 270px;
 	}
 	.travelContainerSuggestion {
 		width: 270px;
 	}
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 945px) {
 	.boxSearchLabelsStudyAbroad {
-		font-size: 30px;
+		font-size: 55px;
+		margin-top: 10px;
 	}
 }
 
 @media only screen and (max-width: 850px) {
 	.boxSearchCointainerStudyAbroad {
-		width: 100%;
+		width: 95%;
 		flex-direction: column;
 		padding-bottom: 5px;
+		align-items: center;
 	}
 	.boxSearchLabelsContainerStudyAbroad {
 		width: 100%;
@@ -282,7 +268,7 @@
 		width: 100%;
 		text-align: center;
 		padding: 0;
-		font-size: calc(20px + 4vw);
+		font-size: calc(50px + 1vw);
 	}
 	.travelBoxSearchInputs {
 		width: 300px;
@@ -328,6 +314,10 @@
 	}
 	.getBiggerCountries {
 		height: 440px;
+	}
+
+	.boxSearchLabelsStudyAbroad {
+		font-size: 40px;
 	}
 }
 @media only screen and (max-width: 410px) {
