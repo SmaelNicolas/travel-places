@@ -140,7 +140,7 @@ const renderSection_4Step_3 = (title, cities, value, country, style) => {
 	let node = document.createElement("div");
 	node.classList.add("section4Info");
 	node.innerHTML = `<div class="section4InfoNumber">
-							<div class="section4InfoNumberText">${value}</div>
+							<div class="section4InfoNumberText">${value + 1}</div>
 							<h3 class="section4InfoNumberTitle ${
 								style.section_4_title_step_3_title
 							}">${title}</h3>
