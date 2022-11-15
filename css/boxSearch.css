@@ -1,17 +1,16 @@
 .boxSearchCointainerStudyAbroad {
 	width: 90%;
-	min-height: 200px;
-	border: 1px solid rgba(153, 153, 153, 0.699);
+	min-height: 450px;
+	border: 1px solid var(--clr--xlight--grey);
 	border-radius: 10px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	align-items: center;
+	align-items: flex-start;
 	margin: 0 auto;
-	box-shadow: var(--shadow--3d--big);
 	background-color: white;
 	padding: 8% 0px;
-	margin-top: 40px;
+	margin-top: 35px;
 }
 
 .boxSearchLabelsContainerStudyAbroad {
@@ -75,7 +74,7 @@
 	color: var(--clr--hard--grey);
 	border-radius: 5px;
 	font-family: var(--ff--Mont);
-	text-transform: uppercase;
+	text-transform: capitalize;
 	border: none;
 	border: 2px solid var(--clr--medium--grey);
 	text-align: left;
@@ -84,32 +83,15 @@
 	background-color: white;
 }
 
-.travelBoxSearchInputsIcon {
-	width: 30px;
-	height: 30px;
-	position: absolute;
-	top: 16px;
-	left: 12px;
-}
-
-.travelBoxSearchInputsArrow {
-	width: 20px;
-	height: 20px;
-	position: absolute;
-	bottom: 10px;
-	right: 5px;
-	rotate: 90deg;
-	z-index: 1;
-}
-
 .boxSearchCountrysContainerStudyAbroad {
 	position: relative;
 }
 
 .boxSearchListCountriesContainerStudyAbroad {
-	width: 340px;
-	padding: 0px 10px;
+	width: 336px;
 	height: 200px;
+	margin-top: 5px;
+	padding: 10px 20px 0px 20px;
 	box-shadow: var(--shadow--3d--medium);
 	border-radius: 5px;
 	background-color: white;
