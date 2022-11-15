@@ -1,5 +1,18 @@
 // import { handleSuggestionsCountrys } from "./handleSuggestionsCountrys.js";
+import { firstRenderCountry } from "./handleDefaultCountry.js";
 import { handleSuggestionsCountrys } from "./handleSuggestionsCountrys.js";
-import { section_6_start } from "./section6.js";
+import { initializeAllSections } from "./initializeAllSectionsByCountry.js";
 
+//LEE EL JSON PARA OBTENER LA LISTA DE PAISES DISPONIBLES
+fetch("../data/countries.json")
+	.then((res) => res.json())
+	.then((res) => {
+		initializeAllSections(
+			res.filter(
+				(country) =>
+					country.country.toLowerCase() ===
+					firstRenderCountry.toLowerCase()
+			)
+		);
+	});
 handleSuggestionsCountrys();
