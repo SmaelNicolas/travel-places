@@ -105,7 +105,9 @@ const renderSection_4Step_1 = (title, text, value, country, style) => {
 									alt="${country}Flag" />
 							</div>
 							<div class="section4InfoOneRibbonContainer">
-								<div class="section4InfoOneRibbonName">
+								<div class="section4InfoOneRibbonName ${
+									style.section_4_title_step_1_title_name_country
+								}">
 									${country}
 								</div>
 								<div class="section4InfoOneRibbonText ${
