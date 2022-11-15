@@ -92,19 +92,42 @@ const addSection_1ToContainer = (
 							href=${url}
 							target='_blank'
 							class=
-									"section1ImageWrapperStudyAbroad
-									${index + 1 === 1 && "section1ImageWrapperLeftStudyAbroad"}
-									${index + 1 === 2 && "section1ImageWrapperMiddleStudyAbroad "}
-									${index + 1 === 3 && "section1ImageWrapperRightStudyAbroad"}">
-							<img
-								id="section1Image${index}"
-								class='section1ImageStudyAbroad ${
-									index + 1 === 2 &&
-									"section1ImageEffectStudyAbroad "
-								}'
-								src="../data/country/${country}/section1/${index + 1}.webp"
-								alt="${country}Event"
-							/>
+									"section1ImageWrapperStudyAbroad ${
+										index + 1 === 1
+											? "section1ImageWrapperLeftStudyAbroad"
+											: ""
+									} ${
+								index + 1 === 2
+									? "section1ImageWrapperMiddleStudyAbroad "
+									: ""
+							} ${
+								index + 1 === 3
+									? "section1ImageWrapperRightStudyAbroad"
+									: ""
+							}">
+							${
+								index + 1 === 2
+									? `<div class='section1ImageWrapperSecondDivMiddleStudyAbroad'>
+										<img
+											id='section1Image${index}'
+											class='section1ImageStudyAbroad section1ImageEffectStudyAbroad'
+											src='../data/country/${country}/section1/${index + 1}.webp'
+											alt='${country}Event'
+										/>
+									</div>`
+									: ""
+							}
+							${
+								index + 1 !== 2
+									? `<img
+										id='section1Image${index}'
+										class='section1ImageStudyAbroad'
+										src='../data/country/${country}/section1/${index + 1}.webp'
+										alt='${country}Event'
+									/>`
+									: ""
+							}
+							
 						</a>`
 					)}
 						
