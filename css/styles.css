@@ -5,8 +5,7 @@
 @import url("./section3_5StudyAbroad.css");
 @import url("./section4StudyAbroad.css");
 @import url("./section6StudyAbroad.css");
-@import url("./jsonStyles_Argentina.css");
-@import url("./jsonStyles_Spain.css");
+@import url("./jsonStyles/jsonStyles_.css");
 
 @font-face {
 	font-family: "Mont-Book";
