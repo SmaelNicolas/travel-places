@@ -27,8 +27,9 @@
 }
 
 .section1ArrowStudyAbroad {
-	width: 45px;
-	height: 45px;
+	font-size: 40px;
+	padding: 5px;
+	color: var(--clr--medium--grey);
 	opacity: 0;
 	transition: transform 0.3s linear;
 }
