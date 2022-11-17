@@ -52,9 +52,7 @@
 	top: 60%;
 	right: 20px;
 	z-index: 4;
-	border-radius: 50%;
-	width: 25px;
-	height: 25px;
+	width: 50px;
 	font-size: 50px;
 }
 
@@ -64,9 +62,7 @@
 	top: 60%;
 	left: 20px;
 	z-index: 4;
-	border-radius: 50%;
-	width: 25px;
-	height: 25px;
+	width: 50px;
 	font-size: 50px;
 }
 
@@ -105,7 +101,8 @@
 	color: var(--clr--medium--grey);
 }
 
-.placesSection6IconDwl:hover {
+.placesSection6IconDwl:hover,
+.placesSection6IconDwl:active {
 	color: black;
 }
 
