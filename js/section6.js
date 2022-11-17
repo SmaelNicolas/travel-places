@@ -41,11 +41,43 @@ export const section_6_start = (section6Info, country, styles) => {
 		document.getElementById("nextPlacesSection6").style.display = "flex";
 		document.getElementById("prevPlacesSection6").style.display = "flex";
 	});
+	document
+		.getElementById("nextPlacesSection6")
+		.addEventListener("mouseenter", () => {
+			document.getElementById("nextPlacesSection6").style.display =
+				"flex";
+			document.getElementById("prevPlacesSection6").style.display =
+				"flex";
+		});
+	document
+		.getElementById("prevPlacesSection6")
+		.addEventListener("mouseenter", () => {
+			document.getElementById("nextPlacesSection6").style.display =
+				"flex";
+			document.getElementById("prevPlacesSection6").style.display =
+				"flex";
+		});
 
 	document.getElementById("Section6").addEventListener("mouseleave", () => {
 		document.getElementById("nextPlacesSection6").style.display = "none";
 		document.getElementById("prevPlacesSection6").style.display = "none";
 	});
+	document
+		.getElementById("nextPlacesSection6")
+		.addEventListener("mouseleave", () => {
+			document.getElementById("nextPlacesSection6").style.display =
+				"none";
+			document.getElementById("prevPlacesSection6").style.display =
+				"none";
+		});
+	document
+		.getElementById("prevPlacesSection6")
+		.addEventListener("mouseleave", () => {
+			document.getElementById("nextPlacesSection6").style.display =
+				"none";
+			document.getElementById("prevPlacesSection6").style.display =
+				"none";
+		});
 };
 
 const addSection_6ToContainer = (
@@ -60,23 +92,16 @@ const addSection_6ToContainer = (
 				<div id="Section6" class="swiper mySwiper section6StudyAbroad">
 					<div id="section6Wrapper" class="swiper-wrapper section6Wrapper">
 					</div>
-					<div
-						id="nextPlacesSection6"
-						class="swiper-button-next nextPlacesSection6">
-						<img src="./assets/icons/right.svg" alt="" srcset="" />
 					</div>
-					<div
-						id="prevPlacesSection6"
-						class="swiper-button-prev prevPlacesSection6">
-						<img src="./assets/icons/left.svg" alt="" srcset="" />
-					</div>
-				</div>`;
+					<i id="nextPlacesSection6" class="fa-solid fa-angle-right swiper-button-next nextPlacesSection6 ${styles.section_6_arrows} "></i>
+					<i id="prevPlacesSection6" class="fa-solid fa-angle-left swiper-button-prev prevPlacesSection6 ${styles.section_6_arrows}"></i>
+					`;
 
 	containerStudyAbroadCities.appendChild(node);
-	createSwiperCardDownload(section6Info, country);
+	createSwiperCardDownload(section6Info, country, styles);
 };
 
-const createSwiperCardDownload = (section6Info, country) => {
+const createSwiperCardDownload = (section6Info, country, styles) => {
 	for (let i = 0; i < section6Info.number_programs; i++) {
 		let node = document.createElement("div");
 		node.classList.add("swiper-slide");
@@ -89,9 +114,12 @@ const createSwiperCardDownload = (section6Info, country) => {
 							/>
 						</div>
 						<a
-							class='placesSection6IconDwl'
 							href='../data/country/${country}/section6/downloads/${i + 1}.pdf'
-							download></a>`;
+							download>
+							<i class="fa-solid fa-download placesSection6IconDwl ${
+								styles.section_6_downloads
+							}"></i>
+							</a>`;
 		document.getElementById("section6Wrapper").appendChild(node);
 	}
 };
