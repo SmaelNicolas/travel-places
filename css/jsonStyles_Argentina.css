@@ -1,6 +1,9 @@
 .section_1_title_argentina {
 	color: blue;
 }
+.section_1_arrows_argentina {
+	color: purple;
+}
 .section_2_title_argentina {
 }
 .section_2_subtitle_argentina {
@@ -48,4 +51,10 @@
 .section_5_title_argentina {
 }
 .section_6_title_argentina {
+}
+.section_6_arrows_argentina {
+	color: orange;
+}
+.section_6_downloads_argentina {
+	color: red;
 }
