@@ -28,6 +28,7 @@
 .section2SubTitleStudyAbroad {
 	width: 100%;
 	position: absolute;
+	top: 500px;
 	left: 20px;
 	font-size: 90px;
 	font-weight: 300;
@@ -150,7 +151,7 @@
 		width: 850px;
 	}
 	.section2TitleStudyAbroad {
-		font-size: 100px;
+		font-size: 90px;
 	}
 
 	.section2SubTitleStudyAbroad {
