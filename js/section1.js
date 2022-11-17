@@ -79,11 +79,9 @@ const addSection_1ToContainer = (
 				<div
 					id="containerSection1"
 					class="containerSection1StudyAbroad">
-					<img
-						id="section1ArrowLeft"
-						class="section1ArrowStudyAbroad"
-						src="./assets/icons/left.svg"
-						alt="" />
+					<i id="section1ArrowLeft" class="fa-solid fa-angle-left section1ArrowStudyAbroad ${
+						styles.section_1_arrows
+					}"></i>
 					<div class="containerSection1ImageStudyAbroad">
 					${section1Info.map(
 						(url, index) =>
@@ -130,13 +128,10 @@ const addSection_1ToContainer = (
 							
 						</a>`
 					)}
-						
 					</div>
-					<img
-						id="section1ArrowRight"
-						class="section1ArrowStudyAbroad"
-						src="./assets/icons/right.svg"
-						alt="" />
+					<i id="section1ArrowRight" class="fa-solid fa-angle-right section1ArrowStudyAbroad ${
+						styles.section_1_arrows
+					}"></i>
 				</div>`;
 	containerStudyAbroadCities.appendChild(node);
 };
