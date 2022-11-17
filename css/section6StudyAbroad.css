@@ -49,23 +49,25 @@
 .nextPlacesSection6 {
 	display: none;
 	position: absolute !important;
-	top: 50%;
-	right: 0px;
+	top: 60%;
+	right: 20px;
 	z-index: 4;
 	border-radius: 50%;
 	width: 25px;
 	height: 25px;
+	font-size: 50px;
 }
 
 .prevPlacesSection6 {
 	display: none;
 	position: absolute !important;
-	top: 50%;
-	left: 0px;
+	top: 60%;
+	left: 20px;
 	z-index: 4;
 	border-radius: 50%;
 	width: 25px;
 	height: 25px;
+	font-size: 50px;
 }
 
 .containerImageSection6Effect {
@@ -91,13 +93,20 @@
 }
 
 .placesSection6IconDwl {
-	width: 40px;
+	/* width: 40px;
 	height: 40px;
 	cursor: pointer;
 	background-image: url("../assets/icons/download.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: contain; */
+	font-size: 25px;
+	cursor: pointer;
+	color: var(--clr--medium--grey);
+}
+
+.placesSection6IconDwl:hover {
+	color: black;
 }
 
 .swiper-button-prev::after {
