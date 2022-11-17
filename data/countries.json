@@ -75,6 +75,7 @@
 		},
 		"styles": {
 			"section_1_title": "section_1_title_argentina",
+			"section_1_arrows": "section_1_arrows_argentina",
 			"section_2_title": "section_2_title_argentina",
 			"section_2_subtitle": "section_2_subtitle_argentina",
 			"section_2_image_title": "section_2_image_title_argentina",
@@ -98,7 +99,9 @@
 			"section_4_title_step_7_title": "section_4_title_step_7_title_argentina",
 			"section_4_title_step_7_paragraph": "section_4_title_step_7_paragraph_argentina",
 			"section_5_title": "section_5_title_argentina",
-			"section_6_title": "section_6_title_argentina"
+			"section_6_title": "section_6_title_argentina",
+			"section_6_arrows": "section_6_arrows_argentina",
+			"section_6_downloads": "section_6_downloads_argentina"
 		}
 	},
 	{
@@ -177,6 +180,7 @@
 		},
 		"styles": {
 			"section_1_title": "section_1_title_spain",
+			"section_1_arrows": "",
 			"section_2_title": "section_2_title_spain",
 			"section_2_subtitle": "section_2_subtitle_spain",
 			"section_2_image_title": "section_2_image_title_spain",
@@ -200,7 +204,9 @@
 			"section_4_title_step_7_title": "section_4_title_step_7_title_spain",
 			"section_4_title_step_7_paragraph": "section_4_title_step_7_paragraph_spain",
 			"section_5_title": "section_5_title_spain",
-			"section_6_title": "section_6_title_spain"
+			"section_6_title": "section_6_title_spain",
+			"section_6_arrows": "",
+			"section_6_downloads": ""
 		}
 	},
 	{
@@ -279,6 +285,7 @@
 		},
 		"styles": {
 			"section_1_title": "section_1_title_spain",
+			"section_1_arrows": "",
 			"section_2_title": "section_2_title_spain",
 			"section_2_subtitle": "section_2_subtitle_spain",
 			"section_2_image_title": "section_2_image_title_spain",
@@ -302,7 +309,9 @@
 			"section_4_title_step_7_title": "section_4_title_step_7_title_spain",
 			"section_4_title_step_7_paragraph": "section_4_title_step_7_paragraph_spain",
 			"section_5_title": "section_5_title_spain",
-			"section_6_title": "section_6_title_spain"
+			"section_6_title": "section_6_title_spain",
+			"section_6_arrows": "",
+			"section_6_downloads": ""
 		}
 	},
 	{
@@ -381,6 +390,7 @@
 		},
 		"styles": {
 			"section_1_title": "section_1_title_spain",
+			"section_1_arrows": "",
 			"section_2_title": "section_2_title_spain",
 			"section_2_subtitle": "section_2_subtitle_spain",
 			"section_2_image_title": "section_2_image_title_spain",
@@ -404,7 +414,9 @@
 			"section_4_title_step_7_title": "section_4_title_step_7_title_spain",
 			"section_4_title_step_7_paragraph": "section_4_title_step_7_paragraph_spain",
 			"section_5_title": "section_5_title_spain",
-			"section_6_title": "section_6_title_spain"
+			"section_6_title": "section_6_title_spain",
+			"section_6_arrows": "",
+			"section_6_downloads": ""
 		}
 	},
 	{
@@ -483,6 +495,7 @@
 		},
 		"styles": {
 			"section_1_title": "section_1_title_spain",
+			"section_1_arrows": "",
 			"section_2_title": "section_2_title_spain",
 			"section_2_subtitle": "section_2_subtitle_spain",
 			"section_2_image_title": "section_2_image_title_spain",
@@ -506,7 +519,9 @@
 			"section_4_title_step_7_title": "section_4_title_step_7_title_spain",
 			"section_4_title_step_7_paragraph": "section_4_title_step_7_paragraph_spain",
 			"section_5_title": "section_5_title_spain",
-			"section_6_title": "section_6_title_spain"
+			"section_6_title": "section_6_title_spain",
+			"section_6_arrows": "",
+			"section_6_downloads": ""
 		}
 	},
 	{
@@ -585,6 +600,7 @@
 		},
 		"styles": {
 			"section_1_title": "section_1_title_spain",
+			"section_1_arrows": "",
 			"section_2_title": "section_2_title_spain",
 			"section_2_subtitle": "section_2_subtitle_spain",
 			"section_2_image_title": "section_2_image_title_spain",
@@ -608,7 +624,9 @@
 			"section_4_title_step_7_title": "section_4_title_step_7_title_spain",
 			"section_4_title_step_7_paragraph": "section_4_title_step_7_paragraph_spain",
 			"section_5_title": "section_5_title_spain",
-			"section_6_title": "section_6_title_spain"
+			"section_6_title": "section_6_title_spain",
+			"section_6_arrows": "",
+			"section_6_downloads": ""
 		}
 	},
 	{
@@ -687,6 +705,7 @@
 		},
 		"styles": {
 			"section_1_title": "section_1_title_spain",
+			"section_1_arrows": "",
 			"section_2_title": "section_2_title_spain",
 			"section_2_subtitle": "section_2_subtitle_spain",
 			"section_2_image_title": "section_2_image_title_spain",
@@ -710,7 +729,9 @@
 			"section_4_title_step_7_title": "section_4_title_step_7_title_spain",
 			"section_4_title_step_7_paragraph": "section_4_title_step_7_paragraph_spain",
 			"section_5_title": "section_5_title_spain",
-			"section_6_title": "section_6_title_spain"
+			"section_6_title": "section_6_title_spain",
+			"section_6_arrows": "",
+			"section_6_downloads": ""
 		}
 	},
 	{
@@ -789,6 +810,7 @@
 		},
 		"styles": {
 			"section_1_title": "section_1_title_spain",
+			"section_1_arrows": "",
 			"section_2_title": "section_2_title_spain",
 			"section_2_subtitle": "section_2_subtitle_spain",
 			"section_2_image_title": "section_2_image_title_spain",
@@ -812,7 +834,9 @@
 			"section_4_title_step_7_title": "section_4_title_step_7_title_spain",
 			"section_4_title_step_7_paragraph": "section_4_title_step_7_paragraph_spain",
 			"section_5_title": "section_5_title_spain",
-			"section_6_title": "section_6_title_spain"
+			"section_6_title": "section_6_title_spain",
+			"section_6_arrows": "",
+			"section_6_downloads": ""
 		}
 	},
 	{
@@ -891,6 +915,7 @@
 		},
 		"styles": {
 			"section_1_title": "section_1_title_spain",
+			"section_1_arrows": "",
 			"section_2_title": "section_2_title_spain",
 			"section_2_subtitle": "section_2_subtitle_spain",
 			"section_2_image_title": "section_2_image_title_spain",
@@ -914,7 +939,9 @@
 			"section_4_title_step_7_title": "section_4_title_step_7_title_spain",
 			"section_4_title_step_7_paragraph": "section_4_title_step_7_paragraph_spain",
 			"section_5_title": "section_5_title_spain",
-			"section_6_title": "section_6_title_spain"
+			"section_6_title": "section_6_title_spain",
+			"section_6_arrows": "",
+			"section_6_downloads": ""
 		}
 	},
 	{
@@ -993,6 +1020,7 @@
 		},
 		"styles": {
 			"section_1_title": "section_1_title_spain",
+			"section_1_arrows": "",
 			"section_2_title": "section_2_title_spain",
 			"section_2_subtitle": "section_2_subtitle_spain",
 			"section_2_image_title": "section_2_image_title_spain",
@@ -1016,7 +1044,9 @@
 			"section_4_title_step_7_title": "section_4_title_step_7_title_spain",
 			"section_4_title_step_7_paragraph": "section_4_title_step_7_paragraph_spain",
 			"section_5_title": "section_5_title_spain",
-			"section_6_title": "section_6_title_spain"
+			"section_6_title": "section_6_title_spain",
+			"section_6_arrows": "",
+			"section_6_downloads": ""
 		}
 	},
 	{
@@ -1095,6 +1125,7 @@
 		},
 		"styles": {
 			"section_1_title": "section_1_title_spain",
+			"section_1_arrows": "",
 			"section_2_title": "section_2_title_spain",
 			"section_2_subtitle": "section_2_subtitle_spain",
 			"section_2_image_title": "section_2_image_title_spain",
@@ -1118,7 +1149,9 @@
 			"section_4_title_step_7_title": "section_4_title_step_7_title_spain",
 			"section_4_title_step_7_paragraph": "section_4_title_step_7_paragraph_spain",
 			"section_5_title": "section_5_title_spain",
-			"section_6_title": "section_6_title_spain"
+			"section_6_title": "section_6_title_spain",
+			"section_6_arrows": "",
+			"section_6_downloads": ""
 		}
 	}
 ]
