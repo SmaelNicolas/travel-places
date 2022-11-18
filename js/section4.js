@@ -88,7 +88,8 @@ const renderSection_4Step_1 = (title, text, value, country, style) => {
 	node.classList.add("section4Info");
 	node.innerHTML = `
 						<div class="section4InfoNumber">
-							<div class="section4InfoNumberText">${value + 1}</div>
+							<div class="section4InfoNumberText  
+							${style.section_4_title_step_1_number}">${value + 1}</div>
 							<h3 class="section4InfoNumberTitle ${
 								style.section_4_title_step_1_title
 							}">${title}</h3>
@@ -123,7 +124,9 @@ const renderSection_4Step_2 = (title, text, value, style) => {
 	let node = document.createElement("div");
 	node.classList.add("section4Info");
 	node.innerHTML = `<div class="section4InfoNumber">
-							<div class="section4InfoNumberText">${value + 1}</div>
+							<div class="section4InfoNumberText ${style.section_4_title_step_2_number}">${
+		value + 1
+	}</div>
 							<h3 class="section4InfoNumberTitle ${
 								style.section_4_title_step_2_title
 							}">${title}</h3>
@@ -142,7 +145,9 @@ const renderSection_4Step_3 = (title, cities, value, country, style) => {
 	let node = document.createElement("div");
 	node.classList.add("section4Info");
 	node.innerHTML = `<div class="section4InfoNumber">
-							<div class="section4InfoNumberText">${value + 1}</div>
+							<div class="section4InfoNumberText ${style.section_4_title_step_3_number}">${
+		value + 1
+	}</div>
 							<h3 class="section4InfoNumberTitle ${
 								style.section_4_title_step_3_title
 							}">${title}</h3>
@@ -172,7 +177,9 @@ const renderSection_4Step_4 = (title, text, value, style) => {
 	let node = document.createElement("div");
 	node.classList.add("section4Info");
 	node.innerHTML = `<div class="section4InfoNumber">
-							<div class="section4InfoNumberText">${value + 1}</div>
+							<div class="section4InfoNumberText ${style.section_4_title_step_4_number}">${
+		value + 1
+	}</div>
 							<h3 class="section4InfoNumberTitle ${style.section_4_title_step_4_title}">
 								${title}
 							</h3>
@@ -191,7 +198,9 @@ const renderSection_4Step_5 = (title, text, value, country, style) => {
 	let node = document.createElement("div");
 	node.classList.add("section4Info");
 	node.innerHTML = `<div class="section4InfoNumber">
-							<div class="section4InfoNumberText">${value + 1}</div>
+							<div class="section4InfoNumberText ${style.section_4_title_step_5_number}">${
+		value + 1
+	}</div>
 							<h3 class="section4InfoNumberTitle ${
 								style.section_4_title_step_5_title
 							}">${title}</h3>
@@ -213,7 +222,9 @@ const renderSection_4Step_6 = (title, text, value, country, style) => {
 	let node = document.createElement("div");
 	node.classList.add("section4Info");
 	node.innerHTML = `<div class="section4InfoNumber">
-							<div class="section4InfoNumberText">${value + 1}</div>
+							<div class="section4InfoNumberText ${style.section_4_title_step_6_number}">${
+		value + 1
+	}</div>
 							<h3 class="section4InfoNumberTitle ${style.section_4_title_step_6_title}">
 								${title}
 							</h3>
@@ -257,7 +268,9 @@ const renderSection_4Step_7 = (title, text, value, country, style) => {
 	let node = document.createElement("div");
 	node.classList.add("section4Info");
 	node.innerHTML = `	<div class="section4InfoNumber">
-							<div class="section4InfoNumberText">${value + 1}</div>
+							<div class="section4InfoNumberText ${style.section_4_title_step_7_number}">${
+		value + 1
+	}</div>
 								<h3 class="section4InfoNumberTitle ${style.section_4_title_step_7_title}">
 									${title}
 								</h3>
