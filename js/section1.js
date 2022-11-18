@@ -83,7 +83,7 @@ const addSection_1ToContainer = (
 						styles.section_1_arrows
 					}"></i>
 					<div class="containerSection1ImageStudyAbroad">
-					${section1Info.map(
+					${section1Info.urls.map(
 						(url, index) =>
 							`<a
 							id="section1ImageWrapperStudyAbroad${index}"
