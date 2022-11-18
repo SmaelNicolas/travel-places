@@ -11,11 +11,21 @@ export const initializeAllSections = (infoCountry) => {
 	);
 	containerStudyAbroadCities.innerHTML = "";
 	infoCountry.map((country) => {
-		section_1_start(country.section_1, country.country, country.styles);
-		section_2_start(country.section_2, country.country, country.styles);
-		section_3_start(country.section_3, country.country, country.styles);
-		section_4_Start(country.section_4, country.country, country.styles);
-		section_5_start(country.section_5, country.country, country.styles);
+		country.section_1.show_section &&
+			section_1_start(country.section_1, country.country, country.styles);
+
+		country.section_2.show_section &&
+			section_2_start(country.section_2, country.country, country.styles);
+
+		country.section_3.show_section &&
+			section_3_start(country.section_3, country.country, country.styles);
+
+		country.section_4.show_section &&
+			section_4_Start(country.section_4, country.country, country.styles);
+
+		country.section_5.show_section &&
+			section_5_start(country.section_5, country.country, country.styles);
+
 		let windowWidth = window.innerWidth;
 		if (windowWidth >= 920) {
 			section_6_start(
