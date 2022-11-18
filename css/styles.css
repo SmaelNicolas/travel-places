@@ -13,6 +13,11 @@
 	font-weight: 100;
 }
 @font-face {
+	font-family: "Mont-Trial-SeminBold";
+	src: url("../assets/fonts/Mont-Trial-SemiBold.otf") format("opentype");
+	font-weight: 100;
+}
+@font-face {
 	font-family: "Heavy";
 	src: url("../assets/fonts/heavy.otf") format("opentype");
 	font-weight: 100;
@@ -29,6 +34,7 @@
 	--clr--black-: #000000;
 	--ff--Mont: "Mont-Book";
 	--ff--Heavy: "Heavy";
+	--ff--Bold: "Mont-Trial-SeminBold";
 
 	--shadow--3d--big: 1px 1px 0px var(--clr--hard--grey),
 		2px 2px 0px var(--clr--hard--grey), 3px 3px 0px var(--clr--hard--grey),
