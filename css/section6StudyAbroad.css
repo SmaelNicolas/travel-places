@@ -143,16 +143,18 @@
 	}
 	.nextPlacesSection6 {
 		display: flex !important;
+		right: 10%;
 	}
 	.prevPlacesSection6 {
 		display: flex !important;
+		left: 10%;
 	}
 	.containerImageSection6Effect {
-		width: 250px;
+		width: 90%;
 		height: 280px;
 	}
 	.placesSection6Image {
-		width: 250px;
+		width: 100%;
 		height: 280px;
 		object-fit: cover;
 	}
@@ -164,8 +166,31 @@
 	}
 }
 
+@media only screen and (max-width: 550px) {
+	.nextPlacesSection6 {
+		right: 1%;
+		top: 55%;
+	}
+	.prevPlacesSection6 {
+		left: 1%;
+		top: 55%;
+	}
+}
+
 @media only screen and (max-width: 400px) {
 	.section6StudyAbroad {
 		width: 310px;
+	}
+	.nextPlacesSection6 {
+		top: 55%;
+		right: 0px;
+	}
+
+	.prevPlacesSection6 {
+		top: 55%;
+		left: -10px;
+	}
+	.containerImageSection6Effect {
+		width: 240px;
 	}
 }
