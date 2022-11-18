@@ -101,7 +101,7 @@ const addSection_2ToContainer = (
 	node.innerHTML = `<h2 class="section2SubTitleStudyAbroadResponsive ${styles.section_2_subtitle}">
 					Places to visit
 				</h2>
-				<h2 class="section2TitleStudyAbroad ${styles.section_2_title} ">in ${country}</h2>
+				<h2 class="section2TitleStudyAbroad ${styles.section_2_title} ">in <span class="section2TitleStudyAbroadSpan ${styles.section_2_title_country}" > ${country} </span> </h2>
 				<div class="containerSection2MainStudyAbroad">
 					<h2 class="section2SubTitleStudyAbroad ${styles.section_2_subtitle}">Places to visit</h2>
 					<div class="containerSection2MainImagesStudyAbroad">
