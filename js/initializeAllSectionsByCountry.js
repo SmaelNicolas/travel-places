@@ -26,27 +26,39 @@ export const initializeAllSections = (infoCountry) => {
 		country.section_5.show_section &&
 			section_5_start(country.section_5, country.country, country.styles);
 
-		let windowWidth = window.innerWidth;
-		if (windowWidth >= 920) {
-			section_6_start(
-				country.section_6,
-				infoCountry[0].country,
-				country.styles
+		renderSection_6(country, infoCountry);
+
+		window.addEventListener("resize", () => {
+			containerStudyAbroadCities.removeChild(
+				containerStudyAbroadCities.lastChild
 			);
-		}
-		if (windowWidth >= 725 && windowWidth < 920) {
-			section_6_start(
-				country.section_6,
-				infoCountry[0].country,
-				country.styles
-			);
-		}
-		if (windowWidth < 725) {
-			section_6_start(
-				country.section_6,
-				infoCountry[0].country,
-				country.styles
-			);
-		}
+			renderSection_6(country, infoCountry);
+		});
 	});
+};
+
+const renderSection_6 = (country, infoCountry) => {
+	let windowWidth = window.innerWidth;
+
+	if (windowWidth >= 920) {
+		section_6_start(
+			country.section_6,
+			infoCountry[0].country,
+			country.styles
+		);
+	}
+	if (windowWidth >= 725 && windowWidth < 920) {
+		section_6_start(
+			country.section_6,
+			infoCountry[0].country,
+			country.styles
+		);
+	}
+	if (windowWidth < 725) {
+		section_6_start(
+			country.section_6,
+			infoCountry[0].country,
+			country.styles
+		);
+	}
 };
