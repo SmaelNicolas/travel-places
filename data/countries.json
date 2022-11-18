@@ -2,12 +2,16 @@
 	{
 		"id": 1,
 		"country": "argentina",
-		"section_1": [
-			"https://www.google.com.ar/",
-			"https://www.youtube.com.ar/",
-			"https://www.ole.com.ar/"
-		],
+		"section_1": {
+			"show_section": false,
+			"urls": [
+				"https://www.google.com.ar/",
+				"https://www.youtube.com.ar/",
+				"https://www.ole.com.ar/"
+			]
+		},
 		"section_2": {
+			"show_section": true,
 			"titles": [
 				"Titulo de ejemplo numero 1",
 				"Titulo de ejemplo numero 2",
@@ -26,6 +30,7 @@
 			]
 		},
 		"section_3": {
+			"show_section": true,
 			"title": "News One",
 			"urls": [
 				"https://www.google.com.ar/",
@@ -34,6 +39,7 @@
 			]
 		},
 		"section_4": {
+			"show_section": true,
 			"titles": [
 				"Country",
 				"Weather",
@@ -62,6 +68,7 @@
 			]
 		},
 		"section_5": {
+			"show_section": true,
 			"title": "News Two",
 			"urls": [
 				"https://www.youtube.com/",
@@ -70,6 +77,7 @@
 			]
 		},
 		"section_6": {
+			"show_section": true,
 			"title": "Programs",
 			"number_programs": 6
 		},
@@ -107,12 +115,16 @@
 	{
 		"id": 2,
 		"country": "spain",
-		"section_1": [
-			"https://www.google.com.ar/",
-			"https://www.youtube.com.ar/",
-			"https://www.ole.com.ar/"
-		],
+		"section_1": {
+			"show_section": true,
+			"urls": [
+				"https://www.google.com.ar/",
+				"https://www.youtube.com.ar/",
+				"https://www.ole.com.ar/"
+			]
+		},
 		"section_2": {
+			"show_section": true,
 			"titles": [
 				"Titulo de ejemplo numero 1",
 				"Titulo de ejemplo numero 2",
@@ -131,6 +143,7 @@
 			]
 		},
 		"section_3": {
+			"show_section": true,
 			"title": "News One",
 			"urls": [
 				"https://www.google.com.ar/",
@@ -139,6 +152,7 @@
 			]
 		},
 		"section_4": {
+			"show_section": true,
 			"titles": [
 				"Country",
 				"Weather",
@@ -167,6 +181,7 @@
 			]
 		},
 		"section_5": {
+			"show_section": true,
 			"title": "News Two",
 			"urls": [
 				"https://www.youtube.com/",
@@ -175,6 +190,7 @@
 			]
 		},
 		"section_6": {
+			"show_section": true,
 			"title": "Programs",
 			"number_programs": 6
 		},
@@ -212,12 +228,16 @@
 	{
 		"id": 3,
 		"country": "united states",
-		"section_1": [
-			"https://www.google.com.ar/",
-			"https://www.youtube.com.ar/",
-			"https://www.ole.com.ar/"
-		],
+		"section_1": {
+			"show_section": true,
+			"urls": [
+				"https://www.google.com.ar/",
+				"https://www.youtube.com.ar/",
+				"https://www.ole.com.ar/"
+			]
+		},
 		"section_2": {
+			"show_section": true,
 			"titles": [
 				"Titulo de ejemplo numero 1",
 				"Titulo de ejemplo numero 2",
@@ -236,6 +256,7 @@
 			]
 		},
 		"section_3": {
+			"show_section": true,
 			"title": "News One",
 			"urls": [
 				"https://www.google.com.ar/",
@@ -244,6 +265,7 @@
 			]
 		},
 		"section_4": {
+			"show_section": true,
 			"titles": [
 				"Country",
 				"Weather",
@@ -272,6 +294,7 @@
 			]
 		},
 		"section_5": {
+			"show_section": true,
 			"title": "News Two",
 			"urls": [
 				"https://www.youtube.com/",
@@ -280,6 +303,7 @@
 			]
 		},
 		"section_6": {
+			"show_section": true,
 			"title": "Programs",
 			"number_programs": 6
 		},
@@ -317,12 +341,16 @@
 	{
 		"id": 4,
 		"country": "united kingdom",
-		"section_1": [
-			"https://www.google.com.ar/",
-			"https://www.youtube.com.ar/",
-			"https://www.ole.com.ar/"
-		],
+		"section_1": {
+			"show_section": true,
+			"urls": [
+				"https://www.google.com.ar/",
+				"https://www.youtube.com.ar/",
+				"https://www.ole.com.ar/"
+			]
+		},
 		"section_2": {
+			"show_section": true,
 			"titles": [
 				"Titulo de ejemplo numero 1",
 				"Titulo de ejemplo numero 2",
@@ -341,6 +369,7 @@
 			]
 		},
 		"section_3": {
+			"show_section": true,
 			"title": "News One",
 			"urls": [
 				"https://www.google.com.ar/",
@@ -349,6 +378,7 @@
 			]
 		},
 		"section_4": {
+			"show_section": true,
 			"titles": [
 				"Country",
 				"Weather",
@@ -377,6 +407,7 @@
 			]
 		},
 		"section_5": {
+			"show_section": true,
 			"title": "News Two",
 			"urls": [
 				"https://www.youtube.com/",
@@ -385,6 +416,7 @@
 			]
 		},
 		"section_6": {
+			"show_section": true,
 			"title": "Programs",
 			"number_programs": 6
 		},
@@ -422,12 +454,16 @@
 	{
 		"id": 5,
 		"country": "france",
-		"section_1": [
-			"https://www.google.com.ar/",
-			"https://www.youtube.com.ar/",
-			"https://www.ole.com.ar/"
-		],
+		"section_1": {
+			"show_section": true,
+			"urls": [
+				"https://www.google.com.ar/",
+				"https://www.youtube.com.ar/",
+				"https://www.ole.com.ar/"
+			]
+		},
 		"section_2": {
+			"show_section": true,
 			"titles": [
 				"Titulo de ejemplo numero 1",
 				"Titulo de ejemplo numero 2",
@@ -446,6 +482,7 @@
 			]
 		},
 		"section_3": {
+			"show_section": true,
 			"title": "News One",
 			"urls": [
 				"https://www.google.com.ar/",
@@ -454,6 +491,7 @@
 			]
 		},
 		"section_4": {
+			"show_section": true,
 			"titles": [
 				"Country",
 				"Weather",
@@ -482,6 +520,7 @@
 			]
 		},
 		"section_5": {
+			"show_section": true,
 			"title": "News Two",
 			"urls": [
 				"https://www.youtube.com/",
@@ -490,6 +529,7 @@
 			]
 		},
 		"section_6": {
+			"show_section": true,
 			"title": "Programs",
 			"number_programs": 6
 		},
@@ -527,12 +567,16 @@
 	{
 		"id": 6,
 		"country": "italy",
-		"section_1": [
-			"https://www.google.com.ar/",
-			"https://www.youtube.com.ar/",
-			"https://www.ole.com.ar/"
-		],
+		"section_1": {
+			"show_section": true,
+			"urls": [
+				"https://www.google.com.ar/",
+				"https://www.youtube.com.ar/",
+				"https://www.ole.com.ar/"
+			]
+		},
 		"section_2": {
+			"show_section": true,
 			"titles": [
 				"Titulo de ejemplo numero 1",
 				"Titulo de ejemplo numero 2",
@@ -551,6 +595,7 @@
 			]
 		},
 		"section_3": {
+			"show_section": true,
 			"title": "News One",
 			"urls": [
 				"https://www.google.com.ar/",
@@ -559,6 +604,7 @@
 			]
 		},
 		"section_4": {
+			"show_section": true,
 			"titles": [
 				"Country",
 				"Weather",
@@ -587,6 +633,7 @@
 			]
 		},
 		"section_5": {
+			"show_section": true,
 			"title": "News Two",
 			"urls": [
 				"https://www.youtube.com/",
@@ -595,6 +642,7 @@
 			]
 		},
 		"section_6": {
+			"show_section": true,
 			"title": "Programs",
 			"number_programs": 6
 		},
@@ -632,12 +680,16 @@
 	{
 		"id": 7,
 		"country": "japan",
-		"section_1": [
-			"https://www.google.com.ar/",
-			"https://www.youtube.com.ar/",
-			"https://www.ole.com.ar/"
-		],
+		"section_1": {
+			"show_section": true,
+			"urls": [
+				"https://www.google.com.ar/",
+				"https://www.youtube.com.ar/",
+				"https://www.ole.com.ar/"
+			]
+		},
 		"section_2": {
+			"show_section": true,
 			"titles": [
 				"Titulo de ejemplo numero 1",
 				"Titulo de ejemplo numero 2",
@@ -656,6 +708,7 @@
 			]
 		},
 		"section_3": {
+			"show_section": true,
 			"title": "News One",
 			"urls": [
 				"https://www.google.com.ar/",
@@ -664,6 +717,7 @@
 			]
 		},
 		"section_4": {
+			"show_section": true,
 			"titles": [
 				"Country",
 				"Weather",
@@ -692,6 +746,7 @@
 			]
 		},
 		"section_5": {
+			"show_section": true,
 			"title": "News Two",
 			"urls": [
 				"https://www.youtube.com/",
@@ -700,6 +755,7 @@
 			]
 		},
 		"section_6": {
+			"show_section": true,
 			"title": "Programs",
 			"number_programs": 6
 		},
@@ -737,12 +793,16 @@
 	{
 		"id": 8,
 		"country": "canada",
-		"section_1": [
-			"https://www.google.com.ar/",
-			"https://www.youtube.com.ar/",
-			"https://www.ole.com.ar/"
-		],
+		"section_1": {
+			"show_section": true,
+			"urls": [
+				"https://www.google.com.ar/",
+				"https://www.youtube.com.ar/",
+				"https://www.ole.com.ar/"
+			]
+		},
 		"section_2": {
+			"show_section": true,
 			"titles": [
 				"Titulo de ejemplo numero 1",
 				"Titulo de ejemplo numero 2",
@@ -761,6 +821,7 @@
 			]
 		},
 		"section_3": {
+			"show_section": true,
 			"title": "News One",
 			"urls": [
 				"https://www.google.com.ar/",
@@ -769,6 +830,7 @@
 			]
 		},
 		"section_4": {
+			"show_section": true,
 			"titles": [
 				"Country",
 				"Weather",
@@ -797,6 +859,7 @@
 			]
 		},
 		"section_5": {
+			"show_section": true,
 			"title": "News Two",
 			"urls": [
 				"https://www.youtube.com/",
@@ -805,6 +868,7 @@
 			]
 		},
 		"section_6": {
+			"show_section": true,
 			"title": "Programs",
 			"number_programs": 6
 		},
@@ -842,12 +906,16 @@
 	{
 		"id": 9,
 		"country": "germany",
-		"section_1": [
-			"https://www.google.com.ar/",
-			"https://www.youtube.com.ar/",
-			"https://www.ole.com.ar/"
-		],
+		"section_1": {
+			"show_section": true,
+			"urls": [
+				"https://www.google.com.ar/",
+				"https://www.youtube.com.ar/",
+				"https://www.ole.com.ar/"
+			]
+		},
 		"section_2": {
+			"show_section": true,
 			"titles": [
 				"Titulo de ejemplo numero 1",
 				"Titulo de ejemplo numero 2",
@@ -866,6 +934,7 @@
 			]
 		},
 		"section_3": {
+			"show_section": true,
 			"title": "News One",
 			"urls": [
 				"https://www.google.com.ar/",
@@ -874,6 +943,7 @@
 			]
 		},
 		"section_4": {
+			"show_section": true,
 			"titles": [
 				"Country",
 				"Weather",
@@ -902,6 +972,7 @@
 			]
 		},
 		"section_5": {
+			"show_section": true,
 			"title": "News Two",
 			"urls": [
 				"https://www.youtube.com/",
@@ -910,6 +981,7 @@
 			]
 		},
 		"section_6": {
+			"show_section": true,
 			"title": "Programs",
 			"number_programs": 6
 		},
@@ -947,12 +1019,16 @@
 	{
 		"id": 10,
 		"country": "australia",
-		"section_1": [
-			"https://www.google.com.ar/",
-			"https://www.youtube.com.ar/",
-			"https://www.ole.com.ar/"
-		],
+		"section_1": {
+			"show_section": true,
+			"urls": [
+				"https://www.google.com.ar/",
+				"https://www.youtube.com.ar/",
+				"https://www.ole.com.ar/"
+			]
+		},
 		"section_2": {
+			"show_section": true,
 			"titles": [
 				"Titulo de ejemplo numero 1",
 				"Titulo de ejemplo numero 2",
@@ -971,6 +1047,7 @@
 			]
 		},
 		"section_3": {
+			"show_section": true,
 			"title": "News One",
 			"urls": [
 				"https://www.google.com.ar/",
@@ -979,6 +1056,7 @@
 			]
 		},
 		"section_4": {
+			"show_section": true,
 			"titles": [
 				"Country",
 				"Weather",
@@ -1007,6 +1085,7 @@
 			]
 		},
 		"section_5": {
+			"show_section": true,
 			"title": "News Two",
 			"urls": [
 				"https://www.youtube.com/",
@@ -1015,6 +1094,7 @@
 			]
 		},
 		"section_6": {
+			"show_section": true,
 			"title": "Programs",
 			"number_programs": 6
 		},
@@ -1052,12 +1132,16 @@
 	{
 		"id": 11,
 		"country": "mexico",
-		"section_1": [
-			"https://www.google.com.ar/",
-			"https://www.youtube.com.ar/",
-			"https://www.ole.com.ar/"
-		],
+		"section_1": {
+			"show_section": true,
+			"urls": [
+				"https://www.google.com.ar/",
+				"https://www.youtube.com.ar/",
+				"https://www.ole.com.ar/"
+			]
+		},
 		"section_2": {
+			"show_section": true,
 			"titles": [
 				"Titulo de ejemplo numero 1",
 				"Titulo de ejemplo numero 2",
@@ -1076,6 +1160,7 @@
 			]
 		},
 		"section_3": {
+			"show_section": true,
 			"title": "News One",
 			"urls": [
 				"https://www.google.com.ar/",
@@ -1084,6 +1169,7 @@
 			]
 		},
 		"section_4": {
+			"show_section": true,
 			"titles": [
 				"Country",
 				"Weather",
@@ -1112,6 +1198,7 @@
 			]
 		},
 		"section_5": {
+			"show_section": true,
 			"title": "News Two",
 			"urls": [
 				"https://www.youtube.com/",
@@ -1120,6 +1207,7 @@
 			]
 		},
 		"section_6": {
+			"show_section": true,
 			"title": "Programs",
 			"number_programs": 6
 		},
