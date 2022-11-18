@@ -16,6 +16,10 @@
 	color: var(--clr--purple);
 }
 
+.section2TitleStudyAbroadSpan {
+	text-transform: capitalize;
+}
+
 .containerSection2MainStudyAbroad {
 	width: 1000px;
 	min-height: 500px;
