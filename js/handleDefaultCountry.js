@@ -1,1 +1,1 @@
-export const firstRenderCountry = "Argentina";
+export const firstRenderCountry = "United Kingdom";

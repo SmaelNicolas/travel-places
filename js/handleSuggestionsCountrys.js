@@ -21,7 +21,7 @@ export const handleSuggestionsCountrys = () => {
 	let dataCountries = [];
 
 	//LEE EL JSON PARA OBTENER LA LISTA DE PAISES DISPONIBLES
-	fetch("../data/countries.json")
+	fetch("../data/countriesStudyAbroad.json")
 		.then((res) => res.json())
 		.then((res) => {
 			sortInitialUniversities(res);
