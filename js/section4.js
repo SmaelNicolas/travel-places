@@ -111,14 +111,58 @@ const renderSection_4Step_1 = (title, text, value, country, style) => {
 								}">
 									${country}
 								</div>
-								<div class="section4InfoOneRibbonText ${
+								<div id="section4InfoOneRibbonTextShort" class="section4InfoOneRibbonText ${
 									style.section_4_title_step_1_paragraph
 								}">
+									${reduceString(text[value])}
+								</div>
+								<i id="section4InfoOneRibbonArrowDown" class="fa-solid fa-chevron-down  ${
+									style.section_4_title_step_1_paragraph
+								} section4Arrow "></i>
+								<div id="section4InfoOneRibbonTextLong" class="section4InfoOneRibbonText ${
+									style.section_4_title_step_1_paragraph
+								} section4HideTextArrow">
 									${text[value]}
 								</div>
+								<i id="section4InfoOneRibbonArrowUp" class="fa-solid fa-chevron-up  ${
+									style.section_4_title_step_1_paragraph
+								} section4Arrow section4HideTextArrow "></i>
+
 							</div>
 						</div>`;
 	document.getElementById("containerSection4Info").appendChild(node);
+	document
+		.getElementById("section4InfoOneRibbonArrowDown")
+		.addEventListener("click", () => {
+			document
+				.getElementById("section4InfoOneRibbonArrowDown")
+				.classList.add("section4HideTextArrow");
+			document
+				.getElementById("section4InfoOneRibbonTextShort")
+				.classList.add("section4HideTextArrow");
+			document
+				.getElementById("section4InfoOneRibbonTextLong")
+				.classList.remove("section4HideTextArrow");
+			document
+				.getElementById("section4InfoOneRibbonArrowUp")
+				.classList.remove("section4HideTextArrow");
+		});
+	document
+		.getElementById("section4InfoOneRibbonArrowUp")
+		.addEventListener("click", () => {
+			document
+				.getElementById("section4InfoOneRibbonArrowDown")
+				.classList.remove("section4HideTextArrow");
+			document
+				.getElementById("section4InfoOneRibbonTextShort")
+				.classList.remove("section4HideTextArrow");
+			document
+				.getElementById("section4InfoOneRibbonTextLong")
+				.classList.add("section4HideTextArrow");
+			document
+				.getElementById("section4InfoOneRibbonArrowUp")
+				.classList.add("section4HideTextArrow");
+		});
 };
 const renderSection_4Step_2 = (title, text, value, style) => {
 	let node = document.createElement("div");
@@ -133,13 +177,59 @@ const renderSection_4Step_2 = (title, text, value, style) => {
 						</div>
 						<div class="section4InfoText section4InfoTwo">
 							<div
+								id="section4InfoTwoTextShort"
 								class="section4InfoTextDescription section4InfoTwoText ${
 									style.section_4_title_step_2_paragraph
 								}">
+								${reduceString(text[value])}
+							</div>
+							<i id="section4InfoTwoTextArrowDown" class="fa-solid fa-chevron-down  ${
+								style.section_4_title_step_2_paragraph
+							} section4Arrow "></i>
+							<div
+								id="section4InfoTwoTextLong"
+								class="section4InfoTextDescription section4InfoTwoText ${
+									style.section_4_title_step_2_paragraph
+								} section4HideTextArrow">
 								${text[value]}
 							</div>
+							<i id="section4InfoTwoTextArrowUp" class="fa-solid fa-chevron-up  ${
+								style.section_4_title_step_2_paragraph
+							} section4Arrow section4HideTextArrow "></i>
 						</div>`;
 	document.getElementById("containerSection4Info").appendChild(node);
+	document
+		.getElementById("section4InfoTwoTextArrowDown")
+		.addEventListener("click", () => {
+			document
+				.getElementById("section4InfoTwoTextArrowDown")
+				.classList.add("section4HideTextArrow");
+			document
+				.getElementById("section4InfoTwoTextShort")
+				.classList.add("section4HideTextArrow");
+			document
+				.getElementById("section4InfoTwoTextLong")
+				.classList.remove("section4HideTextArrow");
+			document
+				.getElementById("section4InfoTwoTextArrowUp")
+				.classList.remove("section4HideTextArrow");
+		});
+	document
+		.getElementById("section4InfoTwoTextArrowUp")
+		.addEventListener("click", () => {
+			document
+				.getElementById("section4InfoTwoTextArrowDown")
+				.classList.remove("section4HideTextArrow");
+			document
+				.getElementById("section4InfoTwoTextShort")
+				.classList.remove("section4HideTextArrow");
+			document
+				.getElementById("section4InfoTwoTextLong")
+				.classList.add("section4HideTextArrow");
+			document
+				.getElementById("section4InfoTwoTextArrowUp")
+				.classList.add("section4HideTextArrow");
+		});
 };
 const renderSection_4Step_3 = (title, cities, value, country, style) => {
 	let node = document.createElement("div");
@@ -186,13 +276,59 @@ const renderSection_4Step_4 = (title, text, value, style) => {
 						</div>
 						<div class="section4InfoText section4InfoFour">
 							<div
+								id="section4InfoFourTextShort"
 								class="section4InfoTextDescription section4InfoFourText ${
 									style.section_4_title_step_4_paragraph
 								}">
+								${reduceString(text[value])}
+							</div>
+							<i id="section4InfoFourTextArrowDown" class="fa-solid fa-chevron-down  ${
+								style.section_4_title_step_4_paragraph
+							} section4Arrow "></i>
+							<div
+								id="section4InfoFourTextLong"
+								class="section4InfoTextDescription section4InfoFourText ${
+									style.section_4_title_step_4_paragraph
+								} section4HideTextArrow">
 								${text[value]}
 							</div>
+							<i id="section4InfoFourTextArrowUp" class="fa-solid fa-chevron-up  ${
+								style.section_4_title_step_4_paragraph
+							} section4Arrow section4HideTextArrow "></i>
 						</div>`;
 	document.getElementById("containerSection4Info").appendChild(node);
+	document
+		.getElementById("section4InfoFourTextArrowDown")
+		.addEventListener("click", () => {
+			document
+				.getElementById("section4InfoFourTextArrowDown")
+				.classList.add("section4HideTextArrow");
+			document
+				.getElementById("section4InfoFourTextShort")
+				.classList.add("section4HideTextArrow");
+			document
+				.getElementById("section4InfoFourTextLong")
+				.classList.remove("section4HideTextArrow");
+			document
+				.getElementById("section4InfoFourTextArrowUp")
+				.classList.remove("section4HideTextArrow");
+		});
+	document
+		.getElementById("section4InfoFourTextArrowUp")
+		.addEventListener("click", () => {
+			document
+				.getElementById("section4InfoFourTextArrowDown")
+				.classList.remove("section4HideTextArrow");
+			document
+				.getElementById("section4InfoFourTextShort")
+				.classList.remove("section4HideTextArrow");
+			document
+				.getElementById("section4InfoFourTextLong")
+				.classList.add("section4HideTextArrow");
+			document
+				.getElementById("section4InfoFourTextArrowUp")
+				.classList.add("section4HideTextArrow");
+		});
 };
 const renderSection_4Step_5 = (title, text, value, country, style) => {
 	let node = document.createElement("div");
@@ -210,13 +346,60 @@ const renderSection_4Step_5 = (title, text, value, country, style) => {
 								src="../data/country/${country}/section4/step5/tickets.png"
 								alt="imgTickets" />
 							<div
+								id="section4InfoFiveTextShort"
 								class="section4InfoTextDescription section4InfoFiveText ${
 									style.section_4_title_step_5_paragraph
 								}">
-								${text[value]}
+								${reduceString(text[value])}
+								<i id="section4InfoFiveTextArrowDown" class="fa-solid fa-chevron-down  ${
+									style.section_4_title_step_5_paragraph
+								} section4Arrow "></i>
 							</div>
+							<div
+								id="section4InfoFiveTextLong"
+								class="section4InfoTextDescription section4InfoFiveText ${
+									style.section_4_title_step_5_paragraph
+								} section4HideTextArrow">
+								${text[value]}
+								<i id="section4InfoFiveTextArrowUp" class="fa-solid fa-chevron-up  ${
+									style.section_4_title_step_5_paragraph
+								} section4Arrow section4HideTextArrow "></i>
+							</div>
+							
 						</div>`;
 	document.getElementById("containerSection4Info").appendChild(node);
+	document
+		.getElementById("section4InfoFiveTextArrowDown")
+		.addEventListener("click", () => {
+			document
+				.getElementById("section4InfoFiveTextArrowDown")
+				.classList.add("section4HideTextArrow");
+			document
+				.getElementById("section4InfoFiveTextShort")
+				.classList.add("section4HideTextArrow");
+			document
+				.getElementById("section4InfoFiveTextLong")
+				.classList.remove("section4HideTextArrow");
+			document
+				.getElementById("section4InfoFiveTextArrowUp")
+				.classList.remove("section4HideTextArrow");
+		});
+	document
+		.getElementById("section4InfoFiveTextArrowUp")
+		.addEventListener("click", () => {
+			document
+				.getElementById("section4InfoFiveTextArrowDown")
+				.classList.remove("section4HideTextArrow");
+			document
+				.getElementById("section4InfoFiveTextShort")
+				.classList.remove("section4HideTextArrow");
+			document
+				.getElementById("section4InfoFiveTextLong")
+				.classList.add("section4HideTextArrow");
+			document
+				.getElementById("section4InfoFiveTextArrowUp")
+				.classList.add("section4HideTextArrow");
+		});
 };
 const renderSection_4Step_6 = (title, text, value, country, style) => {
 	let node = document.createElement("div");
@@ -231,11 +414,26 @@ const renderSection_4Step_6 = (title, text, value, country, style) => {
 						</div>
 						<div class="section4InfoText section4InfoSix">
 							<div
+								id="section4InfoSixTextShort"
 								class="section4InfoTextDescription section4InfoSixText ${
 									style.section_4_title_step_6_paragraph
 								}">
-								${text[value]}
+								${reduceString(text[value])}
+								<i id="section4InfoSixTextArrowDown" class="fa-solid fa-chevron-down  ${
+									style.section_4_title_step_6_paragraph
+								} section4Arrow "></i>
 							</div>
+							<div
+								id="section4InfoSixTextLong"
+								class="section4InfoTextDescription section4InfoSixText ${
+									style.section_4_title_step_6_paragraph
+								} section4HideTextArrow">
+								${text[value]}
+								<i id="section4InfoSixTextArrowup" class="fa-solid fa-chevron-up  ${
+									style.section_4_title_step_6_paragraph
+								} section4Arrow  section4HideTextArrow "></i>
+							</div>
+							
 							<div class="section4InfoSixImagesContainer">
 								<div class="section4InfoSixImageRestContainer">
 									<img
@@ -263,6 +461,38 @@ const renderSection_4Step_6 = (title, text, value, country, style) => {
 					</div>
 					`;
 	document.getElementById("containerSection4Info").appendChild(node);
+	document
+		.getElementById("section4InfoSixTextArrowDown")
+		.addEventListener("click", () => {
+			document
+				.getElementById("section4InfoSixTextArrowDown")
+				.classList.add("section4HideTextArrow");
+			document
+				.getElementById("section4InfoSixTextShort")
+				.classList.add("section4HideTextArrow");
+			document
+				.getElementById("section4InfoSixTextLong")
+				.classList.remove("section4HideTextArrow");
+			document
+				.getElementById("section4InfoSixTextArrowup")
+				.classList.remove("section4HideTextArrow");
+		});
+	document
+		.getElementById("section4InfoSixTextArrowup")
+		.addEventListener("click", () => {
+			document
+				.getElementById("section4InfoSixTextArrowDown")
+				.classList.remove("section4HideTextArrow");
+			document
+				.getElementById("section4InfoSixTextShort")
+				.classList.remove("section4HideTextArrow");
+			document
+				.getElementById("section4InfoSixTextLong")
+				.classList.add("section4HideTextArrow");
+			document
+				.getElementById("section4InfoSixTextArrowup")
+				.classList.add("section4HideTextArrow");
+		});
 };
 const renderSection_4Step_7 = (title, text, value, country, style) => {
 	let node = document.createElement("div");
@@ -277,11 +507,26 @@ const renderSection_4Step_7 = (title, text, value, country, style) => {
 							</div>
 							<div class="section4InfoText section4InfoSeven">
 								<div
+									id="section4InfoSevenTextShort"
 									class="section4InfoTextDescription section4InfoSevenText ${
 										style.section_4_title_step_7_paragraph
 									}">
-									${text[value]}
+									${reduceString(text[value])}
+									<i id="section4InfoSevenTextArrowDown" class="fa-solid fa-chevron-down  ${
+										style.section_4_title_step_7_paragraph
+									} section4Arrow "></i>
 								</div>
+								<div
+									id="section4InfoSevenTextLong"
+									class="section4InfoTextDescription section4InfoSevenText ${
+										style.section_4_title_step_7_paragraph
+									} section4HideTextArrow">
+									${text[value]}
+									<i id="section4InfoSevenTextArrowUp" class="fa-solid fa-chevron-up  ${
+										style.section_4_title_step_7_paragraph
+									} section4Arrow section4HideTextArrow "></i>
+								</div>
+								
 								<img
 									class="section4InfoSevenImage"
 									src="../data/country/${country}/section4/step7/hi.png"
@@ -290,4 +535,41 @@ const renderSection_4Step_7 = (title, text, value, country, style) => {
 						</div>
 					`;
 	document.getElementById("containerSection4Info").appendChild(node);
+	document
+		.getElementById("section4InfoSevenTextArrowDown")
+		.addEventListener("click", () => {
+			document
+				.getElementById("section4InfoSevenTextArrowDown")
+				.classList.add("section4HideTextArrow");
+			document
+				.getElementById("section4InfoSevenTextShort")
+				.classList.add("section4HideTextArrow");
+			document
+				.getElementById("section4InfoSevenTextLong")
+				.classList.remove("section4HideTextArrow");
+			document
+				.getElementById("section4InfoSevenTextArrowUp")
+				.classList.remove("section4HideTextArrow");
+		});
+	document
+		.getElementById("section4InfoSevenTextArrowUp")
+		.addEventListener("click", () => {
+			document
+				.getElementById("section4InfoSevenTextArrowDown")
+				.classList.remove("section4HideTextArrow");
+			document
+				.getElementById("section4InfoSevenTextShort")
+				.classList.remove("section4HideTextArrow");
+			document
+				.getElementById("section4InfoSevenTextLong")
+				.classList.add("section4HideTextArrow");
+			document
+				.getElementById("section4InfoSevenTextArrowUp")
+				.classList.add("section4HideTextArrow");
+		});
+};
+
+const reduceString = (str) => {
+	//FUNCION QUE REDUCE LA DESCRIPCION
+	return str.length > 110 ? str.slice(0, 107).concat(" ...") : str;
 };
